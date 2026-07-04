@@ -5,6 +5,13 @@
     <link>https://factquire.com/</link>
     <description>Source-verified LLM API fact changes and news.</description>
     <item>
+      <title>AWS quietly doubled Bedrock prices for legacy Claude models — and cost trackers haven&#x27;t caught up</title>
+      <link>https://factquire.com/news/bedrock-extended-access-price-doubling.html</link>
+      <guid>https://factquire.com/news/bedrock-extended-access-price-doubling.html</guid>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Amazon Bedrock&#x27;s &#x27;Public Extended Access&#x27; pricing, effective December 1, 2025, doubled per-token prices for Claude 3.5 Sonnet v2. Seven months later, at least one widely used open-source cost tracker still carried the old prices — we verified against the primary source and submitted the fix.</description>
+    </item>
+    <item>
       <title>A facts wire for the model economy: why we exist</title>
       <link>https://factquire.com/news/launch.html</link>
       <guid>https://factquire.com/news/launch.html</guid>

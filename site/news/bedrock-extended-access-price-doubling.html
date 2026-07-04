@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AWS quietly doubled Bedrock prices for legacy Claude models — and cost trackers haven&#x27;t caught up</title>
+    <meta name="description" content="Amazon Bedrock&#x27;s &#x27;Public Extended Access&#x27; pricing, effective December 1, 2025, doubled per-token prices for Claude 3.5 Sonnet v2. Seven months later, at least one widely used open-source cost tracker still carried the old prices — we verified against the primary source and submitted the fix.">
+    <link rel="canonical" href="https://factquire.com/news/bedrock-extended-access-price-doubling.html">
+    <link rel="alternate" type="application/rss+xml" title="FactQuire RSS" href="https://factquire.com/rss.xml">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+    <link rel="apple-touch-icon" href="/assets/favicon-512.png">
+    <meta property="og:title" content="AWS quietly doubled Bedrock prices for legacy Claude models — and cost trackers haven&#x27;t caught up">
+    <meta property="og:description" content="Amazon Bedrock&#x27;s &#x27;Public Extended Access&#x27; pricing, effective December 1, 2025, doubled per-token prices for Claude 3.5 Sonnet v2. Seven months later, at least one widely used open-source cost tracker still carried the old prices — we verified against the primary source and submitted the fix.">
+    <meta property="og:image" content="https://factquire.com/assets/og-card.png">
+    <meta property="og:url" content="https://factquire.com/news/bedrock-extended-access-price-doubling.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="/styles.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"AWS quietly doubled Bedrock prices for legacy Claude models — and cost trackers haven't caught up","datePublished":"2026-07-04","description":"Amazon Bedrock's 'Public Extended Access' pricing, effective December 1, 2025, doubled per-token prices for Claude 3.5 Sonnet v2. Seven months later, at least one widely used open-source cost tracker still carried the old prices — we verified against the primary source and submitted the fix.","url":"https://factquire.com/news/bedrock-extended-access-price-doubling.html","publisher":{"@type":"Organization","name":"FactQuire"}}</script>
+    
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <a href="/" style="display:inline-block;line-height:0;">
+          <img src="/assets/logo.png" alt="FactQuire" height="48" style="height:48px;width:auto;">
+        </a>
+      </div>
+      <nav>
+        <a href="/models/">Models</a>
+        <a href="/news/" aria-current="page">News</a>
+        <a href="/changelog.html">Changelog</a>
+        <a href="/audit.html">Audit</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </header>
+    <main>
+      <article class="article">
+        <h1>AWS quietly doubled Bedrock prices for legacy Claude models — and cost trackers haven&#x27;t caught up</h1>
+        <p class="muted">2026-07-04</p>
+        <h1>AWS quietly doubled Bedrock prices for legacy Claude models — and cost trackers haven&#x27;t caught up</h1>
+<p>If your cost dashboard says a Bedrock call to Claude 3.5 Sonnet v2 costs $3 per million input tokens, your dashboard is seven months out of date — and it is off by exactly 2x.</p>
+<h2>What changed</h2>
+<p>Amazon moved Claude 3.5 Sonnet v2 on Bedrock to what its pricing page calls <strong>Public Extended Access</strong>, effective December 1, 2025. The AWS Bedrock pricing page (https://aws.amazon.com/bedrock/pricing/, accessed 2026-07-04) lists for Anthropic Claude 3.5 Sonnet v2:</p>
+<p>&gt; &quot;$6.00&quot; per 1M input tokens, &quot;$30.00&quot; per 1M output tokens, &gt; cache write &quot;$7.50&quot; per 1M, cache read &quot;$0.60&quot; per 1M &gt; (Public Extended Access, effective December 1, 2025)</p>
+<p>That is double the long-familiar $3.00 / $15.00 — the price most of the ecosystem memorized in 2024 and hardcoded everywhere.</p>
+<h2>Why it went unnoticed</h2>
+<p>Prices that change on a provider&#x27;s page do not change in the JSON files, cost packages, and dashboards that were built when the old price was true. Facts rot silently.</p>
+<p>While cross-auditing community datasets against primary sources on 2026-07-04, we found <a href="https://github.com/Helicone/helicone">Helicone</a>&#x27;s cost package still carried $3.00 / $15.00 for `claude-3.5-sonnet-v2:bedrock`. The code is correct code — it is simply code that does not know the world changed underneath it. We verified the current values against the AWS pricing page and submitted the correction upstream: <a href="https://github.com/Helicone/helicone/pull/5709">Helicone/helicone#5709</a>.</p>
+<p>Notably, the entry&#x27;s cache multipliers (1.25x write, 0.1x read) were still exactly right against the *new* base price — evidence the structure was sound and only the base facts had drifted.</p>
+<h2>The FactQuire entry</h2>
+<p>Our machine-readable record for this model, with the verbatim source quote and access timestamp, is here:</p>
+<ul>
+<li>https://factquire.com/models/amazon/anthropic_claude-3-5-sonnet-20241022-v2_0.json</li>
+</ul>
+<p>Every field in the FactQuire feed carries a quote from the primary source and the time we read it, so anyone can re-verify the claim without trusting us — including when we are the ones who turn out to be wrong. (Our own published corrections are at https://factquire.com/corrections.html.)</p>
+<h2>The general lesson</h2>
+<p>Model pricing is not static reference data; it is news. Prices change with an effective date, quietly, on a page nobody re-reads. Any system that stores a price without storing *when and where it was read* will eventually report costs that are confidently wrong — in this case, by 2x for seven months.</p>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <a href="/corrections.html">corrections</a> |
+      <a href="/editorial.html">editorial</a> |
+      <a href="/cite.html">cite</a>
+    </footer>
+  </body>
+</html>
