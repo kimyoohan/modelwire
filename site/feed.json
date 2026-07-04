@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T08:15:02Z",
+  "generated_at": "2026-07-04T08:25:45Z",
   "count": 123,
   "version": "0.3",
   "models": [
@@ -53,7 +53,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": "OpenAI pricing records the standard short-context tier; long-context pricing, where present, is noted in the cited quote."
+      "notes": "OpenAI pricing records the standard short-context tier; long-context pricing, where present, is noted in the cited quote.",
+      "permalink": "/models/openai/gpt-5_5.html"
     },
     {
       "provider": "openai",
@@ -104,7 +105,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": "OpenAI pricing records the standard short-context tier; long-context pricing, where present, is noted in the cited quote."
+      "notes": "OpenAI pricing records the standard short-context tier; long-context pricing, where present, is noted in the cited quote.",
+      "permalink": "/models/openai/gpt-5_5-pro.html"
     },
     {
       "provider": "openai",
@@ -156,7 +158,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": "OpenAI pricing records the standard short-context tier; long-context pricing, where present, is noted in the cited quote."
+      "notes": "OpenAI pricing records the standard short-context tier; long-context pricing, where present, is noted in the cited quote.",
+      "permalink": "/models/openai/gpt-5_4.html"
     },
     {
       "provider": "anthropic",
@@ -216,7 +219,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/anthropic/claude-fable-5.html"
     },
     {
       "provider": "anthropic",
@@ -276,7 +280,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/anthropic/claude-opus-4-8.html"
     },
     {
       "provider": "anthropic",
@@ -341,7 +346,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/anthropic/claude-opus-4-7.html"
     },
     {
       "provider": "anthropic",
@@ -406,7 +412,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/anthropic/claude-opus-4-6.html"
     },
     {
       "provider": "anthropic",
@@ -466,7 +473,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/anthropic/claude-sonnet-5.html"
     },
     {
       "provider": "anthropic",
@@ -526,7 +534,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/anthropic/claude-haiku-4-5-20251001.html"
     },
     {
       "provider": "google",
@@ -569,7 +578,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier."
+      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
+      "permalink": "/models/google/gemini-3_1-flash-lite.html"
     },
     {
       "provider": "google",
@@ -613,7 +623,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier."
+      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
+      "permalink": "/models/google/gemini-3_1-pro-preview.html"
     },
     {
       "provider": "google",
@@ -653,7 +664,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier."
+      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
+      "permalink": "/models/google/gemini-3_1-flash-live-preview.html"
     },
     {
       "provider": "google",
@@ -696,7 +708,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier."
+      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
+      "permalink": "/models/google/gemini-3-flash-preview.html"
     },
     {
       "provider": "google",
@@ -737,7 +750,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier."
+      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
+      "permalink": "/models/google/gemini-2_5-pro.html"
     },
     {
       "provider": "google",
@@ -788,7 +802,8 @@
         }
       ],
       "verified_at": "2026-07-04T07:37:12Z",
-      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier."
+      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
+      "permalink": "/models/google/gemini-2_5-flash.html"
     },
     {
       "provider": "google",
@@ -831,7 +846,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier."
+      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
+      "permalink": "/models/google/gemini-2_5-flash-lite.html"
     },
     {
       "provider": "google",
@@ -874,7 +890,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier."
+      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
+      "permalink": "/models/google/gemini-2_5-flash-lite-preview-09-2025.html"
     },
     {
       "provider": "google",
@@ -917,7 +934,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier."
+      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
+      "permalink": "/models/google/gemini-2_5-flash-native-audio-preview-12-2025.html"
     },
     {
       "provider": "google",
@@ -957,7 +975,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier."
+      "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
+      "permalink": "/models/google/gemini-2_5-flash-preview-tts.html"
     },
     {
       "provider": "mistral",
@@ -998,7 +1017,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/mistral/mistral-medium-latest.html"
     },
     {
       "provider": "mistral",
@@ -1039,7 +1059,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/mistral/mistral-small-latest.html"
     },
     {
       "provider": "mistral",
@@ -1080,7 +1101,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/mistral/mistral-large-latest.html"
     },
     {
       "provider": "mistral",
@@ -1121,7 +1143,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/mistral/voxtral-small-latest.html"
     },
     {
       "provider": "mistral",
@@ -1161,7 +1184,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/mistral/devstral-medium-latest.html"
     },
     {
       "provider": "mistral",
@@ -1202,7 +1226,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/mistral/devstral-small-latest.html"
     },
     {
       "provider": "mistral",
@@ -1242,7 +1267,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/mistral/codestral-latest.html"
     },
     {
       "provider": "mistral",
@@ -1283,7 +1309,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/mistral/magistral-medium-latest.html"
     },
     {
       "provider": "xai",
@@ -1332,7 +1359,8 @@
         }
       ],
       "verified_at": "2026-07-04T06:08:18Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/xai/grok-build-0_1.html"
     },
     {
       "provider": "xai",
@@ -1381,7 +1409,8 @@
         }
       ],
       "verified_at": "2026-07-04T06:08:18Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/xai/grok-4_3.html"
     },
     {
       "provider": "xai",
@@ -1430,7 +1459,8 @@
         }
       ],
       "verified_at": "2026-07-04T06:08:18Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/xai/grok-4_20-multi-agent-0309.html"
     },
     {
       "provider": "xai",
@@ -1479,7 +1509,8 @@
         }
       ],
       "verified_at": "2026-07-04T06:08:18Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/xai/grok-4_20-0309-reasoning.html"
     },
     {
       "provider": "xai",
@@ -1528,7 +1559,8 @@
         }
       ],
       "verified_at": "2026-07-04T06:08:18Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/xai/grok-4_20-0309-non-reasoning.html"
     },
     {
       "provider": "deepseek",
@@ -1579,7 +1611,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/deepseek/deepseek-v4-flash.html"
     },
     {
       "provider": "deepseek",
@@ -1630,7 +1663,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/deepseek/deepseek-v4-pro.html"
     },
     {
       "provider": "cohere",
@@ -1681,7 +1715,8 @@
         }
       ],
       "verified_at": "2026-07-04T06:08:18Z",
-      "notes": "Listed as legacy on Cohere pricing page"
+      "notes": "Listed as legacy on Cohere pricing page",
+      "permalink": "/models/cohere/command-r-plus-08-2024.html"
     },
     {
       "provider": "cohere",
@@ -1733,7 +1768,8 @@
         }
       ],
       "verified_at": "2026-07-04T06:08:18Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/cohere/command-r-03-2024.html"
     },
     {
       "provider": "cohere",
@@ -1785,7 +1821,8 @@
         }
       ],
       "verified_at": "2026-07-04T06:08:18Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/cohere/command-r-plus-04-2024.html"
     },
     {
       "provider": "cohere",
@@ -1837,7 +1874,8 @@
         }
       ],
       "verified_at": "2026-07-04T06:08:18Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/cohere/command.html"
     },
     {
       "provider": "cohere",
@@ -1889,7 +1927,8 @@
         }
       ],
       "verified_at": "2026-07-04T06:08:18Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/cohere/command-light.html"
     },
     {
       "provider": "cohere",
@@ -1940,7 +1979,8 @@
         }
       ],
       "verified_at": "2026-07-04T05:55:32Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/cohere/c4ai-aya-expanse-32b.html"
     },
     {
       "provider": "amazon",
@@ -1993,7 +2033,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "AWS Bedrock us-east-1 on-demand Standard tier; price table exposed on AWS Bedrock pricing."
+      "notes": "AWS Bedrock us-east-1 on-demand Standard tier; price table exposed on AWS Bedrock pricing.",
+      "permalink": "/models/amazon/amazon_nova-premier-v1_0.html"
     },
     {
       "provider": "amazon",
@@ -2046,7 +2087,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "AWS Bedrock us-east-1 on-demand Standard tier; price table exposed on AWS Bedrock pricing."
+      "notes": "AWS Bedrock us-east-1 on-demand Standard tier; price table exposed on AWS Bedrock pricing.",
+      "permalink": "/models/amazon/amazon_nova-pro-v1_0.html"
     },
     {
       "provider": "amazon",
@@ -2099,7 +2141,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "AWS Bedrock us-east-1 on-demand Standard tier; price table exposed on AWS Bedrock pricing."
+      "notes": "AWS Bedrock us-east-1 on-demand Standard tier; price table exposed on AWS Bedrock pricing.",
+      "permalink": "/models/amazon/amazon_nova-lite-v1_0.html"
     },
     {
       "provider": "amazon",
@@ -2150,7 +2193,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "AWS Bedrock us-east-1 on-demand Standard tier; price table exposed on AWS Bedrock pricing."
+      "notes": "AWS Bedrock us-east-1 on-demand Standard tier; price table exposed on AWS Bedrock pricing.",
+      "permalink": "/models/amazon/amazon_nova-micro-v1_0.html"
     },
     {
       "provider": "alibaba",
@@ -2190,7 +2234,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "International Model Studio price; base 0<Token<=1M tier recorded."
+      "notes": "International Model Studio price; base 0<Token<=1M tier recorded.",
+      "permalink": "/models/alibaba/qwen3_7-max.html"
     },
     {
       "provider": "alibaba",
@@ -2230,7 +2275,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "International Model Studio price; base 0<Token<=1M tier recorded."
+      "notes": "International Model Studio price; base 0<Token<=1M tier recorded.",
+      "permalink": "/models/alibaba/qwen3_7-max-2026-05-20.html"
     },
     {
       "provider": "alibaba",
@@ -2270,7 +2316,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "International Model Studio price; base 0<Token<=1M tier recorded."
+      "notes": "International Model Studio price; base 0<Token<=1M tier recorded.",
+      "permalink": "/models/alibaba/qwen3_7-max-preview.html"
     },
     {
       "provider": "alibaba",
@@ -2310,7 +2357,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "International Model Studio price; base 0<Token<=1M tier recorded."
+      "notes": "International Model Studio price; base 0<Token<=1M tier recorded.",
+      "permalink": "/models/alibaba/qwen3_7-max-2026-05-17.html"
     },
     {
       "provider": "alibaba",
@@ -2350,7 +2398,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "International Model Studio price; base 0<Token<=128K tier recorded; higher tiers noted in quote."
+      "notes": "International Model Studio price; base 0<Token<=128K tier recorded; higher tiers noted in quote.",
+      "permalink": "/models/alibaba/qwen3_6-max-preview.html"
     },
     {
       "provider": "alibaba",
@@ -2390,7 +2439,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "International Model Studio price; base 0<Token<=32K tier recorded; higher tiers noted in quote."
+      "notes": "International Model Studio price; base 0<Token<=32K tier recorded; higher tiers noted in quote.",
+      "permalink": "/models/alibaba/qwen3-max.html"
     },
     {
       "provider": "alibaba",
@@ -2430,7 +2480,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "International Model Studio price; base 0<Token<=32K tier recorded; higher tiers noted in quote."
+      "notes": "International Model Studio price; base 0<Token<=32K tier recorded; higher tiers noted in quote.",
+      "permalink": "/models/alibaba/qwen3-max-2026-01-23.html"
     },
     {
       "provider": "moonshot",
@@ -2481,7 +2532,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/moonshot/kimi-k2_7-code.html"
     },
     {
       "provider": "moonshot",
@@ -2532,7 +2584,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/moonshot/kimi-k2_6.html"
     },
     {
       "provider": "moonshot",
@@ -2583,7 +2636,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/moonshot/kimi-k2_5.html"
     },
     {
       "provider": "zhipu",
@@ -2623,7 +2677,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled.",
+      "permalink": "/models/zhipu/glm-5_2.html"
     },
     {
       "provider": "zhipu",
@@ -2663,7 +2718,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled.",
+      "permalink": "/models/zhipu/glm-5_1.html"
     },
     {
       "provider": "zhipu",
@@ -2703,7 +2759,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled.",
+      "permalink": "/models/zhipu/glm-5.html"
     },
     {
       "provider": "zhipu",
@@ -2743,7 +2800,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled.",
+      "permalink": "/models/zhipu/glm-5-turbo.html"
     },
     {
       "provider": "zhipu",
@@ -2783,7 +2841,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled.",
+      "permalink": "/models/zhipu/glm-4_7.html"
     },
     {
       "provider": "zhipu",
@@ -2823,7 +2882,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled.",
+      "permalink": "/models/zhipu/glm-4_7-flashx.html"
     },
     {
       "provider": "zhipu",
@@ -2863,7 +2923,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled.",
+      "permalink": "/models/zhipu/glm-4_6.html"
     },
     {
       "provider": "zhipu",
@@ -2903,7 +2964,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled.",
+      "permalink": "/models/zhipu/glm-4_5.html"
     },
     {
       "provider": "zhipu",
@@ -2943,7 +3005,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled.",
+      "permalink": "/models/zhipu/glm-4_5-x.html"
     },
     {
       "provider": "zhipu",
@@ -2983,7 +3046,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled.",
+      "permalink": "/models/zhipu/glm-4_5-air.html"
     },
     {
       "provider": "zhipu",
@@ -3023,7 +3087,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled.",
+      "permalink": "/models/zhipu/glm-4_5-airx.html"
     },
     {
       "provider": "zhipu",
@@ -3062,7 +3127,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled.",
+      "permalink": "/models/zhipu/glm-4-32b-0414-128k.html"
     },
     {
       "provider": "minimax",
@@ -3102,7 +3168,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source."
+      "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source.",
+      "permalink": "/models/minimax/minimax-m3.html"
     },
     {
       "provider": "minimax",
@@ -3142,7 +3209,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source."
+      "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source.",
+      "permalink": "/models/minimax/minimax-m2_7.html"
     },
     {
       "provider": "minimax",
@@ -3182,7 +3250,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source."
+      "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source.",
+      "permalink": "/models/minimax/minimax-m2_5.html"
     },
     {
       "provider": "minimax",
@@ -3222,7 +3291,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source."
+      "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source.",
+      "permalink": "/models/minimax/minimax-m2_1.html"
     },
     {
       "provider": "minimax",
@@ -3262,7 +3332,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source."
+      "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source.",
+      "permalink": "/models/minimax/minimax-m2.html"
     },
     {
       "provider": "groq",
@@ -3303,7 +3374,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Upstream model family: Meta Llama; provider is Groq serving platform."
+      "notes": "Upstream model family: Meta Llama; provider is Groq serving platform.",
+      "permalink": "/models/groq/llama-3_1-8b-instant.html"
     },
     {
       "provider": "groq",
@@ -3344,7 +3416,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Upstream model family: Meta Llama; provider is Groq serving platform."
+      "notes": "Upstream model family: Meta Llama; provider is Groq serving platform.",
+      "permalink": "/models/groq/llama-3_3-70b-versatile.html"
     },
     {
       "provider": "groq",
@@ -3385,7 +3458,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Upstream model family: OpenAI GPT OSS; provider is Groq serving platform."
+      "notes": "Upstream model family: OpenAI GPT OSS; provider is Groq serving platform.",
+      "permalink": "/models/groq/openai_gpt-oss-120b.html"
     },
     {
       "provider": "groq",
@@ -3426,7 +3500,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Upstream model family: OpenAI GPT OSS; provider is Groq serving platform."
+      "notes": "Upstream model family: OpenAI GPT OSS; provider is Groq serving platform.",
+      "permalink": "/models/groq/openai_gpt-oss-20b.html"
     },
     {
       "provider": "fireworks",
@@ -3466,7 +3541,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page.",
+      "permalink": "/models/fireworks/kimi-k2_7-code.html"
     },
     {
       "provider": "fireworks",
@@ -3506,7 +3582,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page.",
+      "permalink": "/models/fireworks/kimi-k2_7-code-fast.html"
     },
     {
       "provider": "fireworks",
@@ -3546,7 +3623,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page.",
+      "permalink": "/models/fireworks/kimi-k2_6.html"
     },
     {
       "provider": "fireworks",
@@ -3586,7 +3664,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page.",
+      "permalink": "/models/fireworks/kimi-k2_6-fast.html"
     },
     {
       "provider": "fireworks",
@@ -3626,7 +3705,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page.",
+      "permalink": "/models/fireworks/deepseek-v4-pro.html"
     },
     {
       "provider": "fireworks",
@@ -3666,7 +3746,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page.",
+      "permalink": "/models/fireworks/deepseek-v4-flash.html"
     },
     {
       "provider": "fireworks",
@@ -3706,7 +3787,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page.",
+      "permalink": "/models/fireworks/glm-5_2.html"
     },
     {
       "provider": "fireworks",
@@ -3746,7 +3828,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page.",
+      "permalink": "/models/fireworks/glm-5_2-fast.html"
     },
     {
       "provider": "fireworks",
@@ -3786,7 +3869,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page.",
+      "permalink": "/models/fireworks/glm-5_1.html"
     },
     {
       "provider": "fireworks",
@@ -3826,7 +3910,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page.",
+      "permalink": "/models/fireworks/glm-5_1-fast.html"
     },
     {
       "provider": "fireworks",
@@ -3866,7 +3951,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page.",
+      "permalink": "/models/fireworks/qwen-3_7-plus.html"
     },
     {
       "provider": "fireworks",
@@ -3906,7 +3992,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page.",
+      "permalink": "/models/fireworks/minimax-m3.html"
     },
     {
       "provider": "fireworks",
@@ -3946,7 +4033,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page.",
+      "permalink": "/models/fireworks/minimax-m2_7.html"
     },
     {
       "provider": "fireworks",
@@ -3986,7 +4074,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page.",
+      "permalink": "/models/fireworks/openai-gpt-oss-120b.html"
     },
     {
       "provider": "fireworks",
@@ -4026,7 +4115,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page.",
+      "permalink": "/models/fireworks/openai-gpt-oss-20b.html"
     },
     {
       "provider": "together",
@@ -4066,7 +4156,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/deepseek-v4-pro.html"
     },
     {
       "provider": "together",
@@ -4106,7 +4197,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/minimax-m3.html"
     },
     {
       "provider": "together",
@@ -4146,7 +4238,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/kimi-k2_7-code.html"
     },
     {
       "provider": "together",
@@ -4186,7 +4279,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/glm-5_2.html"
     },
     {
       "provider": "together",
@@ -4225,7 +4319,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/lfm2-24b-a2b.html"
     },
     {
       "provider": "together",
@@ -4264,7 +4359,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/gemma-4-31b.html"
     },
     {
       "provider": "together",
@@ -4304,7 +4400,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/nvidia-nemotron-3-ultra.html"
     },
     {
       "provider": "together",
@@ -4343,7 +4440,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/qwen3_7-plus.html"
     },
     {
       "provider": "together",
@@ -4383,7 +4481,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/kimi-k2_6.html"
     },
     {
       "provider": "together",
@@ -4423,7 +4522,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/qwen3_7-max.html"
     },
     {
       "provider": "together",
@@ -4462,7 +4562,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/gpt-oss-120b.html"
     },
     {
       "provider": "together",
@@ -4502,7 +4603,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/qwen3_5-397b-a17b.html"
     },
     {
       "provider": "together",
@@ -4541,7 +4643,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/qwen3_5-9b.html"
     },
     {
       "provider": "together",
@@ -4580,7 +4683,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/gemma-4-31b-it-pearl.html"
     },
     {
       "provider": "together",
@@ -4619,7 +4723,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/cogito-v2_1-671b.html"
     },
     {
       "provider": "together",
@@ -4658,7 +4763,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/rnj-1-instruct.html"
     },
     {
       "provider": "together",
@@ -4697,7 +4803,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/llama-3_3-70b.html"
     },
     {
       "provider": "together",
@@ -4736,7 +4843,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/gemma-3n-e4b-instruct.html"
     },
     {
       "provider": "together",
@@ -4775,7 +4883,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/gpt-oss-20b.html"
     },
     {
       "provider": "together",
@@ -4814,7 +4923,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/qwen3-235b-a22b-fp8-throughput.html"
     },
     {
       "provider": "together",
@@ -4854,7 +4964,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/minimax-m2_5.html"
     },
     {
       "provider": "together",
@@ -4894,7 +5005,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/glm-5_1.html"
     },
     {
       "provider": "together",
@@ -4934,7 +5046,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/minimax-m2_7.html"
     },
     {
       "provider": "together",
@@ -4973,7 +5086,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page.",
+      "permalink": "/models/together/qwen3_6-plus.html"
     },
     {
       "provider": "perplexity",
@@ -5009,11 +5123,12 @@
             "pricing.output_per_mtok",
             "pricing.cached_input_per_mtok"
           ],
-          "quote": "Perplexity Sonar \u2014 Perplexity\u2019s grounded search model. Model Input ($/1M)Output ($/1M)Cache ($/1M) `perplexity/sonar` 0.25 2.50 0.0625"
+          "quote": "Perplexity Sonar — Perplexity’s grounded search model. Model Input ($/1M)Output ($/1M)Cache ($/1M) `perplexity/sonar` 0.25 2.50 0.0625"
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Perplexity Agent API model table; context window not stated on collected page."
+      "notes": "Perplexity Agent API model table; context window not stated on collected page.",
+      "permalink": "/models/perplexity/perplexity_sonar.html"
     },
     {
       "provider": "cohere",
@@ -5056,7 +5171,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page."
+      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page.",
+      "permalink": "/models/cohere/command-a-plus-05-2026.html"
     },
     {
       "provider": "cohere",
@@ -5098,7 +5214,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page."
+      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page.",
+      "permalink": "/models/cohere/command-a-03-2025.html"
     },
     {
       "provider": "cohere",
@@ -5140,7 +5257,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page."
+      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page.",
+      "permalink": "/models/cohere/command-a-translate-08-2025.html"
     },
     {
       "provider": "cohere",
@@ -5182,7 +5300,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page."
+      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page.",
+      "permalink": "/models/cohere/command-a-reasoning-08-2025.html"
     },
     {
       "provider": "cohere",
@@ -5225,7 +5344,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page."
+      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page.",
+      "permalink": "/models/cohere/command-a-vision-07-2025.html"
     },
     {
       "provider": "cohere",
@@ -5267,7 +5387,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page."
+      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page.",
+      "permalink": "/models/cohere/command-r-08-2024.html"
     },
     {
       "provider": "cohere",
@@ -5312,7 +5433,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": null
+      "notes": null,
+      "permalink": "/models/cohere/command-r7b-12-2024.html"
     },
     {
       "provider": "cohere",
@@ -5354,7 +5476,8 @@
         }
       ],
       "verified_at": "2026-07-04T08:00:00Z",
-      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page."
+      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page.",
+      "permalink": "/models/cohere/tiny-aya-global.html"
     }
   ]
 }

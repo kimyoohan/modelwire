@@ -1,0 +1,42 @@
+{
+  "provider": "groq",
+  "model_id": "llama-3.1-8b-instant",
+  "display_name": "Llama 3.1 8B Instant on Groq",
+  "status": "ga",
+  "release_date": null,
+  "deprecation_date": null,
+  "retirement_date": null,
+  "pricing": {
+    "input_per_mtok": 0.05,
+    "output_per_mtok": 0.08,
+    "cached_input_per_mtok": null,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": 131072,
+  "max_output_tokens": 131072,
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": null,
+  "sources": [
+    {
+      "url": "https://console.groq.com/docs/models",
+      "accessed_at": "2026-07-04T08:00:00Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok",
+        "context_window_tokens",
+        "max_output_tokens"
+      ],
+      "quote": "Production Models MODEL ID ... llama-3.1-8b-instant $0.05 input$0.08 output ... 131,072 131,072 ... llama-3.3-70b-versatile $0.59 input$0.79 output ... 131,072 32,768 ... openai/gpt-oss-120b $0.15 input$0.60 output ... 131,072 65,536 ... openai/gpt-oss-20b $0.075 input$0.30 output ... 131,072 65,536"
+    }
+  ],
+  "verified_at": "2026-07-04T08:00:00Z",
+  "notes": "Upstream model family: Meta Llama; provider is Groq serving platform.",
+  "permalink": "/models/groq/llama-3_1-8b-instant.html"
+}

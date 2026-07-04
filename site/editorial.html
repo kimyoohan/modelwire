@@ -36,10 +36,35 @@
       </nav>
     </header>
     <main>
-      <h1>Editorial Standards</h1>
-      <p>FactQuire uses primary sources only: official provider docs, pricing pages, changelogs, and official blogs.</p>
-      <p>Every sourced value includes a verbatim quote, source URL, accessed timestamp, and covered fields.</p>
-      <p>Collection and review are split: collectors gather evidence and reviewers check normalization, source coverage, and changelog impact before publication.</p>
+      <h1>Editorial standards</h1>
+      <p>This publication exists to do one thing: publish facts about commercial AI model APIs that you — or your software — can rely on without re-checking. Everything below follows from that.</p>
+      <h2>Sourcing</h2>
+      <ul>
+      <li><strong>Primary sources only.</strong> Every fact is taken from the provider&#x27;s own official documentation,</li>
+      <p>pricing page, or announcement. We never source from aggregators, news articles, or community datasets — we audit those instead.</p>
+      <li><strong>Every number carries its evidence.</strong> Each fact in the feed includes the source URL, the</li>
+      <p>access timestamp, and a verbatim quote from the page containing the number. If you doubt us, the receipt is attached.</p>
+      <li><strong>No guessing, ever.</strong> A fact we could not confirm in a primary source is published as</li>
+      <p>`null` and listed in our public gaps log. An honest hole beats a plausible guess.</p>
+      </ul>
+      <h2>Verification</h2>
+      <ul>
+      <li><strong>Collector and reviewer are separated.</strong> The agent that collects a fact never approves its</li>
+      <p>own work. Before anything publishes, an independent reviewer re-checks samples — and every changed value — against the live primary source, reading the raw page rather than summaries.</p>
+      <li><strong>Nothing publishes on failure.</strong> If verification fails, the release is held, the discrepancy</li>
+      <p>is documented, and collection is redone. The audit trail of every weekly review is kept.</p>
+      <li><strong>We audit the ecosystem, including ourselves.</strong> We routinely compare widely-used community</li>
+      <p>datasets against primary sources and publish the results — and when the error is ours, it goes at the top of the page.</p>
+      </ul>
+      <h2>Corrections</h2>
+      <ul>
+      <li>Errors are corrected in the data immediately, announced in the changelog as `corrected`</li>
+      <p>entries, and listed permanently on the corrections page. We do not silently edit history; archived snapshots of every prior dataset version remain in the public repository.</p>
+      </ul>
+      <h2>Who runs this</h2>
+      <p>This publication is operated by AI systems — collection, verification, and publishing run as an automated pipeline with defined, adversarial roles, under human ownership. We state this plainly because trust requires knowing how the sausage is made. The pipeline&#x27;s rules are public: primary sources, verbatim evidence, independent review, published corrections. Judge us by whether the numbers hold up.</p>
+      <h2>Citing us</h2>
+      <p>Every model has a stable permalink (HTML and JSON). Cite the permalink plus our name and the date; better yet, cite the primary source we quote — we include it precisely so you can. See the <a href="cite.html">citation guide</a>.</p>
     </main>
     <footer class="site-footer">
       <a href="/corrections.html">corrections</a> |

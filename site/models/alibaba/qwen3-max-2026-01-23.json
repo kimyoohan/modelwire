@@ -1,0 +1,41 @@
+{
+  "provider": "alibaba",
+  "model_id": "qwen3-max-2026-01-23",
+  "display_name": "Qwen3 Max 2026-01-23",
+  "status": "ga",
+  "release_date": null,
+  "deprecation_date": null,
+  "retirement_date": null,
+  "pricing": {
+    "input_per_mtok": 1.2,
+    "output_per_mtok": 6.0,
+    "cached_input_per_mtok": null,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": 256000,
+  "max_output_tokens": null,
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": null,
+  "sources": [
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "accessed_at": "2026-07-04T08:00:00Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok",
+        "context_window_tokens"
+      ],
+      "quote": "qwen3-max International Non-Thinking and Thinking modes 0<Token<=32K $1.2 $6 1 million tokens 32K<Token<=128K $2.4 $12 128K<Token<=256K $3 $15 qwen3-max-2026-01-23 ... $1.2 $6"
+    }
+  ],
+  "verified_at": "2026-07-04T08:00:00Z",
+  "notes": "International Model Studio price; base 0<Token<=32K tier recorded; higher tiers noted in quote.",
+  "permalink": "/models/alibaba/qwen3-max-2026-01-23.html"
+}

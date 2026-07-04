@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A facts wire for the model economy: why we exist</title>
+    <meta name="description" content="Software is making purchasing decisions about AI models using unverified data. We built a source-verified feed — every number quoted from a primary source, independently reviewed before publishing.">
+    <link rel="canonical" href="https://factquire.com/news/launch.html">
+    <link rel="alternate" type="application/rss+xml" title="FactQuire RSS" href="https://factquire.com/rss.xml">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+    <link rel="apple-touch-icon" href="/assets/favicon-512.png">
+    <meta property="og:title" content="A facts wire for the model economy: why we exist">
+    <meta property="og:description" content="Software is making purchasing decisions about AI models using unverified data. We built a source-verified feed — every number quoted from a primary source, independently reviewed before publishing.">
+    <meta property="og:image" content="https://factquire.com/assets/og-card.png">
+    <meta property="og:url" content="https://factquire.com/news/launch.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="/styles.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"A facts wire for the model economy: why we exist","datePublished":"2026-07-04","description":"Software is making purchasing decisions about AI models using unverified data. We built a source-verified feed — every number quoted from a primary source, independently reviewed before publishing.","url":"https://factquire.com/news/launch.html","publisher":{"@type":"Organization","name":"FactQuire"}}</script>
+    
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <a href="/" style="display:inline-block;line-height:0;">
+          <img src="/assets/logo.png" alt="FactQuire" height="48" style="height:48px;width:auto;">
+        </a>
+      </div>
+      <nav>
+        <a href="/models/">Models</a>
+        <a href="/news/" aria-current="page">News</a>
+        <a href="/changelog.html">Changelog</a>
+        <a href="/audit.html">Audit</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </header>
+    <main>
+      <article class="article">
+        <h1>A facts wire for the model economy: why we exist</h1>
+        <p class="muted">2026-07-04</p>
+        <h1>A facts wire for the model economy: why we exist</h1>
+<p>Every week, model prices change, context limits move, and models are quietly deprecated. And every week, thousands of routers, gateways, cost dashboards, and agent frameworks make real spending decisions using metadata that nobody verified.</p>
+<p>The de facto standard today is a community-maintained JSON file — a heroic volunteer effort that most of the ecosystem consumes as if it were ground truth. It has no verification step. Most entries carry no evidence of where a number came from. When it lags or errs, the error propagates silently into everything built on top of it.</p>
+<p>That is a strange foundation for an economy this large. So we built the boring alternative.</p>
+<h2>What this is</h2>
+<p>A machine-readable feed of facts about commercial LLM APIs — prices, context windows, output limits, lifecycle status, deprecation dates — with a discipline borrowed from wire services, not from web scraping:</p>
+<ul>
+<li><strong>Every number is quoted from a primary source.</strong> Each entry carries the official URL, the</li>
+<p>access timestamp, and a verbatim quote containing the number. The receipt ships with the fact.</p>
+<li><strong>Nothing we can&#x27;t confirm gets published.</strong> Unconfirmable fields are `null`, logged publicly</li>
+<p>as gaps. There are no plausible guesses in this feed.</p>
+<li><strong>A separate reviewer checks the collector.</strong> Before any release publishes, an independent</li>
+<p>pass re-verifies changed values against the live pages — raw HTML, not summaries. Failed verification means no release.</p>
+<li><strong>Changes are the news.</strong> Every difference between releases is published in the</li>
+<p><a href="../changelog.html">changelog</a> — what changed, from what, to what. Corrections are announced, never silently patched.</p>
+</ul>
+<h2>What we found on day one</h2>
+<p>As a first exercise, we compared the most widely consumed community datasets against primary sources, entry by entry, and adjudicated every mismatch — the results are on the <a href="../audit.html">audit page</a>, including any errors of our own, listed first. We intend to run this audit continuously and to contribute confirmed fixes upstream. The community datasets are valuable; our job is to make the numbers in this ecosystem checkable.</p>
+<h2>How to use it</h2>
+<p>The full dataset is one file: <a href="../feed.json">feed.json</a>. Each model has a stable permalink. If you maintain a gateway, router, or cost tool, you can consume the feed directly or simply diff it against your current source — the evidence quotes make disagreements fast to settle. The <a href="../cite.html">citation guide</a> covers the rest.</p>
+<p>Facts for people, and for the software that increasingly acts on their behalf. That&#x27;s the whole business.</p>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <a href="/corrections.html">corrections</a> |
+      <a href="/editorial.html">editorial</a> |
+      <a href="/cite.html">cite</a>
+    </footer>
+  </body>
+</html>

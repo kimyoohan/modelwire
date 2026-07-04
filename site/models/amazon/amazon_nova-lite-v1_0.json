@@ -1,0 +1,54 @@
+{
+  "provider": "amazon",
+  "model_id": "amazon.nova-lite-v1:0",
+  "display_name": "Amazon Nova Lite",
+  "status": "ga",
+  "release_date": null,
+  "deprecation_date": null,
+  "retirement_date": null,
+  "pricing": {
+    "input_per_mtok": 0.06,
+    "output_per_mtok": 0.24,
+    "cached_input_per_mtok": 0.015,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": 300000,
+  "max_output_tokens": 10000,
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": null,
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/bedrock/pricing/",
+      "accessed_at": "2026-07-04T08:00:00Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok",
+        "pricing.cached_input_per_mtok"
+      ],
+      "quote": "Amazon Nova Lite $0.06 per 1M input tokens $0.24 per 1M output tokens; prompt cache read $0.015 per 1M tokens in us-east-1 on-demand."
+    },
+    {
+      "url": "https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html",
+      "accessed_at": "2026-07-04T08:00:00Z",
+      "fields": [
+        "model_id",
+        "modalities",
+        "context_window_tokens",
+        "max_output_tokens"
+      ],
+      "quote": "Model ID amazon.nova-premier-v1:0 amazon.nova-pro-v1:0 amazon.nova-lite-v1:0 amazon.nova-micro-v1:0 ... Input modalities Text, Image, Video Text, Image, Video Text, Image, Video Text ... Output Modalities Text Text Text Text ... Context Window 1M 300k 300k 128k ... Max Output Tokens 10K 10k 10k 10k"
+    }
+  ],
+  "verified_at": "2026-07-04T08:00:00Z",
+  "notes": "AWS Bedrock us-east-1 on-demand Standard tier; price table exposed on AWS Bedrock pricing.",
+  "permalink": "/models/amazon/amazon_nova-lite-v1_0.html"
+}

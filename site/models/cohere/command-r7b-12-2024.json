@@ -1,0 +1,46 @@
+{
+  "provider": "cohere",
+  "model_id": "command-r7b-12-2024",
+  "display_name": "Command R7B 12-2024",
+  "status": "ga",
+  "release_date": null,
+  "deprecation_date": null,
+  "retirement_date": null,
+  "pricing": {
+    "input_per_mtok": 0.0375,
+    "output_per_mtok": 0.15,
+    "cached_input_per_mtok": null,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": 128000,
+  "max_output_tokens": 4000,
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": "June 1, 2024",
+  "sources": [
+    {
+      "url": "https://docs.cohere.com/docs/command-r7b",
+      "accessed_at": "2026-07-04T08:00:00Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok",
+        "context_window_tokens",
+        "max_output_tokens",
+        "knowledge_cutoff",
+        "model_id",
+        "modalities"
+      ],
+      "quote": "Command R7B model details and specifications Capabilities Multilingual Safety Modes Citations Tool Use Structured Outputs Reasoning Image Inputs Pricing Input $0.0375 / 1M tokens Output $0.15 / 1M tokens Specifications Context Window: 128,000 tokens Max Output Tokens: 4,000 tokens Knowledge Cutoff: June 1, 2024 Model ID command-r7b-12-2024"
+    }
+  ],
+  "verified_at": "2026-07-04T08:00:00Z",
+  "notes": null,
+  "permalink": "/models/cohere/command-r7b-12-2024.html"
+}
