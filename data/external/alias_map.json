@@ -1685,6 +1685,210 @@
           "model": "minimax/minimax-m2"
         }
       ]
+    },
+    {
+      "provider": "groq",
+      "model_id": "llama-3.1-8b-instant",
+      "litellm": [
+        "groq/llama-3.1-8b-instant"
+      ],
+      "modelsdev": [
+        {
+          "provider": "groq",
+          "model": "llama-3.1-8b-instant"
+        },
+        {
+          "provider": "helicone",
+          "model": "llama-3.1-8b-instant"
+        }
+      ]
+    },
+    {
+      "provider": "groq",
+      "model_id": "llama-3.3-70b-versatile",
+      "litellm": [
+        "groq/llama-3.3-70b-versatile"
+      ],
+      "modelsdev": [
+        {
+          "provider": "groq",
+          "model": "llama-3.3-70b-versatile"
+        },
+        {
+          "provider": "helicone",
+          "model": "llama-3.3-70b-versatile"
+        },
+        {
+          "provider": "abacus",
+          "model": "llama-3.3-70b-versatile"
+        }
+      ]
+    },
+    {
+      "provider": "groq",
+      "model_id": "openai/gpt-oss-120b",
+      "litellm": [
+        "groq/openai/gpt-oss-120b"
+      ],
+      "modelsdev": [
+        {
+          "provider": "stackit",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "vercel",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "submodel",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "huggingface",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "novita-ai",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "nebius",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "berget",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "groq",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "nearai",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "abacus",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "cloudferro-sherlock",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "deepinfra",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "nvidia",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "evroc",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "siliconflow",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "io-net",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "wandb",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "kilo",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "togetherai",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "openrouter",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "fastrouter",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "baseten",
+          "model": "openai/gpt-oss-120b"
+        },
+        {
+          "provider": "nano-gpt",
+          "model": "openai/gpt-oss-120b"
+        }
+      ]
+    },
+    {
+      "provider": "groq",
+      "model_id": "openai/gpt-oss-20b",
+      "litellm": [
+        "groq/openai/gpt-oss-20b"
+      ],
+      "modelsdev": [
+        {
+          "provider": "vercel",
+          "model": "openai/gpt-oss-20b"
+        },
+        {
+          "provider": "novita-ai",
+          "model": "openai/gpt-oss-20b"
+        },
+        {
+          "provider": "lmstudio",
+          "model": "openai/gpt-oss-20b"
+        },
+        {
+          "provider": "groq",
+          "model": "openai/gpt-oss-20b"
+        },
+        {
+          "provider": "deepinfra",
+          "model": "openai/gpt-oss-20b"
+        },
+        {
+          "provider": "nvidia",
+          "model": "openai/gpt-oss-20b"
+        },
+        {
+          "provider": "siliconflow",
+          "model": "openai/gpt-oss-20b"
+        },
+        {
+          "provider": "io-net",
+          "model": "openai/gpt-oss-20b"
+        },
+        {
+          "provider": "wandb",
+          "model": "openai/gpt-oss-20b"
+        },
+        {
+          "provider": "kilo",
+          "model": "openai/gpt-oss-20b"
+        },
+        {
+          "provider": "togetherai",
+          "model": "openai/gpt-oss-20b"
+        },
+        {
+          "provider": "openrouter",
+          "model": "openai/gpt-oss-20b"
+        },
+        {
+          "provider": "fastrouter",
+          "model": "openai/gpt-oss-20b"
+        },
+        {
+          "provider": "nano-gpt",
+          "model": "openai/gpt-oss-20b"
+        }
+      ]
     }
   ]
 }
