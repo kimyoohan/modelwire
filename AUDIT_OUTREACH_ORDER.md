@@ -35,7 +35,16 @@ instead (that is a FIX for facts.json + corrections entry, more valuable than ou
 History warning (2026-07-04): a drafted claim had the error direction REVERSED — the
 mistake was ours, not theirs. Never send a Codex draft unverified.
 
-### 3. Send (max 3/week, 1 per repo, PR preferred) — CLAUDE DOES THIS DIRECTLY
+### 3. Queue for the send window (DO NOT send from this Monday run)
+Timing rule (user 2026-07-04): sends must land in the TARGET's attention window, not
+Korean-convenient hours — see ops/outreach/SEND_WINDOWS.md. This Monday-morning run is
+US Sunday evening: the WORST send time. So steps 3/3b here produce fully-verified,
+audit-passed drafts written to ops/outreach/queue/<slug>.md (front-matter: repo, type,
+title, verified_at, evidence, review_report). The scheduled "FactQuire Outreach Send"
+task (Tue 23:00 KST = Tue morning ET) executes SEND_ORDER.md, which re-verifies
+freshness and dispatches. Urgent same-day exceptions require target-window awareness.
+
+### 3-prep. Draft rules (max 3/week, 1 per repo, PR preferred) — CLAUDE DOES THIS DIRECTLY
 User directive (2026-07-04): the fix itself — the PR content, the edited data, the issue
 text, and the act of sending — is Claude's own work. NEVER delegate any of step 2, 3 to
 Codex. Codex is only used for step 1 (bulk dataset comparison). Reputation work stays
