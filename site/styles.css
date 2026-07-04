@@ -185,6 +185,80 @@ tbody tr:hover {
   max-width: 920px;
 }
 
+.audit {
+  max-width: 1180px;
+}
+
+.audit-intro,
+.audit-method,
+.audit-corrections {
+  margin-bottom: 18px;
+}
+
+.audit-intro h2,
+.audit-method h2,
+.audit-corrections h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.audit-intro p,
+.audit-method p,
+.audit-corrections p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.audit-stats {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(110px, 1fr));
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.audit-stats div {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  padding: 12px;
+}
+
+.audit-stats strong {
+  display: block;
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.audit-stats span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.audit-table-wrap table {
+  min-width: 1160px;
+}
+
+details summary {
+  cursor: pointer;
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+blockquote {
+  margin: 8px 0;
+  padding-left: 10px;
+  border-left: 3px solid var(--border);
+  color: var(--text);
+}
+
+.audit-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
 .release {
   padding: 18px 0 22px;
   border-bottom: 1px solid var(--border);
@@ -249,5 +323,9 @@ code {
 
   .summary {
     justify-self: start;
+  }
+
+  .audit-stats {
+    grid-template-columns: 1fr 1fr;
   }
 }

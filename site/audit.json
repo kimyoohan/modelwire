@@ -1,0 +1,356 @@
+{
+  "audits": [
+    {
+      "date": "2026-07-04",
+      "summary": "Independent verification of LiteLLM and models.dev metadata against ModelWire source-verified facts.",
+      "stats": {
+        "models_compared": 37,
+        "external_model_pairs_compared": 64,
+        "mismatches": 22,
+        "modelwire_correct": 15,
+        "modelwire_wrong": 2,
+        "both_wrong": 0,
+        "ambiguous": 5
+      },
+      "findings": [
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "google",
+          "model_id": "gemini-2.5-flash",
+          "field": "context_window_tokens",
+          "ours": 1000000,
+          "theirs": 1048576,
+          "verdict": "modelwire_wrong",
+          "evidence": {
+            "url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "Gemini 2.5 Flash ... Model code gemini-2.5-flash ... Token limits ... Input token limit 1,048,576 Output token limit 65,536"
+          },
+          "note": "Corrected data/facts.json to the exact input token limit."
+        },
+        {
+          "date": "2026-07-04",
+          "external": "modelsdev",
+          "provider": "google",
+          "model_id": "gemini-2.5-flash",
+          "field": "context_window_tokens",
+          "ours": 1000000,
+          "theirs": 1048576,
+          "verdict": "modelwire_wrong",
+          "evidence": {
+            "url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "Gemini 2.5 Flash ... Model code gemini-2.5-flash ... Token limits ... Input token limit 1,048,576 Output token limit 65,536"
+          },
+          "note": "Corrected data/facts.json to the exact input token limit."
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "google",
+          "model_id": "gemini-2.5-flash-native-audio-preview-12-2025",
+          "field": "pricing.input_per_mtok",
+          "ours": 0.5,
+          "theirs": 0.3,
+          "verdict": "modelwire_correct",
+          "evidence": {
+            "url": "https://ai.google.dev/gemini-api/docs/pricing",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "Gemini 2.5 Flash Native Audio (Live API) gemini-2.5-flash-native-audio-preview-12-2025 ... Input price Free of charge $0.50 (text) $3.00 (audio / video) Output price ... $2.00 (text) $12.00 (audio)"
+          }
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "google",
+          "model_id": "gemini-2.5-flash-native-audio-preview-12-2025",
+          "field": "pricing.output_per_mtok",
+          "ours": 2.0,
+          "theirs": 2.5,
+          "verdict": "modelwire_correct",
+          "evidence": {
+            "url": "https://ai.google.dev/gemini-api/docs/pricing",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "Gemini 2.5 Flash Native Audio (Live API) gemini-2.5-flash-native-audio-preview-12-2025 ... Input price Free of charge $0.50 (text) $3.00 (audio / video) Output price ... $2.00 (text) $12.00 (audio)"
+          }
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "google",
+          "model_id": "gemini-2.5-flash-preview-tts",
+          "field": "pricing.input_per_mtok",
+          "ours": 0.5,
+          "theirs": 0.3,
+          "verdict": "modelwire_correct",
+          "evidence": {
+            "url": "https://ai.google.dev/gemini-api/docs/pricing",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "Gemini 2.5 Flash Preview TTS gemini-2.5-flash-preview-tts ... Input price Free of charge $0.50 (text) Output price Free of charge $10.00 (audio)"
+          }
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "google",
+          "model_id": "gemini-2.5-flash-preview-tts",
+          "field": "pricing.output_per_mtok",
+          "ours": 10.0,
+          "theirs": 2.5,
+          "verdict": "modelwire_correct",
+          "evidence": {
+            "url": "https://ai.google.dev/gemini-api/docs/pricing",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "Gemini 2.5 Flash Preview TTS gemini-2.5-flash-preview-tts ... Input price Free of charge $0.50 (text) Output price Free of charge $10.00 (audio)"
+          }
+        },
+        {
+          "date": "2026-07-04",
+          "external": "modelsdev",
+          "provider": "mistral",
+          "model_id": "mistral-medium-latest",
+          "field": "pricing.input_per_mtok",
+          "ours": 1.5,
+          "theirs": 0.4,
+          "verdict": "modelwire_correct",
+          "evidence": {
+            "url": "https://mistral.ai/pricing/api/",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "Mistral Medium 3.5 ... Input (/M tokens) $1.5 Output (/M tokens) $7.5 mistral-medium-latest"
+          }
+        },
+        {
+          "date": "2026-07-04",
+          "external": "modelsdev",
+          "provider": "mistral",
+          "model_id": "mistral-medium-latest",
+          "field": "pricing.output_per_mtok",
+          "ours": 7.5,
+          "theirs": 2,
+          "verdict": "modelwire_correct",
+          "evidence": {
+            "url": "https://mistral.ai/pricing/api/",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "Mistral Medium 3.5 ... Input (/M tokens) $1.5 Output (/M tokens) $7.5 mistral-medium-latest"
+          }
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "mistral",
+          "model_id": "mistral-small-latest",
+          "field": "pricing.input_per_mtok",
+          "ours": 0.15,
+          "theirs": 0.06,
+          "verdict": "modelwire_correct",
+          "evidence": {
+            "url": "https://mistral.ai/pricing/api/",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "Mistral Small 4 ... Input (/M tokens) $0.15 Output (/M tokens) $0.6 mistral-small-latest"
+          }
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "mistral",
+          "model_id": "mistral-small-latest",
+          "field": "pricing.output_per_mtok",
+          "ours": 0.6,
+          "theirs": 0.18,
+          "verdict": "modelwire_correct",
+          "evidence": {
+            "url": "https://mistral.ai/pricing/api/",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "Mistral Small 4 ... Input (/M tokens) $0.15 Output (/M tokens) $0.6 mistral-small-latest"
+          }
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "mistral",
+          "model_id": "codestral-latest",
+          "field": "pricing.input_per_mtok",
+          "ours": 0.3,
+          "theirs": 1.0,
+          "verdict": "modelwire_correct",
+          "evidence": {
+            "url": "https://mistral.ai/pricing/api/",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "Codestral ... Input (/M tokens) $0.3 Output (/M tokens) $0.9 codestral-latest"
+          }
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "mistral",
+          "model_id": "codestral-latest",
+          "field": "pricing.output_per_mtok",
+          "ours": 0.9,
+          "theirs": 3.0,
+          "verdict": "modelwire_correct",
+          "evidence": {
+            "url": "https://mistral.ai/pricing/api/",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "Codestral ... Input (/M tokens) $0.3 Output (/M tokens) $0.9 codestral-latest"
+          }
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "xai",
+          "model_id": "grok-4.20-0309-reasoning",
+          "field": "pricing.input_per_mtok",
+          "ours": 1.25,
+          "theirs": 2.0,
+          "verdict": "modelwire_correct",
+          "evidence": {
+            "url": "https://docs.x.ai/developers/pricing",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "Chat API Prices per 1M tokens Model Context Input Cached input Output ... grok-4.20-0309-reasoning 1M $1.25 $0.20 $2.50"
+          }
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "xai",
+          "model_id": "grok-4.20-0309-reasoning",
+          "field": "pricing.output_per_mtok",
+          "ours": 2.5,
+          "theirs": 6.0,
+          "verdict": "modelwire_correct",
+          "evidence": {
+            "url": "https://docs.x.ai/developers/pricing",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "Chat API Prices per 1M tokens Model Context Input Cached input Output ... grok-4.20-0309-reasoning 1M $1.25 $0.20 $2.50"
+          }
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "xai",
+          "model_id": "grok-4.20-0309-reasoning",
+          "field": "context_window_tokens",
+          "ours": 1000000,
+          "theirs": 2000000,
+          "verdict": "modelwire_correct",
+          "evidence": {
+            "url": "https://docs.x.ai/developers/pricing",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "Chat API Prices per 1M tokens Model Context Input Cached input Output ... grok-4.20-0309-reasoning 1M $1.25 $0.20 $2.50"
+          }
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "deepseek",
+          "model_id": "deepseek-v4-flash",
+          "field": "max_output_tokens",
+          "ours": 384000,
+          "theirs": 8192,
+          "verdict": "modelwire_correct",
+          "evidence": {
+            "url": "https://api-docs.deepseek.com/quick_start/pricing",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "MODEL deepseek-v4-flash ... deepseek-v4-pro ... CONTEXT LENGTH 1M MAX OUTPUT MAXIMUM: 384K"
+          }
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "deepseek",
+          "model_id": "deepseek-v4-pro",
+          "field": "max_output_tokens",
+          "ours": 384000,
+          "theirs": 8192,
+          "verdict": "modelwire_correct",
+          "evidence": {
+            "url": "https://api-docs.deepseek.com/quick_start/pricing",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "MODEL deepseek-v4-flash ... deepseek-v4-pro ... CONTEXT LENGTH 1M MAX OUTPUT MAXIMUM: 384K"
+          }
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "cohere",
+          "model_id": "command-r-plus-08-2024",
+          "field": "max_output_tokens",
+          "ours": 4000,
+          "theirs": 4096,
+          "verdict": "ambiguous",
+          "evidence": {
+            "url": "https://docs.cohere.com/docs/models",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "command-r-plus-08-2024 Live ... Text 128k 4k"
+          },
+          "note": "The primary source states 4k rather than an exact integer, so both 4000 and 4096 are plausible normalizations."
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "cohere",
+          "model_id": "command",
+          "field": "context_window_tokens",
+          "ours": 4000,
+          "theirs": 4096,
+          "verdict": "ambiguous",
+          "evidence": {
+            "url": "https://docs.cohere.com/docs/models",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "command Deprecated Sept 15, 2025 ... Text 4k 4k"
+          },
+          "note": "The primary source states 4k rather than an exact integer, so both 4000 and 4096 are plausible normalizations."
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "cohere",
+          "model_id": "command",
+          "field": "max_output_tokens",
+          "ours": 4000,
+          "theirs": 4096,
+          "verdict": "ambiguous",
+          "evidence": {
+            "url": "https://docs.cohere.com/docs/models",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "command Deprecated Sept 15, 2025 ... Text 4k 4k"
+          },
+          "note": "The primary source states 4k rather than an exact integer, so both 4000 and 4096 are plausible normalizations."
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "cohere",
+          "model_id": "command-light",
+          "field": "context_window_tokens",
+          "ours": 4000,
+          "theirs": 4096,
+          "verdict": "ambiguous",
+          "evidence": {
+            "url": "https://docs.cohere.com/docs/models",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "command-light Deprecated Sept 15, 2025 ... Text 4k 4k"
+          },
+          "note": "The primary source states 4k rather than an exact integer, so both 4000 and 4096 are plausible normalizations."
+        },
+        {
+          "date": "2026-07-04",
+          "external": "litellm",
+          "provider": "cohere",
+          "model_id": "command-light",
+          "field": "max_output_tokens",
+          "ours": 4000,
+          "theirs": 4096,
+          "verdict": "ambiguous",
+          "evidence": {
+            "url": "https://docs.cohere.com/docs/models",
+            "accessed_at": "2026-07-04T07:37:12Z",
+            "quote": "command-light Deprecated Sept 15, 2025 ... Text 4k 4k"
+          },
+          "note": "The primary source states 4k rather than an exact integer, so both 4000 and 4096 are plausible normalizations."
+        }
+      ]
+    }
+  ]
+}
