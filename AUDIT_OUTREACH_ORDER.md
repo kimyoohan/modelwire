@@ -35,7 +35,11 @@ instead (that is a FIX for facts.json + corrections entry, more valuable than ou
 History warning (2026-07-04): a drafted claim had the error direction REVERSED — the
 mistake was ours, not theirs. Never send a Codex draft unverified.
 
-### 3. Send (max 3/week, 1 per repo, PR preferred)
+### 3. Send (max 3/week, 1 per repo, PR preferred) — CLAUDE DOES THIS DIRECTLY
+User directive (2026-07-04): the fix itself — the PR content, the edited data, the issue
+text, and the act of sending — is Claude's own work. NEVER delegate any of step 2, 3 to
+Codex. Codex is only used for step 1 (bulk dataset comparison). Reputation work stays
+in the reviewer's hands.
 - Skip any repo where our previous issue/PR is still open (check `gh issue list`/`gh pr list`
   with author kimyoohan) — never stack contacts.
 - PR method: fork + sparse clone just the data file, surgical edit, branch, push,
