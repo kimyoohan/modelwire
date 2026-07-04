@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About ModelWire</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>ModelWire</h1>
+        <p>Source-verified commercial LLM API facts.</p>
+      </div>
+      <nav>
+        <a href="index.html">Models</a>
+        <a href="about.html" aria-current="page">About</a>
+      </nav>
+    </header>
+
+    <main class="about">
+      <h2>What This Is</h2>
+      <p>ModelWire is a machine-readable facts feed for commercial LLM APIs. It tracks model identifiers, pricing, lifecycle status, token limits, modalities, and source evidence.</p>
+
+      <h2>Sourcing Policy</h2>
+      <p>Every entry uses primary sources only: official provider docs, pricing pages, changelogs, or official blogs. Each source includes a verbatim quote and the fields that quote supports. Unconfirmed fields remain null and are listed in <code>gaps.md</code>.</p>
+
+      <h2>Corrections</h2>
+      <p>Corrections should be made as source-backed changes to <code>data/facts.json</code>, then validated and rebuilt. The feed is regenerated from the checked data file so downstream consumers can diff changes.</p>
+
+      <h2>Programmatic Use</h2>
+      <p>Fetch <code>/feed.json</code>. The response wrapper contains <code>generated_at</code>, <code>count</code>, <code>version</code>, and <code>models</code>. Each item in <code>models</code> validates against <code>schema/model_fact.schema.json</code>.</p>
+    </main>
+  </body>
+</html>
