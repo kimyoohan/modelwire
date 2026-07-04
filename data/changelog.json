@@ -2,6 +2,73 @@
   "releases": [
     {
       "date": "2026-07-04",
+      "version": "0.4",
+      "summary": "Wave-2 gap fill",
+      "entries": [
+        {
+          "type": "added",
+          "provider": "perplexity",
+          "model_id": "sonar-pro"
+        },
+        {
+          "type": "added",
+          "provider": "perplexity",
+          "model_id": "sonar-reasoning-pro"
+        },
+        {
+          "type": "added",
+          "provider": "alibaba",
+          "model_id": "qwen3.7-plus"
+        },
+        {
+          "type": "added",
+          "provider": "alibaba",
+          "model_id": "qwen3.7-plus-2026-05-26"
+        },
+        {
+          "type": "added",
+          "provider": "alibaba",
+          "model_id": "qwen3.6-plus"
+        },
+        {
+          "type": "added",
+          "provider": "alibaba",
+          "model_id": "qwen3.6-plus-2026-04-02"
+        },
+        {
+          "type": "added",
+          "provider": "alibaba",
+          "model_id": "qwen3.6-flash"
+        },
+        {
+          "type": "added",
+          "provider": "alibaba",
+          "model_id": "qwen3.6-flash-2026-04-16"
+        },
+        {
+          "type": "added",
+          "provider": "fireworks",
+          "model_id": "llama-v3p3-70b-instruct"
+        },
+        {
+          "type": "added",
+          "provider": "fireworks",
+          "model_id": "qwen2p5-vl-32b-instruct"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "Qwen/Qwen2.5-7B-Instruct-Turbo"
+        },
+        {
+          "type": "added",
+          "provider": "amazon",
+          "model_id": "anthropic.claude-3-5-sonnet-20241022-v2:0"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
       "version": "0.3",
       "summary": "Coverage expansion",
       "entries": [

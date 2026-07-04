@@ -1,0 +1,50 @@
+{
+  "provider": "alibaba",
+  "model_id": "qwen3.6-flash-2026-04-16",
+  "display_name": "Qwen3.6 Flash 2026-04-16",
+  "status": "ga",
+  "release_date": null,
+  "deprecation_date": null,
+  "retirement_date": null,
+  "pricing": {
+    "input_per_mtok": 0.25,
+    "output_per_mtok": 1.5,
+    "cached_input_per_mtok": null,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": 256000,
+  "max_output_tokens": null,
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": null,
+  "sources": [
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "accessed_at": "2026-07-04T08:44:47Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok",
+        "context_window_tokens"
+      ],
+      "quote": "qwen3.6-flash Currently equivalent to qwen3.6-flash-2026-04-16 50% batch inference discount context caching discount International 0<Token?256K $0.25 $1.5 1 million tokens qwen3.6-flash-2026-04-16 International 0<Token?256K $0.25 $1.5 1 million tokens"
+    },
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/models",
+      "accessed_at": "2026-07-04T08:44:47Z",
+      "fields": [
+        "model_id",
+        "modalities"
+      ],
+      "quote": "Text generation Qwen models ... qwen3.7-max qwen3.7-plus qwen3.6-flash ... Alibaba Cloud Model Studio offers Qwen and third-party models for text, image, audio, and video."
+    }
+  ],
+  "verified_at": "2026-07-04T08:44:47Z",
+  "notes": "International Model Studio price; 0<Token<=256K tier recorded.",
+  "permalink": "/models/alibaba/qwen3_6-flash-2026-04-16.html"
+}

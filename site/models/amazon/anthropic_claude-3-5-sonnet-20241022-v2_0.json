@@ -1,0 +1,62 @@
+{
+  "provider": "amazon",
+  "model_id": "anthropic.claude-3-5-sonnet-20241022-v2:0",
+  "display_name": "Anthropic Claude 3.5 Sonnet v2 on Bedrock",
+  "status": "deprecated",
+  "release_date": null,
+  "deprecation_date": "2026-01-30",
+  "retirement_date": "2026-07-30",
+  "pricing": {
+    "input_per_mtok": 6.0,
+    "output_per_mtok": 30.0,
+    "cached_input_per_mtok": 0.6,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": 200000,
+  "max_output_tokens": null,
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": null,
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/bedrock/pricing/",
+      "accessed_at": "2026-07-04T08:44:47Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok",
+        "pricing.cached_input_per_mtok"
+      ],
+      "quote": "Anthropic Claude 3.5 Sonnet v2 (Public Extended Access, Effective 1 Dec 2025) ... $6.00 $30.00 $3.00 $15.00 $7.50 $0.60"
+    },
+    {
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle.html",
+      "accessed_at": "2026-07-04T08:44:47Z",
+      "fields": [
+        "model_id",
+        "status",
+        "deprecation_date",
+        "retirement_date"
+      ],
+      "quote": "Claude 3.5 Sonnet v2 anthropic.claude-3-5-sonnet-20241022-v2:0 ... Legacy date January 30, 2026 EOL date July 30, 2026 Public extended access start date April 30, 2026"
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+      "accessed_at": "2026-07-04T08:44:47Z",
+      "fields": [
+        "context_window_tokens",
+        "modalities"
+      ],
+      "quote": "Claude 3.5 Sonnet is now available ... via Anthropic API, Amazon Bedrock, and Google Cloud Vertex AI ... 200K token context window ... vision capabilities"
+    }
+  ],
+  "verified_at": "2026-07-04T08:44:47Z",
+  "notes": "hosted third-party model (Anthropic) on Bedrock; Public Extended Access price recorded from AWS Bedrock pricing.",
+  "permalink": "/models/amazon/anthropic_claude-3-5-sonnet-20241022-v2_0.html"
+}

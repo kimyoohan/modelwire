@@ -1,0 +1,49 @@
+{
+  "provider": "perplexity",
+  "model_id": "sonar-pro",
+  "display_name": "Sonar Pro",
+  "status": "ga",
+  "release_date": null,
+  "deprecation_date": null,
+  "retirement_date": null,
+  "pricing": {
+    "input_per_mtok": 3.0,
+    "output_per_mtok": 15.0,
+    "cached_input_per_mtok": null,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": 200000,
+  "max_output_tokens": null,
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": null,
+  "sources": [
+    {
+      "url": "https://docs.perplexity.ai/docs/getting-started/pricing",
+      "accessed_at": "2026-07-04T08:44:47Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok"
+      ],
+      "quote": "Token Pricing ... Sonar Pro$3$15--- Sonar Reasoning Pro$2$8--- Request Pricing by Search Context Size ... Sonar Pro$6$10$14 Sonar Reasoning Pro$6$10$14"
+    },
+    {
+      "url": "https://docs.perplexity.ai/docs/sonar/models/sonar-pro",
+      "accessed_at": "2026-07-04T08:44:47Z",
+      "fields": [
+        "model_id",
+        "context_window_tokens"
+      ],
+      "quote": "Sonar Pro ... Input Tokens $3 Per 1M Tokens ... Output Tokens $15 Per 1M Tokens ... model: sonar-pro ... 200K context length"
+    }
+  ],
+  "verified_at": "2026-07-04T08:44:47Z",
+  "notes": "Perplexity Sonar API model; request fees vary by search context size and are noted in the cited pricing quote.",
+  "permalink": "/models/perplexity/sonar-pro.html"
+}

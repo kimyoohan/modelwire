@@ -1,0 +1,50 @@
+{
+  "provider": "alibaba",
+  "model_id": "qwen3.6-plus-2026-04-02",
+  "display_name": "Qwen3.6 Plus 2026-04-02",
+  "status": "ga",
+  "release_date": null,
+  "deprecation_date": null,
+  "retirement_date": null,
+  "pricing": {
+    "input_per_mtok": 0.5,
+    "output_per_mtok": 3.0,
+    "cached_input_per_mtok": null,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": 1000000,
+  "max_output_tokens": null,
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": null,
+  "sources": [
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "accessed_at": "2026-07-04T08:44:47Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok",
+        "context_window_tokens"
+      ],
+      "quote": "qwen3.7-plus Currently equivalent to qwen3.7-plus-2026-05-26 International 0<Token?256K $0.4 $1.6 $1.6 1 million tokens 256K<Token?1M $1.2 $4.8 $4.8 qwen3.7-plus-2026-05-26 International 0<Token?256K $0.4 $1.6 $1.6 1 million tokens 256K<Token?1M $1.2 $4.8 $4.8 qwen3.6-plus Currently equivalent to qwen3.6-plus-2026-04-02 International 0<Token?256K $0.5 $3 $3 1 million tokens 256K<Token?1M $2 $6 $6 qwen3.6-plus-2026-04-02 International 0<Token?256K $0.5 $3 $3 1 million tokens 256K<Token?1M $2 $6 $6"
+    },
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/models",
+      "accessed_at": "2026-07-04T08:44:47Z",
+      "fields": [
+        "model_id",
+        "modalities"
+      ],
+      "quote": "Text generation Qwen models ... qwen3.7-max qwen3.7-plus qwen3.6-flash ... Alibaba Cloud Model Studio offers Qwen and third-party models for text, image, audio, and video."
+    }
+  ],
+  "verified_at": "2026-07-04T08:44:47Z",
+  "notes": "International/Global Model Studio price; base 0<Token<=256K tier recorded; higher tier to 1M tokens is noted in the cited quote.",
+  "permalink": "/models/alibaba/qwen3_6-plus-2026-04-02.html"
+}

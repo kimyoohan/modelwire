@@ -1,0 +1,50 @@
+{
+  "provider": "fireworks",
+  "model_id": "llama-v3p3-70b-instruct",
+  "display_name": "Llama 3.3 70B Instruct",
+  "status": "ga",
+  "release_date": null,
+  "deprecation_date": null,
+  "retirement_date": null,
+  "pricing": {
+    "input_per_mtok": 0.9,
+    "output_per_mtok": 0.9,
+    "cached_input_per_mtok": null,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": 131072,
+  "max_output_tokens": null,
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": null,
+  "sources": [
+    {
+      "url": "https://docs.fireworks.ai/serverless/pricing",
+      "accessed_at": "2026-07-04T08:44:47Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok"
+      ],
+      "quote": "Prices below are per 1 million tokens in US dollars ... Other base models -- by size and architecture ... More than 16B parameters $0.90"
+    },
+    {
+      "url": "https://fireworks.ai/models/fireworks/llama-v3p3-70b-instruct",
+      "accessed_at": "2026-07-04T08:44:47Z",
+      "fields": [
+        "model_id",
+        "context_window_tokens",
+        "modalities"
+      ],
+      "quote": "model path:accounts/fireworks/models/llama-v3p3-70b-instruct ... Fireworks supports a context length of 131,072 tokens ... The model is available via serverless at $0.90 per million tokens ... Support image input Not supported"
+    }
+  ],
+  "verified_at": "2026-07-04T08:44:47Z",
+  "notes": "Provider is Fireworks serving platform; upstream model family is Meta Llama. Generic >16B serverless token tier recorded.",
+  "permalink": "/models/fireworks/llama-v3p3-70b-instruct.html"
+}
