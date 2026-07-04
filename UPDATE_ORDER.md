@@ -21,6 +21,9 @@ unconfirmed, never guess. Never reconstruct a table from memory.
    turn the output into a new release in `data/changelog.json` (bump minor version, write a
    1-2 sentence human summary; empty diff → still add a release with summary "No changes; all
    facts re-verified" and entries []).
+4b. **External audit**: run `py scripts/fetch_external.py` and `py scripts/audit_external.py`,
+   adjudicate new mismatches against primary sources, and append a new audit entry to
+   `data/audit.json`.
 5. **Gaps**: update gaps.md (remove resolved lines, add new ones).
 6. `py scripts/validate.py` must exit 0; run `py scripts/build_site.py`.
 7. Commit everything with message `Weekly refresh <date>`. **DO NOT PUSH** — an independent

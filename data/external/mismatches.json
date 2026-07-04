@@ -1,0 +1,3325 @@
+{
+  "generated_at": "2026-07-04T07:55:17Z",
+  "field_tolerance": "relative difference > 0.5% for prices; any integer token-limit difference",
+  "stats": {
+    "match": 230,
+    "mismatch": 20,
+    "not_present": 16,
+    "they_lack": 2,
+    "we_lack": 68
+  },
+  "comparisons": [
+    {
+      "external": "litellm",
+      "provider": "openai",
+      "model_id": "gpt-5.5",
+      "field": "pricing.input_per_mtok",
+      "ours": 5.0,
+      "theirs": 5.0,
+      "status": "match",
+      "alias": "gpt-5.5"
+    },
+    {
+      "external": "litellm",
+      "provider": "openai",
+      "model_id": "gpt-5.5",
+      "field": "pricing.output_per_mtok",
+      "ours": 30.0,
+      "theirs": 30.0,
+      "status": "match",
+      "alias": "gpt-5.5"
+    },
+    {
+      "external": "litellm",
+      "provider": "openai",
+      "model_id": "gpt-5.5",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.5,
+      "theirs": 0.5,
+      "status": "match",
+      "alias": "gpt-5.5"
+    },
+    {
+      "external": "litellm",
+      "provider": "openai",
+      "model_id": "gpt-5.5",
+      "field": "context_window_tokens",
+      "ours": 1050000,
+      "theirs": 1050000,
+      "status": "match",
+      "alias": "gpt-5.5"
+    },
+    {
+      "external": "litellm",
+      "provider": "openai",
+      "model_id": "gpt-5.5",
+      "field": "max_output_tokens",
+      "ours": 128000,
+      "theirs": 128000,
+      "status": "match",
+      "alias": "gpt-5.5"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "openai",
+      "model_id": "gpt-5.5",
+      "field": "pricing.input_per_mtok",
+      "ours": 5.0,
+      "theirs": 5,
+      "status": "match",
+      "alias": "openai/gpt-5.5"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "openai",
+      "model_id": "gpt-5.5",
+      "field": "pricing.output_per_mtok",
+      "ours": 30.0,
+      "theirs": 30,
+      "status": "match",
+      "alias": "openai/gpt-5.5"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "openai",
+      "model_id": "gpt-5.5",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.5,
+      "theirs": 0.5,
+      "status": "match",
+      "alias": "openai/gpt-5.5"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "openai",
+      "model_id": "gpt-5.5",
+      "field": "context_window_tokens",
+      "ours": 1050000,
+      "theirs": 1050000,
+      "status": "match",
+      "alias": "openai/gpt-5.5"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "openai",
+      "model_id": "gpt-5.5",
+      "field": "max_output_tokens",
+      "ours": 128000,
+      "theirs": 128000,
+      "status": "match",
+      "alias": "openai/gpt-5.5"
+    },
+    {
+      "external": "litellm",
+      "provider": "openai",
+      "model_id": "gpt-5.5-pro",
+      "field": "pricing.input_per_mtok",
+      "ours": 30.0,
+      "theirs": 30.0,
+      "status": "match",
+      "alias": "gpt-5.5-pro"
+    },
+    {
+      "external": "litellm",
+      "provider": "openai",
+      "model_id": "gpt-5.5-pro",
+      "field": "pricing.output_per_mtok",
+      "ours": 180.0,
+      "theirs": 180.0,
+      "status": "match",
+      "alias": "gpt-5.5-pro"
+    },
+    {
+      "external": "litellm",
+      "provider": "openai",
+      "model_id": "gpt-5.5-pro",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": 3.0,
+      "status": "we_lack",
+      "alias": "gpt-5.5-pro"
+    },
+    {
+      "external": "litellm",
+      "provider": "openai",
+      "model_id": "gpt-5.5-pro",
+      "field": "context_window_tokens",
+      "ours": 1050000,
+      "theirs": 1050000,
+      "status": "match",
+      "alias": "gpt-5.5-pro"
+    },
+    {
+      "external": "litellm",
+      "provider": "openai",
+      "model_id": "gpt-5.5-pro",
+      "field": "max_output_tokens",
+      "ours": 128000,
+      "theirs": 128000,
+      "status": "match",
+      "alias": "gpt-5.5-pro"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "openai",
+      "model_id": "gpt-5.5-pro",
+      "field": "pricing.input_per_mtok",
+      "ours": 30.0,
+      "theirs": 30,
+      "status": "match",
+      "alias": "openai/gpt-5.5-pro"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "openai",
+      "model_id": "gpt-5.5-pro",
+      "field": "pricing.output_per_mtok",
+      "ours": 180.0,
+      "theirs": 180,
+      "status": "match",
+      "alias": "openai/gpt-5.5-pro"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "openai",
+      "model_id": "gpt-5.5-pro",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "openai/gpt-5.5-pro"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "openai",
+      "model_id": "gpt-5.5-pro",
+      "field": "context_window_tokens",
+      "ours": 1050000,
+      "theirs": 1050000,
+      "status": "match",
+      "alias": "openai/gpt-5.5-pro"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "openai",
+      "model_id": "gpt-5.5-pro",
+      "field": "max_output_tokens",
+      "ours": 128000,
+      "theirs": 128000,
+      "status": "match",
+      "alias": "openai/gpt-5.5-pro"
+    },
+    {
+      "external": "litellm",
+      "provider": "openai",
+      "model_id": "gpt-5.4",
+      "field": "pricing.input_per_mtok",
+      "ours": 2.5,
+      "theirs": 2.5,
+      "status": "match",
+      "alias": "gpt-5.4"
+    },
+    {
+      "external": "litellm",
+      "provider": "openai",
+      "model_id": "gpt-5.4",
+      "field": "pricing.output_per_mtok",
+      "ours": 15.0,
+      "theirs": 15.0,
+      "status": "match",
+      "alias": "gpt-5.4"
+    },
+    {
+      "external": "litellm",
+      "provider": "openai",
+      "model_id": "gpt-5.4",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.25,
+      "theirs": 0.25,
+      "status": "match",
+      "alias": "gpt-5.4"
+    },
+    {
+      "external": "litellm",
+      "provider": "openai",
+      "model_id": "gpt-5.4",
+      "field": "context_window_tokens",
+      "ours": 1050000,
+      "theirs": 1050000,
+      "status": "match",
+      "alias": "gpt-5.4"
+    },
+    {
+      "external": "litellm",
+      "provider": "openai",
+      "model_id": "gpt-5.4",
+      "field": "max_output_tokens",
+      "ours": 128000,
+      "theirs": 128000,
+      "status": "match",
+      "alias": "gpt-5.4"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "openai",
+      "model_id": "gpt-5.4",
+      "field": "pricing.input_per_mtok",
+      "ours": 2.5,
+      "theirs": 2.5,
+      "status": "match",
+      "alias": "openai/gpt-5.4"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "openai",
+      "model_id": "gpt-5.4",
+      "field": "pricing.output_per_mtok",
+      "ours": 15.0,
+      "theirs": 15,
+      "status": "match",
+      "alias": "openai/gpt-5.4"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "openai",
+      "model_id": "gpt-5.4",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.25,
+      "theirs": 0.25,
+      "status": "match",
+      "alias": "openai/gpt-5.4"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "openai",
+      "model_id": "gpt-5.4",
+      "field": "context_window_tokens",
+      "ours": 1050000,
+      "theirs": 1050000,
+      "status": "match",
+      "alias": "openai/gpt-5.4"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "openai",
+      "model_id": "gpt-5.4",
+      "field": "max_output_tokens",
+      "ours": 128000,
+      "theirs": 128000,
+      "status": "match",
+      "alias": "openai/gpt-5.4"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-fable-5",
+      "field": "pricing.input_per_mtok",
+      "ours": 10,
+      "theirs": 10.0,
+      "status": "match",
+      "alias": "claude-fable-5"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-fable-5",
+      "field": "pricing.output_per_mtok",
+      "ours": 50,
+      "theirs": 50.0,
+      "status": "match",
+      "alias": "claude-fable-5"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-fable-5",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 1,
+      "theirs": 1.0,
+      "status": "match",
+      "alias": "claude-fable-5"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-fable-5",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "claude-fable-5"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-fable-5",
+      "field": "max_output_tokens",
+      "ours": 128000,
+      "theirs": 128000,
+      "status": "match",
+      "alias": "claude-fable-5"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-fable-5",
+      "field": "pricing.input_per_mtok",
+      "ours": 10,
+      "theirs": 10,
+      "status": "match",
+      "alias": "anthropic/claude-fable-5"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-fable-5",
+      "field": "pricing.output_per_mtok",
+      "ours": 50,
+      "theirs": 50,
+      "status": "match",
+      "alias": "anthropic/claude-fable-5"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-fable-5",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 1,
+      "theirs": 1,
+      "status": "match",
+      "alias": "anthropic/claude-fable-5"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-fable-5",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "anthropic/claude-fable-5"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-fable-5",
+      "field": "max_output_tokens",
+      "ours": 128000,
+      "theirs": 128000,
+      "status": "match",
+      "alias": "anthropic/claude-fable-5"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-8",
+      "field": "pricing.input_per_mtok",
+      "ours": 5,
+      "theirs": 5.0,
+      "status": "match",
+      "alias": "claude-opus-4-8"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-8",
+      "field": "pricing.output_per_mtok",
+      "ours": 25,
+      "theirs": 25.0,
+      "status": "match",
+      "alias": "claude-opus-4-8"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-8",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.5,
+      "theirs": 0.5,
+      "status": "match",
+      "alias": "claude-opus-4-8"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-8",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "claude-opus-4-8"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-8",
+      "field": "max_output_tokens",
+      "ours": 128000,
+      "theirs": 128000,
+      "status": "match",
+      "alias": "claude-opus-4-8"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-8",
+      "field": "pricing.input_per_mtok",
+      "ours": 5,
+      "theirs": 5,
+      "status": "match",
+      "alias": "anthropic/claude-opus-4-8"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-8",
+      "field": "pricing.output_per_mtok",
+      "ours": 25,
+      "theirs": 25,
+      "status": "match",
+      "alias": "anthropic/claude-opus-4-8"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-8",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.5,
+      "theirs": 0.5,
+      "status": "match",
+      "alias": "anthropic/claude-opus-4-8"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-8",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "anthropic/claude-opus-4-8"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-8",
+      "field": "max_output_tokens",
+      "ours": 128000,
+      "theirs": 128000,
+      "status": "match",
+      "alias": "anthropic/claude-opus-4-8"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-7",
+      "field": "pricing.input_per_mtok",
+      "ours": 5,
+      "theirs": 5.0,
+      "status": "match",
+      "alias": "claude-opus-4-7"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-7",
+      "field": "pricing.output_per_mtok",
+      "ours": 25,
+      "theirs": 25.0,
+      "status": "match",
+      "alias": "claude-opus-4-7"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-7",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.5,
+      "theirs": 0.5,
+      "status": "match",
+      "alias": "claude-opus-4-7"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-7",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "claude-opus-4-7"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-7",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 128000,
+      "status": "we_lack",
+      "alias": "claude-opus-4-7"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-7",
+      "field": "pricing.input_per_mtok",
+      "ours": 5,
+      "theirs": 5,
+      "status": "match",
+      "alias": "anthropic/claude-opus-4-7"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-7",
+      "field": "pricing.output_per_mtok",
+      "ours": 25,
+      "theirs": 25,
+      "status": "match",
+      "alias": "anthropic/claude-opus-4-7"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-7",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.5,
+      "theirs": 0.5,
+      "status": "match",
+      "alias": "anthropic/claude-opus-4-7"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-7",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "anthropic/claude-opus-4-7"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-7",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 128000,
+      "status": "we_lack",
+      "alias": "anthropic/claude-opus-4-7"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-6",
+      "field": "pricing.input_per_mtok",
+      "ours": 5,
+      "theirs": 5.0,
+      "status": "match",
+      "alias": "claude-opus-4-6"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-6",
+      "field": "pricing.output_per_mtok",
+      "ours": 25,
+      "theirs": 25.0,
+      "status": "match",
+      "alias": "claude-opus-4-6"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-6",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.5,
+      "theirs": 0.5,
+      "status": "match",
+      "alias": "claude-opus-4-6"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-6",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "claude-opus-4-6"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-6",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 128000,
+      "status": "we_lack",
+      "alias": "claude-opus-4-6"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-6",
+      "field": "pricing.input_per_mtok",
+      "ours": 5,
+      "theirs": 5,
+      "status": "match",
+      "alias": "anthropic/claude-opus-4-6"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-6",
+      "field": "pricing.output_per_mtok",
+      "ours": 25,
+      "theirs": 25,
+      "status": "match",
+      "alias": "anthropic/claude-opus-4-6"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-6",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.5,
+      "theirs": 0.5,
+      "status": "match",
+      "alias": "anthropic/claude-opus-4-6"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-6",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "anthropic/claude-opus-4-6"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-opus-4-6",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 128000,
+      "status": "we_lack",
+      "alias": "anthropic/claude-opus-4-6"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-sonnet-5",
+      "field": "pricing.input_per_mtok",
+      "ours": 2,
+      "theirs": 2.0,
+      "status": "match",
+      "alias": "claude-sonnet-5"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-sonnet-5",
+      "field": "pricing.output_per_mtok",
+      "ours": 10,
+      "theirs": 10.0,
+      "status": "match",
+      "alias": "claude-sonnet-5"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-sonnet-5",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.2,
+      "theirs": 0.19999999999999998,
+      "status": "match",
+      "alias": "claude-sonnet-5"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-sonnet-5",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "claude-sonnet-5"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-sonnet-5",
+      "field": "max_output_tokens",
+      "ours": 128000,
+      "theirs": 128000,
+      "status": "match",
+      "alias": "claude-sonnet-5"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-sonnet-5",
+      "field": "pricing.input_per_mtok",
+      "ours": 2,
+      "theirs": 2,
+      "status": "match",
+      "alias": "anthropic/claude-sonnet-5"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-sonnet-5",
+      "field": "pricing.output_per_mtok",
+      "ours": 10,
+      "theirs": 10,
+      "status": "match",
+      "alias": "anthropic/claude-sonnet-5"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-sonnet-5",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.2,
+      "theirs": 0.2,
+      "status": "match",
+      "alias": "anthropic/claude-sonnet-5"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-sonnet-5",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "anthropic/claude-sonnet-5"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-sonnet-5",
+      "field": "max_output_tokens",
+      "ours": 128000,
+      "theirs": 128000,
+      "status": "match",
+      "alias": "anthropic/claude-sonnet-5"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-haiku-4-5-20251001",
+      "field": "pricing.input_per_mtok",
+      "ours": 1,
+      "theirs": 1.0,
+      "status": "match",
+      "alias": "claude-haiku-4-5-20251001"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-haiku-4-5-20251001",
+      "field": "pricing.output_per_mtok",
+      "ours": 5,
+      "theirs": 5.0,
+      "status": "match",
+      "alias": "claude-haiku-4-5-20251001"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-haiku-4-5-20251001",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.1,
+      "theirs": 0.09999999999999999,
+      "status": "match",
+      "alias": "claude-haiku-4-5-20251001"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-haiku-4-5-20251001",
+      "field": "context_window_tokens",
+      "ours": 200000,
+      "theirs": 200000,
+      "status": "match",
+      "alias": "claude-haiku-4-5-20251001"
+    },
+    {
+      "external": "litellm",
+      "provider": "anthropic",
+      "model_id": "claude-haiku-4-5-20251001",
+      "field": "max_output_tokens",
+      "ours": 64000,
+      "theirs": 64000,
+      "status": "match",
+      "alias": "claude-haiku-4-5-20251001"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-haiku-4-5-20251001",
+      "field": "pricing.input_per_mtok",
+      "ours": 1,
+      "theirs": 1,
+      "status": "match",
+      "alias": "anthropic/claude-haiku-4-5-20251001"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-haiku-4-5-20251001",
+      "field": "pricing.output_per_mtok",
+      "ours": 5,
+      "theirs": 5,
+      "status": "match",
+      "alias": "anthropic/claude-haiku-4-5-20251001"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-haiku-4-5-20251001",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.1,
+      "theirs": 0.1,
+      "status": "match",
+      "alias": "anthropic/claude-haiku-4-5-20251001"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-haiku-4-5-20251001",
+      "field": "context_window_tokens",
+      "ours": 200000,
+      "theirs": 200000,
+      "status": "match",
+      "alias": "anthropic/claude-haiku-4-5-20251001"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "anthropic",
+      "model_id": "claude-haiku-4-5-20251001",
+      "field": "max_output_tokens",
+      "ours": 64000,
+      "theirs": 64000,
+      "status": "match",
+      "alias": "anthropic/claude-haiku-4-5-20251001"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3.1-flash-lite",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.25,
+      "theirs": 0.25,
+      "status": "match",
+      "alias": "gemini/gemini-3.1-flash-lite"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3.1-flash-lite",
+      "field": "pricing.output_per_mtok",
+      "ours": 1.5,
+      "theirs": 1.5,
+      "status": "match",
+      "alias": "gemini/gemini-3.1-flash-lite"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3.1-flash-lite",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.025,
+      "theirs": 0.024999999999999998,
+      "status": "match",
+      "alias": "gemini/gemini-3.1-flash-lite"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3.1-flash-lite",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 1048576,
+      "status": "we_lack",
+      "alias": "gemini/gemini-3.1-flash-lite"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3.1-flash-lite",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 65536,
+      "status": "we_lack",
+      "alias": "gemini/gemini-3.1-flash-lite"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-3.1-flash-lite",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.25,
+      "theirs": 0.25,
+      "status": "match",
+      "alias": "google/gemini-3.1-flash-lite"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-3.1-flash-lite",
+      "field": "pricing.output_per_mtok",
+      "ours": 1.5,
+      "theirs": 1.5,
+      "status": "match",
+      "alias": "google/gemini-3.1-flash-lite"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-3.1-flash-lite",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.025,
+      "theirs": 0.025,
+      "status": "match",
+      "alias": "google/gemini-3.1-flash-lite"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-3.1-flash-lite",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 1048576,
+      "status": "we_lack",
+      "alias": "google/gemini-3.1-flash-lite"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-3.1-flash-lite",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 65536,
+      "status": "we_lack",
+      "alias": "google/gemini-3.1-flash-lite"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3.1-pro-preview",
+      "field": "pricing.input_per_mtok",
+      "ours": 2.0,
+      "theirs": 2.0,
+      "status": "match",
+      "alias": "gemini/gemini-3.1-pro-preview"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3.1-pro-preview",
+      "field": "pricing.output_per_mtok",
+      "ours": 12.0,
+      "theirs": 12.0,
+      "status": "match",
+      "alias": "gemini/gemini-3.1-pro-preview"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3.1-pro-preview",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.2,
+      "theirs": 0.19999999999999998,
+      "status": "match",
+      "alias": "gemini/gemini-3.1-pro-preview"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3.1-pro-preview",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 1048576,
+      "status": "we_lack",
+      "alias": "gemini/gemini-3.1-pro-preview"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3.1-pro-preview",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 65536,
+      "status": "we_lack",
+      "alias": "gemini/gemini-3.1-pro-preview"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-3.1-pro-preview",
+      "field": "pricing.input_per_mtok",
+      "ours": 2.0,
+      "theirs": 2,
+      "status": "match",
+      "alias": "google/gemini-3.1-pro-preview"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-3.1-pro-preview",
+      "field": "pricing.output_per_mtok",
+      "ours": 12.0,
+      "theirs": 12,
+      "status": "match",
+      "alias": "google/gemini-3.1-pro-preview"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-3.1-pro-preview",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.2,
+      "theirs": 0.2,
+      "status": "match",
+      "alias": "google/gemini-3.1-pro-preview"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-3.1-pro-preview",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 1048576,
+      "status": "we_lack",
+      "alias": "google/gemini-3.1-pro-preview"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-3.1-pro-preview",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 65536,
+      "status": "we_lack",
+      "alias": "google/gemini-3.1-pro-preview"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3.1-flash-live-preview",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.75,
+      "theirs": 0.75,
+      "status": "match",
+      "alias": "gemini/gemini-3.1-flash-live-preview"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3.1-flash-live-preview",
+      "field": "pricing.output_per_mtok",
+      "ours": 4.5,
+      "theirs": 4.5,
+      "status": "match",
+      "alias": "gemini/gemini-3.1-flash-live-preview"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3.1-flash-live-preview",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "gemini/gemini-3.1-flash-live-preview"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3.1-flash-live-preview",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 131072,
+      "status": "we_lack",
+      "alias": "gemini/gemini-3.1-flash-live-preview"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3.1-flash-live-preview",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 65536,
+      "status": "we_lack",
+      "alias": "gemini/gemini-3.1-flash-live-preview"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-3.1-flash-live-preview",
+      "status": "not_present",
+      "alias": null
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3-flash-preview",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.5,
+      "theirs": 0.5,
+      "status": "match",
+      "alias": "gemini/gemini-3-flash-preview"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3-flash-preview",
+      "field": "pricing.output_per_mtok",
+      "ours": 3.0,
+      "theirs": 3.0,
+      "status": "match",
+      "alias": "gemini/gemini-3-flash-preview"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3-flash-preview",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.05,
+      "theirs": 0.049999999999999996,
+      "status": "match",
+      "alias": "gemini/gemini-3-flash-preview"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3-flash-preview",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 1048576,
+      "status": "we_lack",
+      "alias": "gemini/gemini-3-flash-preview"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-3-flash-preview",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 65535,
+      "status": "we_lack",
+      "alias": "gemini/gemini-3-flash-preview"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-3-flash-preview",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.5,
+      "theirs": 0.5,
+      "status": "match",
+      "alias": "google/gemini-3-flash-preview"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-3-flash-preview",
+      "field": "pricing.output_per_mtok",
+      "ours": 3.0,
+      "theirs": 3,
+      "status": "match",
+      "alias": "google/gemini-3-flash-preview"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-3-flash-preview",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.05,
+      "theirs": 0.05,
+      "status": "match",
+      "alias": "google/gemini-3-flash-preview"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-3-flash-preview",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 1048576,
+      "status": "we_lack",
+      "alias": "google/gemini-3-flash-preview"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-3-flash-preview",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 65536,
+      "status": "we_lack",
+      "alias": "google/gemini-3-flash-preview"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-pro",
+      "field": "pricing.input_per_mtok",
+      "ours": 1.25,
+      "theirs": 1.25,
+      "status": "match",
+      "alias": "gemini/gemini-2.5-pro"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-pro",
+      "field": "pricing.output_per_mtok",
+      "ours": 10.0,
+      "theirs": 10.0,
+      "status": "match",
+      "alias": "gemini/gemini-2.5-pro"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-pro",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.125,
+      "theirs": 0.125,
+      "status": "match",
+      "alias": "gemini/gemini-2.5-pro"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-pro",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 1048576,
+      "status": "we_lack",
+      "alias": "gemini/gemini-2.5-pro"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-pro",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 65535,
+      "status": "we_lack",
+      "alias": "gemini/gemini-2.5-pro"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-pro",
+      "field": "pricing.input_per_mtok",
+      "ours": 1.25,
+      "theirs": 1.25,
+      "status": "match",
+      "alias": "google/gemini-2.5-pro"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-pro",
+      "field": "pricing.output_per_mtok",
+      "ours": 10.0,
+      "theirs": 10,
+      "status": "match",
+      "alias": "google/gemini-2.5-pro"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-pro",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.125,
+      "theirs": 0.125,
+      "status": "match",
+      "alias": "google/gemini-2.5-pro"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-pro",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 1048576,
+      "status": "we_lack",
+      "alias": "google/gemini-2.5-pro"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-pro",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 65536,
+      "status": "we_lack",
+      "alias": "google/gemini-2.5-pro"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.3,
+      "theirs": 0.3,
+      "status": "match",
+      "alias": "gemini/gemini-2.5-flash"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash",
+      "field": "pricing.output_per_mtok",
+      "ours": 2.5,
+      "theirs": 2.5,
+      "status": "match",
+      "alias": "gemini/gemini-2.5-flash"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.03,
+      "theirs": 0.03,
+      "status": "match",
+      "alias": "gemini/gemini-2.5-flash"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash",
+      "field": "context_window_tokens",
+      "ours": 1048576,
+      "theirs": 1048576,
+      "status": "match",
+      "alias": "gemini/gemini-2.5-flash"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 65535,
+      "status": "we_lack",
+      "alias": "gemini/gemini-2.5-flash"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.3,
+      "theirs": 0.3,
+      "status": "match",
+      "alias": "google/gemini-2.5-flash"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash",
+      "field": "pricing.output_per_mtok",
+      "ours": 2.5,
+      "theirs": 2.5,
+      "status": "match",
+      "alias": "google/gemini-2.5-flash"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.03,
+      "theirs": 0.03,
+      "status": "match",
+      "alias": "google/gemini-2.5-flash"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash",
+      "field": "context_window_tokens",
+      "ours": 1048576,
+      "theirs": 1048576,
+      "status": "match",
+      "alias": "google/gemini-2.5-flash"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 65536,
+      "status": "we_lack",
+      "alias": "google/gemini-2.5-flash"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-lite",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.1,
+      "theirs": 0.09999999999999999,
+      "status": "match",
+      "alias": "gemini/gemini-2.5-flash-lite"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-lite",
+      "field": "pricing.output_per_mtok",
+      "ours": 0.4,
+      "theirs": 0.39999999999999997,
+      "status": "match",
+      "alias": "gemini/gemini-2.5-flash-lite"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-lite",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.01,
+      "theirs": 0.01,
+      "status": "match",
+      "alias": "gemini/gemini-2.5-flash-lite"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-lite",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 1048576,
+      "status": "we_lack",
+      "alias": "gemini/gemini-2.5-flash-lite"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-lite",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 65535,
+      "status": "we_lack",
+      "alias": "gemini/gemini-2.5-flash-lite"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-lite",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.1,
+      "theirs": 0.1,
+      "status": "match",
+      "alias": "google/gemini-2.5-flash-lite"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-lite",
+      "field": "pricing.output_per_mtok",
+      "ours": 0.4,
+      "theirs": 0.4,
+      "status": "match",
+      "alias": "google/gemini-2.5-flash-lite"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-lite",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.01,
+      "theirs": 0.01,
+      "status": "match",
+      "alias": "google/gemini-2.5-flash-lite"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-lite",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 1048576,
+      "status": "we_lack",
+      "alias": "google/gemini-2.5-flash-lite"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-lite",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 65536,
+      "status": "we_lack",
+      "alias": "google/gemini-2.5-flash-lite"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-lite-preview-09-2025",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.1,
+      "theirs": 0.09999999999999999,
+      "status": "match",
+      "alias": "gemini/gemini-2.5-flash-lite-preview-09-2025"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-lite-preview-09-2025",
+      "field": "pricing.output_per_mtok",
+      "ours": 0.4,
+      "theirs": 0.39999999999999997,
+      "status": "match",
+      "alias": "gemini/gemini-2.5-flash-lite-preview-09-2025"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-lite-preview-09-2025",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.01,
+      "theirs": 0.01,
+      "status": "match",
+      "alias": "gemini/gemini-2.5-flash-lite-preview-09-2025"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-lite-preview-09-2025",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 1048576,
+      "status": "we_lack",
+      "alias": "gemini/gemini-2.5-flash-lite-preview-09-2025"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-lite-preview-09-2025",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 65535,
+      "status": "we_lack",
+      "alias": "gemini/gemini-2.5-flash-lite-preview-09-2025"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-lite-preview-09-2025",
+      "status": "not_present",
+      "alias": null
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-native-audio-preview-12-2025",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.5,
+      "theirs": 0.3,
+      "status": "mismatch",
+      "alias": "gemini/gemini-2.5-flash-native-audio-preview-12-2025"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-native-audio-preview-12-2025",
+      "field": "pricing.output_per_mtok",
+      "ours": 2.0,
+      "theirs": 2.5,
+      "status": "mismatch",
+      "alias": "gemini/gemini-2.5-flash-native-audio-preview-12-2025"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-native-audio-preview-12-2025",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "gemini/gemini-2.5-flash-native-audio-preview-12-2025"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-native-audio-preview-12-2025",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 1048576,
+      "status": "we_lack",
+      "alias": "gemini/gemini-2.5-flash-native-audio-preview-12-2025"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-native-audio-preview-12-2025",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 8192,
+      "status": "we_lack",
+      "alias": "gemini/gemini-2.5-flash-native-audio-preview-12-2025"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-native-audio-preview-12-2025",
+      "status": "not_present",
+      "alias": null
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-preview-tts",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.5,
+      "theirs": 0.3,
+      "status": "mismatch",
+      "alias": "gemini/gemini-2.5-flash-preview-tts"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-preview-tts",
+      "field": "pricing.output_per_mtok",
+      "ours": 10.0,
+      "theirs": 2.5,
+      "status": "mismatch",
+      "alias": "gemini/gemini-2.5-flash-preview-tts"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-preview-tts",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "gemini/gemini-2.5-flash-preview-tts"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-preview-tts",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "gemini/gemini-2.5-flash-preview-tts"
+    },
+    {
+      "external": "litellm",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-preview-tts",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "gemini/gemini-2.5-flash-preview-tts"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-preview-tts",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.5,
+      "theirs": 0.5,
+      "status": "match",
+      "alias": "google/gemini-2.5-flash-preview-tts"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-preview-tts",
+      "field": "pricing.output_per_mtok",
+      "ours": 10.0,
+      "theirs": 10,
+      "status": "match",
+      "alias": "google/gemini-2.5-flash-preview-tts"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-preview-tts",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "google/gemini-2.5-flash-preview-tts"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-preview-tts",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 8192,
+      "status": "we_lack",
+      "alias": "google/gemini-2.5-flash-preview-tts"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "google",
+      "model_id": "gemini-2.5-flash-preview-tts",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 16384,
+      "status": "we_lack",
+      "alias": "google/gemini-2.5-flash-preview-tts"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "mistral-medium-latest",
+      "field": "pricing.input_per_mtok",
+      "ours": 1.5,
+      "theirs": 1.5,
+      "status": "match",
+      "alias": "mistral/mistral-medium-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "mistral-medium-latest",
+      "field": "pricing.output_per_mtok",
+      "ours": 7.5,
+      "theirs": 7.5,
+      "status": "match",
+      "alias": "mistral/mistral-medium-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "mistral-medium-latest",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "mistral/mistral-medium-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "mistral-medium-latest",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 262144,
+      "status": "we_lack",
+      "alias": "mistral/mistral-medium-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "mistral-medium-latest",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 262144,
+      "status": "we_lack",
+      "alias": "mistral/mistral-medium-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "mistral-medium-latest",
+      "field": "pricing.input_per_mtok",
+      "ours": 1.5,
+      "theirs": 0.4,
+      "status": "mismatch",
+      "alias": "mistral/mistral-medium-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "mistral-medium-latest",
+      "field": "pricing.output_per_mtok",
+      "ours": 7.5,
+      "theirs": 2,
+      "status": "mismatch",
+      "alias": "mistral/mistral-medium-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "mistral-medium-latest",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "mistral/mistral-medium-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "mistral-medium-latest",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 262144,
+      "status": "we_lack",
+      "alias": "mistral/mistral-medium-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "mistral-medium-latest",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 262144,
+      "status": "we_lack",
+      "alias": "mistral/mistral-medium-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "mistral-small-latest",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.15,
+      "theirs": 0.06,
+      "status": "mismatch",
+      "alias": "mistral/mistral-small-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "mistral-small-latest",
+      "field": "pricing.output_per_mtok",
+      "ours": 0.6,
+      "theirs": 0.18,
+      "status": "mismatch",
+      "alias": "mistral/mistral-small-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "mistral-small-latest",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "mistral/mistral-small-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "mistral-small-latest",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 131072,
+      "status": "we_lack",
+      "alias": "mistral/mistral-small-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "mistral-small-latest",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 131072,
+      "status": "we_lack",
+      "alias": "mistral/mistral-small-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "mistral-small-latest",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.15,
+      "theirs": 0.15,
+      "status": "match",
+      "alias": "mistral/mistral-small-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "mistral-small-latest",
+      "field": "pricing.output_per_mtok",
+      "ours": 0.6,
+      "theirs": 0.6,
+      "status": "match",
+      "alias": "mistral/mistral-small-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "mistral-small-latest",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "mistral/mistral-small-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "mistral-small-latest",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 256000,
+      "status": "we_lack",
+      "alias": "mistral/mistral-small-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "mistral-small-latest",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 256000,
+      "status": "we_lack",
+      "alias": "mistral/mistral-small-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "mistral-large-latest",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.5,
+      "theirs": 0.5,
+      "status": "match",
+      "alias": "mistral/mistral-large-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "mistral-large-latest",
+      "field": "pricing.output_per_mtok",
+      "ours": 1.5,
+      "theirs": 1.5,
+      "status": "match",
+      "alias": "mistral/mistral-large-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "mistral-large-latest",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "mistral/mistral-large-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "mistral-large-latest",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 262144,
+      "status": "we_lack",
+      "alias": "mistral/mistral-large-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "mistral-large-latest",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 262144,
+      "status": "we_lack",
+      "alias": "mistral/mistral-large-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "mistral-large-latest",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.5,
+      "theirs": 0.5,
+      "status": "match",
+      "alias": "mistral/mistral-large-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "mistral-large-latest",
+      "field": "pricing.output_per_mtok",
+      "ours": 1.5,
+      "theirs": 1.5,
+      "status": "match",
+      "alias": "mistral/mistral-large-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "mistral-large-latest",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "mistral/mistral-large-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "mistral-large-latest",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 262144,
+      "status": "we_lack",
+      "alias": "mistral/mistral-large-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "mistral-large-latest",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 262144,
+      "status": "we_lack",
+      "alias": "mistral/mistral-large-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "voxtral-small-latest",
+      "status": "not_present",
+      "alias": null
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "voxtral-small-latest",
+      "status": "not_present",
+      "alias": null
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "devstral-medium-latest",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.4,
+      "theirs": 0.39999999999999997,
+      "status": "match",
+      "alias": "mistral/devstral-medium-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "devstral-medium-latest",
+      "field": "pricing.output_per_mtok",
+      "ours": 2.0,
+      "theirs": 2.0,
+      "status": "match",
+      "alias": "mistral/devstral-medium-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "devstral-medium-latest",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "mistral/devstral-medium-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "devstral-medium-latest",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 256000,
+      "status": "we_lack",
+      "alias": "mistral/devstral-medium-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "devstral-medium-latest",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 256000,
+      "status": "we_lack",
+      "alias": "mistral/devstral-medium-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "devstral-medium-latest",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.4,
+      "theirs": 0.4,
+      "status": "match",
+      "alias": "mistral/devstral-medium-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "devstral-medium-latest",
+      "field": "pricing.output_per_mtok",
+      "ours": 2.0,
+      "theirs": 2,
+      "status": "match",
+      "alias": "mistral/devstral-medium-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "devstral-medium-latest",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "mistral/devstral-medium-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "devstral-medium-latest",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 262144,
+      "status": "we_lack",
+      "alias": "mistral/devstral-medium-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "devstral-medium-latest",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 262144,
+      "status": "we_lack",
+      "alias": "mistral/devstral-medium-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "devstral-small-latest",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.1,
+      "theirs": 0.09999999999999999,
+      "status": "match",
+      "alias": "mistral/devstral-small-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "devstral-small-latest",
+      "field": "pricing.output_per_mtok",
+      "ours": 0.3,
+      "theirs": 0.3,
+      "status": "match",
+      "alias": "mistral/devstral-small-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "devstral-small-latest",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "mistral/devstral-small-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "devstral-small-latest",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 256000,
+      "status": "we_lack",
+      "alias": "mistral/devstral-small-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "devstral-small-latest",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 256000,
+      "status": "we_lack",
+      "alias": "mistral/devstral-small-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "devstral-small-latest",
+      "status": "not_present",
+      "alias": null
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "codestral-latest",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.3,
+      "theirs": 1.0,
+      "status": "mismatch",
+      "alias": "mistral/codestral-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "codestral-latest",
+      "field": "pricing.output_per_mtok",
+      "ours": 0.9,
+      "theirs": 3.0,
+      "status": "mismatch",
+      "alias": "mistral/codestral-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "codestral-latest",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "mistral/codestral-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "codestral-latest",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 32000,
+      "status": "we_lack",
+      "alias": "mistral/codestral-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "codestral-latest",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 8191,
+      "status": "we_lack",
+      "alias": "mistral/codestral-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "codestral-latest",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.3,
+      "theirs": 0.3,
+      "status": "match",
+      "alias": "mistral/codestral-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "codestral-latest",
+      "field": "pricing.output_per_mtok",
+      "ours": 0.9,
+      "theirs": 0.9,
+      "status": "match",
+      "alias": "mistral/codestral-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "codestral-latest",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "mistral/codestral-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "codestral-latest",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 256000,
+      "status": "we_lack",
+      "alias": "mistral/codestral-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "codestral-latest",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 4096,
+      "status": "we_lack",
+      "alias": "mistral/codestral-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "magistral-medium-latest",
+      "field": "pricing.input_per_mtok",
+      "ours": 2.0,
+      "theirs": 2.0,
+      "status": "match",
+      "alias": "mistral/magistral-medium-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "magistral-medium-latest",
+      "field": "pricing.output_per_mtok",
+      "ours": 5.0,
+      "theirs": 5.0,
+      "status": "match",
+      "alias": "mistral/magistral-medium-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "magistral-medium-latest",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "mistral/magistral-medium-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "magistral-medium-latest",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 40000,
+      "status": "we_lack",
+      "alias": "mistral/magistral-medium-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "mistral",
+      "model_id": "magistral-medium-latest",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 40000,
+      "status": "we_lack",
+      "alias": "mistral/magistral-medium-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "magistral-medium-latest",
+      "field": "pricing.input_per_mtok",
+      "ours": 2.0,
+      "theirs": 2,
+      "status": "match",
+      "alias": "mistral/magistral-medium-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "magistral-medium-latest",
+      "field": "pricing.output_per_mtok",
+      "ours": 5.0,
+      "theirs": 5,
+      "status": "match",
+      "alias": "mistral/magistral-medium-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "magistral-medium-latest",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "mistral/magistral-medium-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "magistral-medium-latest",
+      "field": "context_window_tokens",
+      "ours": null,
+      "theirs": 128000,
+      "status": "we_lack",
+      "alias": "mistral/magistral-medium-latest"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "mistral",
+      "model_id": "magistral-medium-latest",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 16384,
+      "status": "we_lack",
+      "alias": "mistral/magistral-medium-latest"
+    },
+    {
+      "external": "litellm",
+      "provider": "xai",
+      "model_id": "grok-build-0.1",
+      "status": "not_present",
+      "alias": null
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-build-0.1",
+      "field": "pricing.input_per_mtok",
+      "ours": 1.0,
+      "theirs": 1,
+      "status": "match",
+      "alias": "xai/grok-build-0.1"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-build-0.1",
+      "field": "pricing.output_per_mtok",
+      "ours": 2.0,
+      "theirs": 2,
+      "status": "match",
+      "alias": "xai/grok-build-0.1"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-build-0.1",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.2,
+      "theirs": 0.2,
+      "status": "match",
+      "alias": "xai/grok-build-0.1"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-build-0.1",
+      "field": "context_window_tokens",
+      "ours": 256000,
+      "theirs": 256000,
+      "status": "match",
+      "alias": "xai/grok-build-0.1"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-build-0.1",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 256000,
+      "status": "we_lack",
+      "alias": "xai/grok-build-0.1"
+    },
+    {
+      "external": "litellm",
+      "provider": "xai",
+      "model_id": "grok-4.3",
+      "field": "pricing.input_per_mtok",
+      "ours": 1.25,
+      "theirs": 1.25,
+      "status": "match",
+      "alias": "xai/grok-4.3"
+    },
+    {
+      "external": "litellm",
+      "provider": "xai",
+      "model_id": "grok-4.3",
+      "field": "pricing.output_per_mtok",
+      "ours": 2.5,
+      "theirs": 2.5,
+      "status": "match",
+      "alias": "xai/grok-4.3"
+    },
+    {
+      "external": "litellm",
+      "provider": "xai",
+      "model_id": "grok-4.3",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.2,
+      "theirs": 0.19999999999999998,
+      "status": "match",
+      "alias": "xai/grok-4.3"
+    },
+    {
+      "external": "litellm",
+      "provider": "xai",
+      "model_id": "grok-4.3",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "xai/grok-4.3"
+    },
+    {
+      "external": "litellm",
+      "provider": "xai",
+      "model_id": "grok-4.3",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 1000000,
+      "status": "we_lack",
+      "alias": "xai/grok-4.3"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.3",
+      "field": "pricing.input_per_mtok",
+      "ours": 1.25,
+      "theirs": 1.25,
+      "status": "match",
+      "alias": "xai/grok-4.3"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.3",
+      "field": "pricing.output_per_mtok",
+      "ours": 2.5,
+      "theirs": 2.5,
+      "status": "match",
+      "alias": "xai/grok-4.3"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.3",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.2,
+      "theirs": 0.2,
+      "status": "match",
+      "alias": "xai/grok-4.3"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.3",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "xai/grok-4.3"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.3",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 30000,
+      "status": "we_lack",
+      "alias": "xai/grok-4.3"
+    },
+    {
+      "external": "litellm",
+      "provider": "xai",
+      "model_id": "grok-4.20-multi-agent-0309",
+      "status": "not_present",
+      "alias": null
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.20-multi-agent-0309",
+      "field": "pricing.input_per_mtok",
+      "ours": 1.25,
+      "theirs": 1.25,
+      "status": "match",
+      "alias": "xai/grok-4.20-multi-agent-0309"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.20-multi-agent-0309",
+      "field": "pricing.output_per_mtok",
+      "ours": 2.5,
+      "theirs": 2.5,
+      "status": "match",
+      "alias": "xai/grok-4.20-multi-agent-0309"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.20-multi-agent-0309",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.2,
+      "theirs": 0.2,
+      "status": "match",
+      "alias": "xai/grok-4.20-multi-agent-0309"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.20-multi-agent-0309",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "xai/grok-4.20-multi-agent-0309"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.20-multi-agent-0309",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 30000,
+      "status": "we_lack",
+      "alias": "xai/grok-4.20-multi-agent-0309"
+    },
+    {
+      "external": "litellm",
+      "provider": "xai",
+      "model_id": "grok-4.20-0309-reasoning",
+      "field": "pricing.input_per_mtok",
+      "ours": 1.25,
+      "theirs": 2.0,
+      "status": "mismatch",
+      "alias": "xai/grok-4.20-0309-reasoning"
+    },
+    {
+      "external": "litellm",
+      "provider": "xai",
+      "model_id": "grok-4.20-0309-reasoning",
+      "field": "pricing.output_per_mtok",
+      "ours": 2.5,
+      "theirs": 6.0,
+      "status": "mismatch",
+      "alias": "xai/grok-4.20-0309-reasoning"
+    },
+    {
+      "external": "litellm",
+      "provider": "xai",
+      "model_id": "grok-4.20-0309-reasoning",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.2,
+      "theirs": 0.19999999999999998,
+      "status": "match",
+      "alias": "xai/grok-4.20-0309-reasoning"
+    },
+    {
+      "external": "litellm",
+      "provider": "xai",
+      "model_id": "grok-4.20-0309-reasoning",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 2000000,
+      "status": "mismatch",
+      "alias": "xai/grok-4.20-0309-reasoning"
+    },
+    {
+      "external": "litellm",
+      "provider": "xai",
+      "model_id": "grok-4.20-0309-reasoning",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 2000000,
+      "status": "we_lack",
+      "alias": "xai/grok-4.20-0309-reasoning"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.20-0309-reasoning",
+      "field": "pricing.input_per_mtok",
+      "ours": 1.25,
+      "theirs": 1.25,
+      "status": "match",
+      "alias": "xai/grok-4.20-0309-reasoning"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.20-0309-reasoning",
+      "field": "pricing.output_per_mtok",
+      "ours": 2.5,
+      "theirs": 2.5,
+      "status": "match",
+      "alias": "xai/grok-4.20-0309-reasoning"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.20-0309-reasoning",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.2,
+      "theirs": 0.2,
+      "status": "match",
+      "alias": "xai/grok-4.20-0309-reasoning"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.20-0309-reasoning",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "xai/grok-4.20-0309-reasoning"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.20-0309-reasoning",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 30000,
+      "status": "we_lack",
+      "alias": "xai/grok-4.20-0309-reasoning"
+    },
+    {
+      "external": "litellm",
+      "provider": "xai",
+      "model_id": "grok-4.20-0309-non-reasoning",
+      "status": "not_present",
+      "alias": null
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.20-0309-non-reasoning",
+      "field": "pricing.input_per_mtok",
+      "ours": 1.25,
+      "theirs": 1.25,
+      "status": "match",
+      "alias": "xai/grok-4.20-0309-non-reasoning"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.20-0309-non-reasoning",
+      "field": "pricing.output_per_mtok",
+      "ours": 2.5,
+      "theirs": 2.5,
+      "status": "match",
+      "alias": "xai/grok-4.20-0309-non-reasoning"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.20-0309-non-reasoning",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.2,
+      "theirs": 0.2,
+      "status": "match",
+      "alias": "xai/grok-4.20-0309-non-reasoning"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.20-0309-non-reasoning",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "xai/grok-4.20-0309-non-reasoning"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "xai",
+      "model_id": "grok-4.20-0309-non-reasoning",
+      "field": "max_output_tokens",
+      "ours": null,
+      "theirs": 30000,
+      "status": "we_lack",
+      "alias": "xai/grok-4.20-0309-non-reasoning"
+    },
+    {
+      "external": "litellm",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-flash",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.14,
+      "theirs": 0.14,
+      "status": "match",
+      "alias": "deepseek-v4-flash"
+    },
+    {
+      "external": "litellm",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-flash",
+      "field": "pricing.output_per_mtok",
+      "ours": 0.28,
+      "theirs": 0.28,
+      "status": "match",
+      "alias": "deepseek-v4-flash"
+    },
+    {
+      "external": "litellm",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-flash",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.0028,
+      "theirs": 0.0028,
+      "status": "match",
+      "alias": "deepseek-v4-flash"
+    },
+    {
+      "external": "litellm",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-flash",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "deepseek-v4-flash"
+    },
+    {
+      "external": "litellm",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-flash",
+      "field": "max_output_tokens",
+      "ours": 384000,
+      "theirs": 8192,
+      "status": "mismatch",
+      "alias": "deepseek-v4-flash"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-flash",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.14,
+      "theirs": 0.14,
+      "status": "match",
+      "alias": "deepseek/deepseek-v4-flash"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-flash",
+      "field": "pricing.output_per_mtok",
+      "ours": 0.28,
+      "theirs": 0.28,
+      "status": "match",
+      "alias": "deepseek/deepseek-v4-flash"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-flash",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.0028,
+      "theirs": 0.0028,
+      "status": "match",
+      "alias": "deepseek/deepseek-v4-flash"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-flash",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "deepseek/deepseek-v4-flash"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-flash",
+      "field": "max_output_tokens",
+      "ours": 384000,
+      "theirs": 384000,
+      "status": "match",
+      "alias": "deepseek/deepseek-v4-flash"
+    },
+    {
+      "external": "litellm",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-pro",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.435,
+      "theirs": 0.435,
+      "status": "match",
+      "alias": "deepseek-v4-pro"
+    },
+    {
+      "external": "litellm",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-pro",
+      "field": "pricing.output_per_mtok",
+      "ours": 0.87,
+      "theirs": 0.87,
+      "status": "match",
+      "alias": "deepseek-v4-pro"
+    },
+    {
+      "external": "litellm",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-pro",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.003625,
+      "theirs": 0.003625,
+      "status": "match",
+      "alias": "deepseek-v4-pro"
+    },
+    {
+      "external": "litellm",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-pro",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "deepseek-v4-pro"
+    },
+    {
+      "external": "litellm",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-pro",
+      "field": "max_output_tokens",
+      "ours": 384000,
+      "theirs": 8192,
+      "status": "mismatch",
+      "alias": "deepseek-v4-pro"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-pro",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.435,
+      "theirs": 0.435,
+      "status": "match",
+      "alias": "deepseek/deepseek-v4-pro"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-pro",
+      "field": "pricing.output_per_mtok",
+      "ours": 0.87,
+      "theirs": 0.87,
+      "status": "match",
+      "alias": "deepseek/deepseek-v4-pro"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-pro",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": 0.003625,
+      "theirs": 0.003625,
+      "status": "match",
+      "alias": "deepseek/deepseek-v4-pro"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-pro",
+      "field": "context_window_tokens",
+      "ours": 1000000,
+      "theirs": 1000000,
+      "status": "match",
+      "alias": "deepseek/deepseek-v4-pro"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "deepseek",
+      "model_id": "deepseek-v4-pro",
+      "field": "max_output_tokens",
+      "ours": 384000,
+      "theirs": 384000,
+      "status": "match",
+      "alias": "deepseek/deepseek-v4-pro"
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "command-r-plus-08-2024",
+      "field": "pricing.input_per_mtok",
+      "ours": 2.5,
+      "theirs": 2.5,
+      "status": "match",
+      "alias": "command-r-plus-08-2024"
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "command-r-plus-08-2024",
+      "field": "pricing.output_per_mtok",
+      "ours": 10.0,
+      "theirs": 10.0,
+      "status": "match",
+      "alias": "command-r-plus-08-2024"
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "command-r-plus-08-2024",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "command-r-plus-08-2024"
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "command-r-plus-08-2024",
+      "field": "context_window_tokens",
+      "ours": 128000,
+      "theirs": 128000,
+      "status": "match",
+      "alias": "command-r-plus-08-2024"
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "command-r-plus-08-2024",
+      "field": "max_output_tokens",
+      "ours": 4000,
+      "theirs": 4096,
+      "status": "mismatch",
+      "alias": "command-r-plus-08-2024"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "cohere",
+      "model_id": "command-r-plus-08-2024",
+      "field": "pricing.input_per_mtok",
+      "ours": 2.5,
+      "theirs": 2.5,
+      "status": "match",
+      "alias": "cohere/command-r-plus-08-2024"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "cohere",
+      "model_id": "command-r-plus-08-2024",
+      "field": "pricing.output_per_mtok",
+      "ours": 10.0,
+      "theirs": 10,
+      "status": "match",
+      "alias": "cohere/command-r-plus-08-2024"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "cohere",
+      "model_id": "command-r-plus-08-2024",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "cohere/command-r-plus-08-2024"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "cohere",
+      "model_id": "command-r-plus-08-2024",
+      "field": "context_window_tokens",
+      "ours": 128000,
+      "theirs": 128000,
+      "status": "match",
+      "alias": "cohere/command-r-plus-08-2024"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "cohere",
+      "model_id": "command-r-plus-08-2024",
+      "field": "max_output_tokens",
+      "ours": 4000,
+      "theirs": 4000,
+      "status": "match",
+      "alias": "cohere/command-r-plus-08-2024"
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "command-r-03-2024",
+      "status": "not_present",
+      "alias": null
+    },
+    {
+      "external": "modelsdev",
+      "provider": "cohere",
+      "model_id": "command-r-03-2024",
+      "status": "not_present",
+      "alias": null
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "command-r-plus-04-2024",
+      "status": "not_present",
+      "alias": null
+    },
+    {
+      "external": "modelsdev",
+      "provider": "cohere",
+      "model_id": "command-r-plus-04-2024",
+      "status": "not_present",
+      "alias": null
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "command",
+      "field": "pricing.input_per_mtok",
+      "ours": 1.0,
+      "theirs": 1.0,
+      "status": "match",
+      "alias": "command"
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "command",
+      "field": "pricing.output_per_mtok",
+      "ours": 2.0,
+      "theirs": 2.0,
+      "status": "match",
+      "alias": "command"
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "command",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "command"
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "command",
+      "field": "context_window_tokens",
+      "ours": 4000,
+      "theirs": 4096,
+      "status": "mismatch",
+      "alias": "command"
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "command",
+      "field": "max_output_tokens",
+      "ours": 4000,
+      "theirs": 4096,
+      "status": "mismatch",
+      "alias": "command"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "cohere",
+      "model_id": "command",
+      "status": "not_present",
+      "alias": null
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "command-light",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.3,
+      "theirs": 0.3,
+      "status": "match",
+      "alias": "command-light"
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "command-light",
+      "field": "pricing.output_per_mtok",
+      "ours": 0.6,
+      "theirs": 0.6,
+      "status": "match",
+      "alias": "command-light"
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "command-light",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "command-light"
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "command-light",
+      "field": "context_window_tokens",
+      "ours": 4000,
+      "theirs": 4096,
+      "status": "mismatch",
+      "alias": "command-light"
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "command-light",
+      "field": "max_output_tokens",
+      "ours": 4000,
+      "theirs": 4096,
+      "status": "mismatch",
+      "alias": "command-light"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "cohere",
+      "model_id": "command-light",
+      "status": "not_present",
+      "alias": null
+    },
+    {
+      "external": "litellm",
+      "provider": "cohere",
+      "model_id": "c4ai-aya-expanse-32b",
+      "status": "not_present",
+      "alias": null
+    },
+    {
+      "external": "modelsdev",
+      "provider": "cohere",
+      "model_id": "c4ai-aya-expanse-32b",
+      "field": "pricing.input_per_mtok",
+      "ours": 0.5,
+      "theirs": null,
+      "status": "they_lack",
+      "alias": "cohere/c4ai-aya-expanse-32b"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "cohere",
+      "model_id": "c4ai-aya-expanse-32b",
+      "field": "pricing.output_per_mtok",
+      "ours": 1.5,
+      "theirs": null,
+      "status": "they_lack",
+      "alias": "cohere/c4ai-aya-expanse-32b"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "cohere",
+      "model_id": "c4ai-aya-expanse-32b",
+      "field": "pricing.cached_input_per_mtok",
+      "ours": null,
+      "theirs": null,
+      "status": "match",
+      "alias": "cohere/c4ai-aya-expanse-32b"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "cohere",
+      "model_id": "c4ai-aya-expanse-32b",
+      "field": "context_window_tokens",
+      "ours": 128000,
+      "theirs": 128000,
+      "status": "match",
+      "alias": "cohere/c4ai-aya-expanse-32b"
+    },
+    {
+      "external": "modelsdev",
+      "provider": "cohere",
+      "model_id": "c4ai-aya-expanse-32b",
+      "field": "max_output_tokens",
+      "ours": 4000,
+      "theirs": 4000,
+      "status": "match",
+      "alias": "cohere/c4ai-aya-expanse-32b"
+    }
+  ]
+}

@@ -2,6 +2,21 @@
   "releases": [
     {
       "date": "2026-07-04",
+      "version": "0.2",
+      "summary": "External dataset audit self-correction: Gemini 2.5 Flash exact context limit",
+      "entries": [
+        {
+          "type": "corrected",
+          "provider": "google",
+          "model_id": "gemini-2.5-flash",
+          "field": "context_window_tokens",
+          "old": 1000000,
+          "new": 1048576
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
       "version": "0.1",
       "summary": "Initial dataset: 40 models across 7 providers",
       "entries": [

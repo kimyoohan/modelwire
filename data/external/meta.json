@@ -1,0 +1,11 @@
+{
+  "accessed_at": "2026-07-04T07:08:15Z",
+  "urls": {
+    "litellm": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+    "modelsdev": "https://models.dev/api.json"
+  },
+  "sha256": {
+    "litellm.json": "9c171fc839cbac7a9ca8ee5f13cc810e8bfa57b10f3bd41b1fa8d77159c3f44b",
+    "modelsdev.json": "0027bc1825745b442ac5484aa5e59aa5ba03c88fe70b371d0b4dfa13c109e2c6"
+  }
+}
