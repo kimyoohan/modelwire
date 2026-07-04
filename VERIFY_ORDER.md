@@ -15,8 +15,12 @@ The collector's evidence is NOT proof — the live page is.
    trust them for tables (proven 2026-07-04). JS-rendered pages: grep the embedded JSON payload too.
    A fact passes only if the number is present in the raw response (or its documented unit conversion).
 4. **Verdict**:
-   - ALL PASS → `git push origin main` (this publishes via GitHub Pages), then write
-     `ops/reports/<date>.md`: sample list, evidence snippets, PASS.
+   - ALL PASS → `git push origin main` (this publishes via GitHub Pages), then CONFIRM the
+     deploy: `gh run list --limit 1` must show success; on failure rerun with
+     `gh run rerun <id>` (transient "Deployment failed, try again later" happens — observed
+     twice on 2026-07-04; one rerun fixed it both times). Verify the live site updated
+     (`curl` the feed's generated_at). Then write `ops/reports/<date>.md`: sample list,
+     evidence snippets, PASS.
    - ANY FAIL → write `FIX_ORDER-<date>.md` with exact reproduction (url, what the page shows,
      what facts.json claims), run
      `codex exec --sandbox danger-full-access -c model_reasoning_effort="medium" "Read FIX_ORDER-<date>.md and execute it fully." </dev/null`,
