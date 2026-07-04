@@ -10,40 +10,40 @@
           "provider": "alibaba",
           "model_id": "qwen3.6-max-preview",
           "field": "status",
-          "from": "ga",
-          "to": "preview"
+          "old": "ga",
+          "new": "preview"
         },
         {
           "type": "corrected",
           "provider": "alibaba",
           "model_id": "qwen3.7-max-preview",
           "field": "status",
-          "from": "ga",
-          "to": "preview"
+          "old": "ga",
+          "new": "preview"
         },
         {
           "type": "corrected",
           "provider": "minimax",
           "model_id": "minimax-m2",
           "field": "status",
-          "from": "ga",
-          "to": "deprecated"
+          "old": "ga",
+          "new": "deprecated"
         },
         {
           "type": "corrected",
           "provider": "minimax",
           "model_id": "minimax-m2.1",
           "field": "status",
-          "from": "ga",
-          "to": "deprecated"
+          "old": "ga",
+          "new": "deprecated"
         },
         {
           "type": "corrected",
           "provider": "minimax",
           "model_id": "minimax-m2.5",
           "field": "status",
-          "from": "ga",
-          "to": "deprecated"
+          "old": "ga",
+          "new": "deprecated"
         }
       ]
     },
