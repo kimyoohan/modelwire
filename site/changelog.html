@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ModelWire Changelog</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>ModelWire</h1>
+        <p>Source-verified commercial LLM API facts.</p>
+      </div>
+      <nav>
+        <a href="index.html">Models</a>
+        <a href="changelog.html" aria-current="page">Changelog</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main class="changelog">
+      <div class="summary" id="changelog-summary">Loading...</div>
+      <div id="releases"></div>
+    </main>
+
+    <script>
+      (function () {
+        const summary = document.querySelector("#changelog-summary");
+        const releasesEl = document.querySelector("#releases");
+
+        function fmtValue(value, field) {
+          if (value === null || value === undefined) {
+            return "-";
+          }
+          if (field && field.startsWith("pricing.")) {
+            return `$${Number(value).toFixed(2)}`;
+          }
+          if (typeof value === "number") {
+            return Number(value).toLocaleString();
+          }
+          if (Array.isArray(value)) {
+            return value.join("+");
+          }
+          return String(value);
+        }
+
+        function lineFor(entry) {
+          const model = `${entry.provider}/${entry.model_id}`;
+          if (entry.type === "added") {
+            return `${model} added`;
+          }
+          if (entry.type === "removed") {
+            return `${model} removed`;
+          }
+          return `${model} ${entry.field} ${fmtValue(entry.old, entry.field)} -> ${fmtValue(entry.new, entry.field)}`;
+        }
+
+        function render(changelog) {
+          const releases = (changelog.releases || []).slice().sort((a, b) => b.date.localeCompare(a.date));
+          summary.textContent = `${releases.length} release${releases.length === 1 ? "" : "s"}`;
+          releasesEl.textContent = "";
+
+          const fragment = document.createDocumentFragment();
+          for (const release of releases) {
+            const section = document.createElement("section");
+            section.className = "release";
+
+            const heading = document.createElement("h2");
+            heading.textContent = `${release.date} v${release.version}`;
+            section.appendChild(heading);
+
+            const releaseSummary = document.createElement("p");
+            releaseSummary.className = "release-summary";
+            releaseSummary.textContent = release.summary;
+            section.appendChild(releaseSummary);
+
+            const list = document.createElement("ul");
+            list.className = "changes";
+            for (const entry of release.entries || []) {
+              const item = document.createElement("li");
+              item.textContent = lineFor(entry);
+              list.appendChild(item);
+            }
+            section.appendChild(list);
+            fragment.appendChild(section);
+          }
+          releasesEl.appendChild(fragment);
+        }
+
+        async function loadChangelog() {
+          if (window.location.protocol === "file:") {
+            return loadInlineChangelog();
+          }
+
+          try {
+            const response = await fetch("changelog.json", { cache: "no-store" });
+            if (!response.ok) {
+              throw new Error(`changelog.json returned ${response.status}`);
+            }
+            return await response.json();
+          } catch (error) {
+            return loadInlineChangelog(error);
+          }
+        }
+
+        function loadInlineChangelog(error) {
+          const fallback = document.querySelector("#modelwire-changelog");
+          if (!fallback || !fallback.textContent.trim()) {
+            throw error || new Error("No embedded changelog fallback found");
+          }
+          return JSON.parse(fallback.textContent);
+        }
+
+        async function init() {
+          try {
+            render(await loadChangelog());
+          } catch (error) {
+            summary.textContent = "Unable to load changelog";
+            releasesEl.textContent = error.message;
+          }
+        }
+
+        init();
+      })();
+    </script>
+    <script id="modelwire-changelog" type="application/json">{"releases":[{"date":"2026-07-04","version":"0.1","summary":"Initial dataset: 40 models across 7 providers","entries":[{"type":"added","provider":"openai","model_id":"gpt-5.5"},{"type":"added","provider":"openai","model_id":"gpt-5.5-pro"},{"type":"added","provider":"openai","model_id":"gpt-5.4"},{"type":"added","provider":"anthropic","model_id":"claude-fable-5"},{"type":"added","provider":"anthropic","model_id":"claude-opus-4-8"},{"type":"added","provider":"anthropic","model_id":"claude-opus-4-7"},{"type":"added","provider":"anthropic","model_id":"claude-opus-4-6"},{"type":"added","provider":"anthropic","model_id":"claude-sonnet-5"},{"type":"added","provider":"anthropic","model_id":"claude-haiku-4-5-20251001"},{"type":"added","provider":"google","model_id":"gemini-3.1-flash-lite"},{"type":"added","provider":"google","model_id":"gemini-3.1-pro-preview"},{"type":"added","provider":"google","model_id":"gemini-3.1-flash-live-preview"},{"type":"added","provider":"google","model_id":"gemini-3-flash-preview"},{"type":"added","provider":"google","model_id":"gemini-2.5-pro"},{"type":"added","provider":"google","model_id":"gemini-2.5-flash"},{"type":"added","provider":"google","model_id":"gemini-2.5-flash-lite"},{"type":"added","provider":"google","model_id":"gemini-2.5-flash-lite-preview-09-2025"},{"type":"added","provider":"google","model_id":"gemini-2.5-flash-native-audio-preview-12-2025"},{"type":"added","provider":"google","model_id":"gemini-2.5-flash-preview-tts"},{"type":"added","provider":"mistral","model_id":"mistral-medium-latest"},{"type":"added","provider":"mistral","model_id":"mistral-small-latest"},{"type":"added","provider":"mistral","model_id":"mistral-large-latest"},{"type":"added","provider":"mistral","model_id":"voxtral-small-latest"},{"type":"added","provider":"mistral","model_id":"devstral-medium-latest"},{"type":"added","provider":"mistral","model_id":"devstral-small-latest"},{"type":"added","provider":"mistral","model_id":"codestral-latest"},{"type":"added","provider":"mistral","model_id":"magistral-medium-latest"},{"type":"added","provider":"xai","model_id":"grok-build-0.1"},{"type":"added","provider":"xai","model_id":"grok-4.3"},{"type":"added","provider":"xai","model_id":"grok-4.20-multi-agent-0309"},{"type":"added","provider":"xai","model_id":"grok-4.20-0309-reasoning"},{"type":"added","provider":"xai","model_id":"grok-4.20-0309-non-reasoning"},{"type":"added","provider":"deepseek","model_id":"deepseek-v4-flash"},{"type":"added","provider":"deepseek","model_id":"deepseek-v4-pro"},{"type":"added","provider":"cohere","model_id":"command-r-plus-08-2024"},{"type":"added","provider":"cohere","model_id":"command-r-03-2024"},{"type":"added","provider":"cohere","model_id":"command-r-plus-04-2024"},{"type":"added","provider":"cohere","model_id":"command"},{"type":"added","provider":"cohere","model_id":"command-light"},{"type":"added","provider":"cohere","model_id":"c4ai-aya-expanse-32b"}]}]}</script>
+  </body>
+</html>
