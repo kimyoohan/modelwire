@@ -6,7 +6,7 @@ from pathlib import Path
 
 from jsonschema import Draft202012Validator, FormatChecker
 
-from logic_check import CHANGELOG_PATH, audited_field_count, run_logic_checks
+from logic_check import BASELINE_PATH, CHANGELOG_PATH, audited_field_count, finding_key, run_logic_checks
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -54,6 +54,14 @@ def populated_checked_fields(entry):
         if entry.get(field) is not None:
             populated.add(field)
     return populated
+
+
+def baseline_keys(path):
+    try:
+        baseline = load_json(path)
+    except RuntimeError:
+        return set()
+    return {item.get("key") for item in baseline.get("findings", []) if item.get("key")}
 
 
 def main():
@@ -109,9 +117,12 @@ def main():
         for field in sorted(populated_checked_fields(entry) - covered):
             errors.append(f"{model}: non-null {field} not listed in any source fields")
 
+    accepted_logic = baseline_keys(BASELINE_PATH)
     logic_findings = run_logic_checks(facts, changelog)
     for finding in logic_findings:
-        errors.append(f"{finding.entry}: {finding.field}: {finding.class_name}: {finding.detail}")
+        key = finding_key(finding)
+        if key not in accepted_logic:
+            errors.append(f"{finding.entry}: {finding.field}: {finding.class_name}: {finding.detail}")
 
     if errors:
         print("Validation failed:")

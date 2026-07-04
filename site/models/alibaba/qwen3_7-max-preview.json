@@ -2,7 +2,7 @@
   "provider": "alibaba",
   "model_id": "qwen3.7-max-preview",
   "display_name": "Qwen3.7 Max Preview",
-  "status": "ga",
+  "status": "preview",
   "release_date": null,
   "deprecation_date": null,
   "retirement_date": null,
@@ -13,6 +13,7 @@
     "batch_discount_pct": null
   },
   "context_window_tokens": 1000000,
+  "context_window_notation": "1M",
   "max_output_tokens": null,
   "modalities": {
     "input": [

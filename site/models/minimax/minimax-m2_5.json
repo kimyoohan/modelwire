@@ -2,7 +2,7 @@
   "provider": "minimax",
   "model_id": "minimax-m2.5",
   "display_name": "MiniMax M2.5",
-  "status": "ga",
+  "status": "deprecated",
   "release_date": null,
   "deprecation_date": null,
   "retirement_date": null,

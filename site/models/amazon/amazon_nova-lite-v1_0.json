@@ -13,6 +13,7 @@
     "batch_discount_pct": null
   },
   "context_window_tokens": 300000,
+  "context_window_notation": "300k",
   "max_output_tokens": 10000,
   "modalities": {
     "input": [

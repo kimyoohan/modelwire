@@ -169,6 +169,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": 128000,
     "modalities": {
       "input": [
@@ -229,6 +230,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": 128000,
     "modalities": {
       "input": [
@@ -289,6 +291,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -354,6 +357,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -419,6 +423,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": 128000,
     "modalities": {
       "input": [
@@ -479,6 +484,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 200000,
+    "context_window_notation": "200k",
     "max_output_tokens": 64000,
     "modalities": {
       "input": [
@@ -1296,6 +1302,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 256000,
+    "context_window_notation": "256k",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -1345,6 +1352,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -1394,6 +1402,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -1443,6 +1452,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -1492,6 +1502,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -1541,6 +1552,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": 384000,
     "modalities": {
       "input": [
@@ -1592,6 +1604,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": 384000,
     "modalities": {
       "input": [
@@ -1643,6 +1656,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 128000,
+    "context_window_notation": "128k",
     "max_output_tokens": 4000,
     "modalities": {
       "input": [
@@ -1694,6 +1708,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 128000,
+    "context_window_notation": "128k",
     "max_output_tokens": 4000,
     "modalities": {
       "input": [
@@ -1746,6 +1761,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 128000,
+    "context_window_notation": "128k",
     "max_output_tokens": 4000,
     "modalities": {
       "input": [
@@ -1798,6 +1814,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 4000,
+    "context_window_notation": "4k",
     "max_output_tokens": 4000,
     "modalities": {
       "input": [
@@ -1850,6 +1867,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 4000,
+    "context_window_notation": "4k",
     "max_output_tokens": 4000,
     "modalities": {
       "input": [
@@ -1902,6 +1920,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 128000,
+    "context_window_notation": "128k",
     "max_output_tokens": 4000,
     "modalities": {
       "input": [
@@ -1953,6 +1972,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": 10000,
     "modalities": {
       "input": [
@@ -2006,6 +2026,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 300000,
+    "context_window_notation": "300k",
     "max_output_tokens": 10000,
     "modalities": {
       "input": [
@@ -2059,6 +2080,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 300000,
+    "context_window_notation": "300k",
     "max_output_tokens": 10000,
     "modalities": {
       "input": [
@@ -2112,6 +2134,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 128000,
+    "context_window_notation": "128k",
     "max_output_tokens": 10000,
     "modalities": {
       "input": [
@@ -2163,6 +2186,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -2203,6 +2227,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -2232,7 +2257,7 @@
     "provider": "alibaba",
     "model_id": "qwen3.7-max-preview",
     "display_name": "Qwen3.7 Max Preview",
-    "status": "ga",
+    "status": "preview",
     "release_date": null,
     "deprecation_date": null,
     "retirement_date": null,
@@ -2243,6 +2268,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -2283,6 +2309,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -2312,7 +2339,7 @@
     "provider": "alibaba",
     "model_id": "qwen3.6-max-preview",
     "display_name": "Qwen3.6 Max Preview",
-    "status": "ga",
+    "status": "preview",
     "release_date": null,
     "deprecation_date": null,
     "retirement_date": null,
@@ -2323,6 +2350,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 256000,
+    "context_window_notation": "256K",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -2363,6 +2391,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 256000,
+    "context_window_notation": "256K",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -2403,6 +2432,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 256000,
+    "context_window_notation": "256K",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -2443,6 +2473,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 256000,
+    "context_window_notation": "256k",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -2494,6 +2525,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 256000,
+    "context_window_notation": "256k",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -2545,6 +2577,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 256000,
+    "context_window_notation": "256k",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -3144,7 +3177,7 @@
     "provider": "minimax",
     "model_id": "minimax-m2.5",
     "display_name": "MiniMax M2.5",
-    "status": "ga",
+    "status": "deprecated",
     "release_date": null,
     "deprecation_date": null,
     "retirement_date": null,
@@ -3184,7 +3217,7 @@
     "provider": "minimax",
     "model_id": "minimax-m2.1",
     "display_name": "MiniMax M2.1",
-    "status": "ga",
+    "status": "deprecated",
     "release_date": null,
     "deprecation_date": null,
     "retirement_date": null,
@@ -3224,7 +3257,7 @@
     "provider": "minimax",
     "model_id": "minimax-m2",
     "display_name": "MiniMax M2",
-    "status": "ga",
+    "status": "deprecated",
     "release_date": null,
     "deprecation_date": null,
     "retirement_date": null,
@@ -3498,7 +3531,7 @@
           "pricing.output_per_mtok",
           "pricing.cached_input_per_mtok"
         ],
-        "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code Fast $1.90 / $0.38 / $8.00"
       }
     ],
     "verified_at": "2026-07-04T08:00:00Z",
@@ -3578,7 +3611,7 @@
           "pricing.output_per_mtok",
           "pricing.cached_input_per_mtok"
         ],
-        "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.6 Fast $2.00 / $0.30 / $8.00"
       }
     ],
     "verified_at": "2026-07-04T08:00:00Z",
@@ -3738,7 +3771,7 @@
           "pricing.output_per_mtok",
           "pricing.cached_input_per_mtok"
         ],
-        "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... GLM 5.2 Fast $2.10 / $0.21 / $6.60"
       }
     ],
     "verified_at": "2026-07-04T08:00:00Z",
@@ -3818,7 +3851,7 @@
           "pricing.output_per_mtok",
           "pricing.cached_input_per_mtok"
         ],
-        "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... GLM 5.1 Fast $2.80 / $0.52 / $8.80"
       }
     ],
     "verified_at": "2026-07-04T08:00:00Z",
@@ -5026,6 +5059,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 128000,
+    "context_window_notation": "128k",
     "max_output_tokens": 64000,
     "modalities": {
       "input": [
@@ -5069,6 +5103,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 256000,
+    "context_window_notation": "256k",
     "max_output_tokens": 8000,
     "modalities": {
       "input": [
@@ -5111,6 +5146,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 8000,
+    "context_window_notation": "8k",
     "max_output_tokens": 8000,
     "modalities": {
       "input": [
@@ -5153,6 +5189,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 256000,
+    "context_window_notation": "256k",
     "max_output_tokens": 32000,
     "modalities": {
       "input": [
@@ -5195,6 +5232,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 128000,
+    "context_window_notation": "128k",
     "max_output_tokens": 8000,
     "modalities": {
       "input": [
@@ -5238,6 +5276,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 128000,
+    "context_window_notation": "128k",
     "max_output_tokens": 4000,
     "modalities": {
       "input": [
@@ -5325,6 +5364,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 8000,
+    "context_window_notation": "8k",
     "max_output_tokens": 8000,
     "modalities": {
       "input": [
@@ -5367,6 +5407,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 200000,
+    "context_window_notation": "200K",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -5415,6 +5456,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 128000,
+    "context_window_notation": "128K",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -5463,6 +5505,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": 64000,
     "modalities": {
       "input": [
@@ -5512,6 +5555,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": 64000,
     "modalities": {
       "input": [
@@ -5561,6 +5605,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": 64000,
     "modalities": {
       "input": [
@@ -5610,6 +5655,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": 64000,
     "modalities": {
       "input": [
@@ -5659,6 +5705,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": 64000,
     "modalities": {
       "input": [
@@ -5708,6 +5755,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 1000000,
+    "context_window_notation": "1M",
     "max_output_tokens": 64000,
     "modalities": {
       "input": [
@@ -5856,6 +5904,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 32768,
+    "context_window_notation": "32K",
     "max_output_tokens": null,
     "modalities": {
       "input": [
@@ -5906,6 +5955,7 @@
       "batch_discount_pct": null
     },
     "context_window_tokens": 200000,
+    "context_window_notation": "200K",
     "max_output_tokens": null,
     "modalities": {
       "input": [

@@ -129,6 +129,13 @@
       ],
       "minimum": 1
     },
+    "context_window_notation": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Provider-printed context-window token such as 128K or 1M when the source uses compact K/M notation."
+    },
     "max_output_tokens": {
       "type": [
         "integer",

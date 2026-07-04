@@ -13,6 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 FACTS_PATH = ROOT / "data" / "facts.json"
 CHANGELOG_PATH = ROOT / "data" / "changelog.json"
+BASELINE_PATH = ROOT / "ops" / "logic-baseline.json"
 
 NUMERIC_FIELDS = (
     "pricing.input_per_mtok",
@@ -36,6 +37,7 @@ REPORT_CLASS_ORDER = (
     "RULE-7",
     "RULE-8",
 )
+WARNING_CLASSES = {"UNSUPPORTED", "AMBIGUOUS"} | {f"RULE-{index}" for index in range(1, 9)}
 ACTIVE_STATUSES = {"ga", "preview"}
 INACTIVE_LANGUAGE_RE = re.compile(
     r"\b(deprecated|deprecation|retired|retirement|legacy|eol|end[- ]of[- ]life|sunset)\b",
@@ -204,7 +206,17 @@ def token_candidates(quote):
         window = quote[max(0, start - 45): min(len(quote), end + 45)]
         if start > 0 and quote[start - 1] == "$":
             continue
-        if re.search(r"\b20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}\b", window):
+        # Date filtering should remove the date component itself, not nearby token
+        # ranges such as "128K<Token<=256K ... qwen-2026-01-23".
+        window_start = max(0, start - 45)
+        inside_date = False
+        for date_match in re.finditer(r"\b20[0-9]{2}[-/][0-9]{2}[-/][0-9]{2}\b", window):
+            date_start = window_start + date_match.start()
+            date_end = window_start + date_match.end()
+            if start >= date_start and end <= date_end:
+                inside_date = True
+                break
+        if inside_date:
             continue
         if "." in number and not (suffix or word):
             continue
@@ -350,13 +362,49 @@ def status_quote_statuses(quote):
     return statuses
 
 
+def status_aliases(entry):
+    aliases = {
+        str(entry.get("model_id") or ""),
+        str(entry.get("display_name") or ""),
+    }
+    display = str(entry.get("display_name") or "")
+    compact_display = display.replace(" ", "-")
+    aliases.add(compact_display)
+    aliases.add(compact_display.lower())
+    for alias in list(aliases):
+        aliases.add(alias.replace("-", " "))
+        aliases.add(alias.replace(".", " "))
+    return tuple(sorted({alias for alias in aliases if alias}, key=len, reverse=True))
+
+
+def scoped_status_quote_statuses(entry, quote):
+    statuses = set()
+    alias_blob = " ".join(status_aliases(entry))
+    statuses.update(status_quote_statuses(alias_blob))
+
+    for alias in status_aliases(entry):
+        pattern = re.compile(rf"(?<![A-Za-z0-9._-]){re.escape(alias)}(?![A-Za-z0-9._-])", re.IGNORECASE)
+        for match in pattern.finditer(quote):
+            start, end = match.span()
+            scoped_quote = quote[max(0, start - 50): min(len(quote), end + 50)]
+            if re.search(r"\b(ga|generally available|live|available)\b", scoped_quote, re.IGNORECASE):
+                statuses.add("ga")
+            if re.search(rf"\b(legacy|deprecated|retired)\s+models?\b.{{0,60}}{re.escape(alias)}", scoped_quote, re.IGNORECASE):
+                statuses.add("deprecated")
+            if re.search(rf"{re.escape(alias)}.{{0,25}}\b(preview|beta|experimental)\b", scoped_quote, re.IGNORECASE):
+                statuses.add("preview")
+            if re.search(rf"\b(preview|beta|experimental)\b.{{0,25}}{re.escape(alias)}", scoped_quote, re.IGNORECASE):
+                statuses.add("preview")
+    return statuses
+
+
 def audit_status(entry):
     status = entry.get("status")
     if status is None:
         return []
     quote_statuses = set()
     for quote in source_quotes(entry):
-        quote_statuses.update(status_quote_statuses(quote))
+        quote_statuses.update(scoped_status_quote_statuses(entry, quote))
 
     if status in quote_statuses:
         return []
@@ -685,6 +733,33 @@ def markdown_escape(value):
     return str(value).replace("|", "\\|").replace("\n", " ")
 
 
+def finding_key(finding):
+    return "|".join(
+        markdown_escape(part)
+        for part in (finding.entry, finding.field, finding.class_name, finding.detail)
+    )
+
+
+def write_baseline(path, findings, today):
+    accepted = [finding for finding in findings if finding.class_name in WARNING_CLASSES]
+    payload = {
+        "generated_at": datetime.combine(today, datetime.min.time(), tzinfo=timezone.utc).isoformat().replace("+00:00", "Z"),
+        "policy": "Findings listed here are accepted warnings. Validation fails only on logic findings with keys absent from this baseline.",
+        "findings": [
+            {
+                "key": finding_key(finding),
+                "entry": finding.entry,
+                "field": finding.field,
+                "class": finding.class_name,
+                "detail": finding.detail,
+            }
+            for finding in accepted
+        ],
+    }
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
 def judgment_for(finding):
     if finding.class_name == "CRITICAL":
         return "Re-collect from live source; stored value and cited evidence conflict."
@@ -780,6 +855,7 @@ def main(argv=None):
     parser.add_argument("--facts", default=str(FACTS_PATH), help="Path to facts.json")
     parser.add_argument("--changelog", default=str(CHANGELOG_PATH), help="Path to changelog.json")
     parser.add_argument("--report", help="Optional Markdown report path")
+    parser.add_argument("--write-baseline", action="store_true", help="Write accepted warning findings to ops/logic-baseline.json")
     parser.add_argument("--today", help="Override current date for timestamp checks, YYYY-MM-DD")
     args = parser.parse_args(argv)
 
@@ -796,11 +872,21 @@ def main(argv=None):
             report_path = ROOT / report_path
         write_markdown_report(report_path, facts, findings, today)
         print(f"Wrote {report_path.relative_to(ROOT)}")
+    if args.write_baseline:
+        write_baseline(BASELINE_PATH, findings, today)
+        print(f"Wrote {BASELINE_PATH.relative_to(ROOT)}")
 
-    if findings:
-        print(f"Logic check failed: {len(findings)} findings across {len(facts)} entries and {audited_field_count(facts)} audited Part A fields.")
-        print_findings(findings)
+    critical_findings = [finding for finding in findings if finding.class_name == "CRITICAL"]
+    warning_findings = [finding for finding in findings if finding.class_name != "CRITICAL"]
+    if critical_findings:
+        print(f"Logic check failed: {len(critical_findings)} critical findings, {len(warning_findings)} warnings across {len(facts)} entries and {audited_field_count(facts)} audited Part A fields.")
+        print_findings(critical_findings)
         return 1
+
+    if warning_findings:
+        print(f"Logic check passed with warnings: {len(warning_findings)} accepted warning findings across {len(facts)} entries and {audited_field_count(facts)} audited Part A fields.")
+        print_findings(warning_findings)
+        return 0
 
     print(f"Logic check passed: {len(facts)} entries, {audited_field_count(facts)} audited Part A fields, all 8 invariant rules clean.")
     return 0

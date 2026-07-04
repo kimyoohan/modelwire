@@ -32,7 +32,7 @@
         "pricing.output_per_mtok",
         "pricing.cached_input_per_mtok"
       ],
-      "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+      "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... GLM 5.2 Fast $2.10 / $0.21 / $6.60"
     }
   ],
   "verified_at": "2026-07-04T08:00:00Z",

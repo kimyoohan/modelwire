@@ -2,6 +2,38 @@
   "releases": [
     {
       "date": "2026-07-04",
+      "version": "0.5",
+      "summary": "Logic audit triage",
+      "entries": [
+        {
+          "type": "corrected",
+          "provider": "alibaba",
+          "model_id": "qwen3.6-max-preview"
+        },
+        {
+          "type": "corrected",
+          "provider": "alibaba",
+          "model_id": "qwen3.7-max-preview"
+        },
+        {
+          "type": "corrected",
+          "provider": "minimax",
+          "model_id": "minimax-m2"
+        },
+        {
+          "type": "corrected",
+          "provider": "minimax",
+          "model_id": "minimax-m2.1"
+        },
+        {
+          "type": "corrected",
+          "provider": "minimax",
+          "model_id": "minimax-m2.5"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
       "version": "0.4",
       "summary": "Wave-2 gap fill",
       "entries": [
