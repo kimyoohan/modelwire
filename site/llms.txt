@@ -1,0 +1,16 @@
+# FactQuire
+> Source-verified facts about commercial LLM APIs -- pricing, limits, lifecycle, with primary-source quotes.
+
+## Data
+- [Verified model facts feed](https://factquire.com/feed.json): JSON feed, 40+ models, 7+ providers
+- [Full dataset as plain text](https://factquire.com/llms-full.txt): human+machine readable
+
+## Updates
+- [Changelog](https://factquire.com/changelog.html): versioned release history
+- [RSS feed](https://factquire.com/rss.xml): subscribe to fact changes and news
+
+## Trust
+- [Editorial standards](https://factquire.com/editorial.html): sourcing and verification policy
+- [Corrections](https://factquire.com/corrections.html): all corrections with before/after values
+- [Cite this feed](https://factquire.com/cite.html): citation guide
+- [Audit](https://factquire.com/audit.html): independent comparison vs LiteLLM and models.dev

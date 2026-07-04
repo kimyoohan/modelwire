@@ -1,0 +1,52 @@
+{
+  "provider": "deepseek",
+  "model_id": "deepseek-v4-flash",
+  "display_name": "DeepSeek V4 Flash",
+  "status": "ga",
+  "release_date": null,
+  "deprecation_date": null,
+  "retirement_date": null,
+  "pricing": {
+    "input_per_mtok": 0.14,
+    "output_per_mtok": 0.28,
+    "cached_input_per_mtok": 0.0028,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": 1000000,
+  "max_output_tokens": 384000,
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": null,
+  "sources": [
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "accessed_at": "2026-07-04T05:55:32Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok",
+        "pricing.cached_input_per_mtok",
+        "context_window_tokens",
+        "max_output_tokens",
+        "modalities"
+      ],
+      "quote": "MODEL deepseek-v4-flash(1)deepseek-v4-pro ... CONTEXT LENGTH 1M MAX OUTPUT MAXIMUM: 384K ... 1M INPUT TOKENS (CACHE HIT)$0.0028$0.003625 1M INPUT TOKENS (CACHE MISS)$0.14$0.435 1M OUTPUT TOKENS$0.28$0.87"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/api/list-models",
+      "accessed_at": "2026-07-04T05:55:32Z",
+      "fields": [
+        "model_id"
+      ],
+      "quote": "\"id\": \"deepseek-v4-flash\" ... \"id\": \"deepseek-v4-pro\""
+    }
+  ],
+  "verified_at": "2026-07-04T05:55:32Z",
+  "notes": null,
+  "permalink": "/models/deepseek/deepseek-v4-flash.html"
+}

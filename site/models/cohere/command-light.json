@@ -1,0 +1,53 @@
+{
+  "provider": "cohere",
+  "model_id": "command-light",
+  "display_name": "Command Light",
+  "status": "deprecated",
+  "release_date": null,
+  "deprecation_date": "2025-09-15",
+  "retirement_date": null,
+  "pricing": {
+    "input_per_mtok": 0.3,
+    "output_per_mtok": 0.6,
+    "cached_input_per_mtok": null,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": 4000,
+  "max_output_tokens": 4000,
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": null,
+  "sources": [
+    {
+      "url": "https://cohere.com/pricing",
+      "accessed_at": "2026-07-04T06:08:18Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok"
+      ],
+      "quote": "Command-light pricing is $0.30/1M tokens for input and $0.60/1M tokens for output"
+    },
+    {
+      "url": "https://docs.cohere.com/docs/models",
+      "accessed_at": "2026-07-04T06:08:18Z",
+      "fields": [
+        "model_id",
+        "status",
+        "modalities",
+        "context_window_tokens",
+        "max_output_tokens",
+        "deprecation_date"
+      ],
+      "quote": "`command-light `Deprecated Sept 15, 2025 A smaller, faster version of `command`. Almost as capable, but a lot faster.Text 4k 4k"
+    }
+  ],
+  "verified_at": "2026-07-04T06:08:18Z",
+  "notes": null,
+  "permalink": "/models/cohere/command-light.html"
+}

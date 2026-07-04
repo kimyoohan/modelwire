@@ -1,0 +1,52 @@
+{
+  "provider": "cohere",
+  "model_id": "c4ai-aya-expanse-32b",
+  "display_name": "Aya Expanse 32B",
+  "status": "ga",
+  "release_date": null,
+  "deprecation_date": null,
+  "retirement_date": null,
+  "pricing": {
+    "input_per_mtok": 0.5,
+    "output_per_mtok": 1.5,
+    "cached_input_per_mtok": null,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": 128000,
+  "max_output_tokens": 4000,
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": null,
+  "sources": [
+    {
+      "url": "https://cohere.com/pricing",
+      "accessed_at": "2026-07-04T05:55:32Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok"
+      ],
+      "quote": "Aya Expanse models (8B and 32B) on the API are charged at $0.50/1M tokens for input and $1.50/1M tokens for output."
+    },
+    {
+      "url": "https://docs.cohere.com/docs/models",
+      "accessed_at": "2026-07-04T05:55:32Z",
+      "fields": [
+        "model_id",
+        "status",
+        "modalities",
+        "context_window_tokens",
+        "max_output_tokens"
+      ],
+      "quote": "`c4ai-aya-expanse-32b `Live Aya Expanse is a highly performant 32B multilingual model ... Text 128k 4k"
+    }
+  ],
+  "verified_at": "2026-07-04T05:55:32Z",
+  "notes": null,
+  "permalink": "/models/cohere/c4ai-aya-expanse-32b.html"
+}

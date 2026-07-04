@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About - FactQuire</title>
-    <meta name="description" content="About the FactQuire source-verified LLM API facts feed.">
-    <link rel="canonical" href="https://factquire.com/about.html">
+    <title>Cite This Feed - FactQuire</title>
+    <meta name="description" content="Citation guide for FactQuire facts.">
+    <link rel="canonical" href="https://factquire.com/cite.html">
     <link rel="alternate" type="application/rss+xml" title="FactQuire RSS" href="https://factquire.com/rss.xml">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
     <link rel="apple-touch-icon" href="/assets/favicon-512.png">
-    <meta property="og:title" content="About - FactQuire">
-    <meta property="og:description" content="About the FactQuire source-verified LLM API facts feed.">
+    <meta property="og:title" content="Cite This Feed - FactQuire">
+    <meta property="og:description" content="Citation guide for FactQuire facts.">
     <meta property="og:image" content="https://factquire.com/assets/og-card.png">
-    <meta property="og:url" content="https://factquire.com/about.html">
+    <meta property="og:url" content="https://factquire.com/cite.html">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="/styles.css">
@@ -32,13 +32,30 @@
         <a href="/news/">News</a>
         <a href="/changelog.html">Changelog</a>
         <a href="/audit.html">Audit</a>
-        <a href="/about.html" aria-current="page">About</a>
+        <a href="/about.html">About</a>
       </nav>
     </header>
     <main>
-      <h1>About</h1>
-      <p>FactQuire is a machine-readable, source-verified facts feed for commercial LLM APIs.</p>
-      <p>The dataset tracks model identifiers, pricing, lifecycle status, token limits, modalities, source evidence, and changelog history.</p>
+      <h1>Cite This Feed</h1>
+      <h2>Stable URLs</h2>
+      <ul>
+        <li><code>https://factquire.com/feed.json</code></li>
+        <li><code>https://factquire.com/models/&lt;provider&gt;/&lt;model_id&gt;.html</code></li>
+        <li><code>https://factquire.com/models/&lt;provider&gt;/&lt;model_id&gt;.json</code></li>
+      </ul>
+      <h2>BibTeX</h2>
+      <pre>@misc{factquire,
+  title = {FactQuire Verified LLM API Facts Feed},
+  howpublished = {https://factquire.com/feed.json},
+  note = {Cite both FactQuire and the primary source evidence for each fact}
+}</pre>
+      <h2>JSON</h2>
+      <pre>{
+  "dataset": "FactQuire Verified LLM API Facts Feed",
+  "url": "https://factquire.com/feed.json",
+  "note": "Cite both FactQuire and the primary source evidence for each fact."
+}</pre>
+      <p>Cite both FactQuire and the primary source for any fact you reuse.</p>
     </main>
     <footer class="site-footer">
       <a href="/corrections.html">corrections</a> |

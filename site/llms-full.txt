@@ -1,0 +1,66 @@
+# FactQuire full dataset
+
+## anthropic
+model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
+claude-fable-5	10	50	1000000	128000	ga
+claude-haiku-4-5-20251001	1	5	200000	64000	ga
+claude-opus-4-6	5	25	1000000	-	ga
+claude-opus-4-7	5	25	1000000	-	ga
+claude-opus-4-8	5	25	1000000	128000	ga
+claude-sonnet-5	2	10	1000000	128000	ga
+
+## cohere
+model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
+c4ai-aya-expanse-32b	0.5	1.5	128000	4000	ga
+command	1.0	2.0	4000	4000	deprecated
+command-light	0.3	0.6	4000	4000	deprecated
+command-r-03-2024	0.5	1.5	128000	4000	deprecated
+command-r-plus-04-2024	3.0	15.0	128000	4000	deprecated
+command-r-plus-08-2024	2.5	10.0	128000	4000	ga
+
+## deepseek
+model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
+deepseek-v4-flash	0.14	0.28	1000000	384000	ga
+deepseek-v4-pro	0.435	0.87	1000000	384000	ga
+
+## google
+model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
+gemini-2.5-flash	0.3	2.5	1048576	-	ga
+gemini-2.5-flash-lite	0.1	0.4	-	-	ga
+gemini-2.5-flash-lite-preview-09-2025	0.1	0.4	-	-	preview
+gemini-2.5-flash-native-audio-preview-12-2025	0.5	2.0	-	-	preview
+gemini-2.5-flash-preview-tts	0.5	10.0	-	-	preview
+gemini-2.5-pro	1.25	10.0	-	-	ga
+gemini-3-flash-preview	0.5	3.0	-	-	preview
+gemini-3.1-flash-lite	0.25	1.5	-	-	ga
+gemini-3.1-flash-live-preview	0.75	4.5	-	-	preview
+gemini-3.1-pro-preview	2.0	12.0	-	-	preview
+
+## mistral
+model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
+codestral-latest	0.3	0.9	-	-	ga
+devstral-medium-latest	0.4	2.0	-	-	ga
+devstral-small-latest	0.1	0.3	-	-	ga
+magistral-medium-latest	2.0	5.0	-	-	ga
+mistral-large-latest	0.5	1.5	-	-	ga
+mistral-medium-latest	1.5	7.5	-	-	ga
+mistral-small-latest	0.15	0.6	-	-	ga
+voxtral-small-latest	0.1	0.4	-	-	ga
+
+## openai
+model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
+gpt-5.4	2.5	15.0	1050000	128000	ga
+gpt-5.5	5.0	30.0	1050000	128000	ga
+gpt-5.5-pro	30.0	180.0	1050000	128000	ga
+
+## xai
+model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
+grok-4.20-0309-non-reasoning	1.25	2.5	1000000	-	ga
+grok-4.20-0309-reasoning	1.25	2.5	1000000	-	ga
+grok-4.20-multi-agent-0309	1.25	2.5	1000000	-	ga
+grok-4.3	1.25	2.5	1000000	-	ga
+grok-build-0.1	1.0	2.0	256000	-	ga
+
+## Changelog
+2026-07-04	v0.2	External dataset audit self-correction: Gemini 2.5 Flash exact context limit
+2026-07-04	v0.1	Initial dataset: 40 models across 7 providers

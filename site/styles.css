@@ -69,6 +69,45 @@ main {
   padding: 20px 28px 32px;
 }
 
+.site-footer {
+  padding: 18px 28px 28px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  background: var(--panel);
+}
+
+.intro,
+.model-detail,
+.article,
+.article-list,
+main > h1 + section,
+main > h1 + ul {
+  max-width: 980px;
+}
+
+.intro {
+  margin-bottom: 18px;
+}
+
+.intro h1,
+.model-detail h1,
+.article h1,
+main > h1 {
+  margin: 0 0 8px;
+}
+
+.muted,
+.eyebrow {
+  color: var(--muted);
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .controls {
   display: grid;
   grid-template-columns: repeat(3, minmax(150px, 220px)) 1fr;
@@ -113,6 +152,15 @@ table {
   width: 100%;
   min-width: 1120px;
   border-collapse: collapse;
+}
+
+.fact-table {
+  min-width: 0;
+}
+
+.fact-table th {
+  position: static;
+  width: 220px;
 }
 
 th,
@@ -254,6 +302,19 @@ blockquote {
   color: var(--text);
 }
 
+pre {
+  overflow: auto;
+  max-width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+}
+
+.source-list li,
+.article-list li {
+  margin-bottom: 16px;
+}
+
 .audit-note {
   margin: 8px 0 0;
   color: var(--muted);
@@ -314,6 +375,10 @@ code {
   }
 
   main {
+    padding: 16px 18px 24px;
+  }
+
+  .site-footer {
     padding: 16px 18px 24px;
   }
 

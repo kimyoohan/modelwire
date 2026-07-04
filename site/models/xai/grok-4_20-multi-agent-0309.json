@@ -1,0 +1,50 @@
+{
+  "provider": "xai",
+  "model_id": "grok-4.20-multi-agent-0309",
+  "display_name": "Grok 4.20 Multi-Agent 0309",
+  "status": "ga",
+  "release_date": null,
+  "deprecation_date": null,
+  "retirement_date": null,
+  "pricing": {
+    "input_per_mtok": 1.25,
+    "output_per_mtok": 2.5,
+    "cached_input_per_mtok": 0.2,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": 1000000,
+  "max_output_tokens": null,
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": null,
+  "sources": [
+    {
+      "url": "https://docs.x.ai/developers/pricing",
+      "accessed_at": "2026-07-04T06:08:18Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok",
+        "pricing.cached_input_per_mtok",
+        "context_window_tokens"
+      ],
+      "quote": "Chat API Prices per 1M tokens Model Context Input Cached input Output grok-build-0.1 256k$1.00$0.20$2.00 grok-4.3 1M$1.25$0.20$2.50 grok-4.20-multi-agent-0309 1M$1.25$0.20$2.50 grok-4.20-0309-reasoning 1M$1.25$0.20$2.50 grok-4.20-0309-non-reasoning 1M$1.25$0.20$2.50"
+    },
+    {
+      "url": "https://docs.x.ai/developers/models",
+      "accessed_at": "2026-07-04T05:55:32Z",
+      "fields": [
+        "modalities"
+      ],
+      "quote": "We have dedicated models and APIs for audio, image, and video capabilities. For everything else, use Grok 4.3."
+    }
+  ],
+  "verified_at": "2026-07-04T06:08:18Z",
+  "notes": null,
+  "permalink": "/models/xai/grok-4_20-multi-agent-0309.html"
+}
