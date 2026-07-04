@@ -1,0 +1,53 @@
+{
+  "provider": "openai",
+  "model_id": "gpt-5.5",
+  "display_name": "GPT-5.5",
+  "status": "ga",
+  "release_date": null,
+  "deprecation_date": null,
+  "retirement_date": null,
+  "pricing": {
+    "input_per_mtok": 5.0,
+    "output_per_mtok": 30.0,
+    "cached_input_per_mtok": 0.5,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": 1050000,
+  "max_output_tokens": 128000,
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": "Dec 01, 2025",
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "accessed_at": "2026-07-04T05:55:32Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok",
+        "pricing.cached_input_per_mtok"
+      ],
+      "quote": "gpt-5.5$5.00$0.50$30.00$10.00$1.00$45.00"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/models/compare",
+      "accessed_at": "2026-07-04T05:55:32Z",
+      "fields": [
+        "context_window_tokens",
+        "max_output_tokens",
+        "knowledge_cutoff",
+        "modalities"
+      ],
+      "quote": "GPT-5.5 ... Input $5.00 Cached Input $0.50 Output $30.00 Context Window 1,050,000 Max Output Tokens 128,000 Knowledge Cutoff Dec 01, 2025 Supported Features Streaming Function calling Structured outputs Image input"
+    }
+  ],
+  "verified_at": "2026-07-04T05:55:32Z",
+  "notes": "OpenAI pricing records the standard short-context tier; long-context pricing, where present, is noted in the cited quote.",
+  "permalink": "/models/openai/gpt-5_5.html"
+}

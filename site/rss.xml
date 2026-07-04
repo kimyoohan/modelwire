@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>FactQuire</title>
+    <link>https://factquire.com/</link>
+    <description>Source-verified LLM API fact changes and news.</description>
+    <item>
+      <title>FactQuire v0.2: External dataset audit self-correction: Gemini 2.5 Flash exact context limit</title>
+      <link>https://factquire.com/changelog.html#v0.2</link>
+      <guid>https://factquire.com/changelog.html#v0.2</guid>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+      <description>External dataset audit self-correction: Gemini 2.5 Flash exact context limit</description>
+    </item>
+    <item>
+      <title>FactQuire v0.1: Initial dataset: 40 models across 7 providers</title>
+      <link>https://factquire.com/changelog.html#v0.1</link>
+      <guid>https://factquire.com/changelog.html#v0.1</guid>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Initial dataset: 40 models across 7 providers</description>
+    </item>
+  </channel>
+</rss>

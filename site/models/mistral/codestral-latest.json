@@ -1,0 +1,41 @@
+{
+  "provider": "mistral",
+  "model_id": "codestral-latest",
+  "display_name": "Codestral",
+  "status": "ga",
+  "release_date": null,
+  "deprecation_date": null,
+  "retirement_date": null,
+  "pricing": {
+    "input_per_mtok": 0.3,
+    "output_per_mtok": 0.9,
+    "cached_input_per_mtok": null,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": null,
+  "max_output_tokens": null,
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": null,
+  "sources": [
+    {
+      "url": "https://mistral.ai/pricing/api/",
+      "accessed_at": "2026-07-04T05:55:32Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok",
+        "modalities"
+      ],
+      "quote": "Codestral ... Coding Text-to-text Input (/M tokens) $0.3 Output (/M tokens) $0.9 codestral-latest"
+    }
+  ],
+  "verified_at": "2026-07-04T05:55:32Z",
+  "notes": null,
+  "permalink": "/models/mistral/codestral-latest.html"
+}

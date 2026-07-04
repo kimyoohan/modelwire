@@ -1,0 +1,66 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-opus-4-7",
+  "display_name": "Claude Opus 4.7",
+  "status": "ga",
+  "release_date": null,
+  "deprecation_date": null,
+  "retirement_date": null,
+  "pricing": {
+    "input_per_mtok": 5,
+    "output_per_mtok": 25,
+    "cached_input_per_mtok": 0.5,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": 1000000,
+  "max_output_tokens": null,
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": null,
+  "sources": [
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "accessed_at": "2026-07-04T05:55:32Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok",
+        "pricing.cached_input_per_mtok"
+      ],
+      "quote": "Claude Fable 5$10 / MTok$12.50 / MTok$20 / MTok$1 / MTok$50 / MTok Claude Opus 4.8$5 / MTok$6.25 / MTok$10 / MTok$0.50 / MTok$25 / MTok Claude Opus 4.7$5 / MTok$6.25 / MTok$10 / MTok$0.50 / MTok$25 / MTok Claude Opus 4.6$5 / MTok$6.25 / MTok$10 / MTok$0.50 / MTok$25 / MTok Claude Sonnet 5 through August 31, 2026 $2 / MTok$2.50 / MTok$4 / MTok$0.20 / MTok$10 / MTok Claude Haiku 4.5$1 / MTok$1.25 / MTok$2 / MTok$0.10 / MTok$5 / MTok"
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+      "accessed_at": "2026-07-04T05:55:32Z",
+      "fields": [
+        "modalities"
+      ],
+      "quote": "All current Claude models support text and image input, text output, multilingual capabilities, and vision."
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/model-ids-and-versions",
+      "accessed_at": "2026-07-04T05:55:32Z",
+      "fields": [
+        "model_id"
+      ],
+      "quote": "For example: `claude-sonnet-4-6`, `claude-sonnet-5`, `claude-opus-4-6`, `claude-opus-4-7`, and `claude-opus-4-8`"
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "accessed_at": "2026-07-04T05:55:32Z",
+      "fields": [
+        "context_window_tokens"
+      ],
+      "quote": "Claude Fable 5, Claude Mythos 5, Claude Mythos Preview, Claude Opus 4.8, Opus 4.7, Opus 4.6, Sonnet 5, and Sonnet 4.6 include the full 1M token context window at standard pricing."
+    }
+  ],
+  "verified_at": "2026-07-04T05:55:32Z",
+  "notes": null,
+  "permalink": "/models/anthropic/claude-opus-4-7.html"
+}

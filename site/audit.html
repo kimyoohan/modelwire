@@ -3,226 +3,401 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Audit — FactQuire</title>
-    <meta name="description" content="Independent verification of widely-used LLM model metadata datasets against primary sources.">
+    <title>Audit - FactQuire</title>
+    <meta name="description" content="Independent comparison of FactQuire facts against external LLM metadata datasets.">
     <link rel="canonical" href="https://factquire.com/audit.html">
-    <link rel="icon" href="favicon.ico" sizes="32x32">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-    <link rel="apple-touch-icon" href="assets/favicon-512.png">
-    <meta property="og:title" content="Audit — FactQuire">
-    <meta property="og:description" content="Independent verification of widely-used LLM model metadata datasets against primary sources.">
+    <link rel="alternate" type="application/rss+xml" title="FactQuire RSS" href="https://factquire.com/rss.xml">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+    <link rel="apple-touch-icon" href="/assets/favicon-512.png">
+    <meta property="og:title" content="Audit - FactQuire">
+    <meta property="og:description" content="Independent comparison of FactQuire facts against external LLM metadata datasets.">
     <meta property="og:image" content="https://factquire.com/assets/og-card.png">
     <meta property="og:url" content="https://factquire.com/audit.html">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Audit — FactQuire">
-    <meta name="twitter:image" content="https://factquire.com/assets/og-card.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
+    
+    
   </head>
   <body>
     <header class="topbar">
       <div>
         <a href="/" style="display:inline-block;line-height:0;">
-          <img src="assets/logo.png" alt="FactQuire" height="48" style="height:48px;width:auto;">
+          <img src="/assets/logo.png" alt="FactQuire" height="48" style="height:48px;width:auto;">
         </a>
       </div>
       <nav>
-        <a href="index.html">Models</a>
-        <a href="changelog.html">Changelog</a>
-        <a href="audit.html" aria-current="page">Audit</a>
-        <a href="about.html">About</a>
+        <a href="/models/">Models</a>
+        <a href="/news/">News</a>
+        <a href="/changelog.html">Changelog</a>
+        <a href="/audit.html" aria-current="page">Audit</a>
+        <a href="/about.html">About</a>
       </nav>
     </header>
-
-    <main class="audit">
-      <section class="audit-intro">
-        <h2>External Dataset Audit</h2>
-        <p>Independent verification of widely-used datasets: <a href="https://github.com/BerriAI/litellm" target="_blank" rel="noreferrer">LiteLLM</a> and <a href="https://github.com/sst/models.dev" target="_blank" rel="noreferrer">models.dev</a>. Confirmed upstream errors are candidates for upstream fixes.</p>
-      </section>
-
-      <section class="audit-stats" id="audit-stats" aria-label="Audit stats"></section>
-
-      <section class="audit-method">
-        <h2>Method</h2>
-        <p>ModelWire maps direct-provider aliases by hand, compares prices and token limits with fixed tolerances, and adjudicates every mismatch against fresh primary sources only. External absence, ModelWire-null fields, and external-null fields are recorded separately from mismatch verdicts.</p>
-      </section>
-
-      <section class="audit-corrections" id="audit-corrections" aria-label="Self-corrections"></section>
-
-      <section class="table-wrap audit-table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Verdict</th>
-              <th>External</th>
-              <th>Model</th>
-              <th>Field</th>
-              <th>Ours</th>
-              <th>Theirs</th>
-              <th>Evidence</th>
-            </tr>
-          </thead>
-          <tbody id="audit-body"></tbody>
-        </table>
-      </section>
+    <main>
+      <h1>Audit</h1>
+<p>Independent comparison vs LiteLLM and models.dev.</p><pre>{
+  &quot;audits&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-04&quot;,
+      &quot;summary&quot;: &quot;Independent verification of LiteLLM and models.dev metadata against ModelWire source-verified facts.&quot;,
+      &quot;stats&quot;: {
+        &quot;models_compared&quot;: 37,
+        &quot;external_model_pairs_compared&quot;: 64,
+        &quot;mismatches&quot;: 22,
+        &quot;modelwire_correct&quot;: 15,
+        &quot;modelwire_wrong&quot;: 2,
+        &quot;both_wrong&quot;: 0,
+        &quot;ambiguous&quot;: 5
+      },
+      &quot;findings&quot;: [
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;google&quot;,
+          &quot;model_id&quot;: &quot;gemini-2.5-flash&quot;,
+          &quot;field&quot;: &quot;context_window_tokens&quot;,
+          &quot;ours&quot;: 1000000,
+          &quot;theirs&quot;: 1048576,
+          &quot;verdict&quot;: &quot;modelwire_wrong&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;Gemini 2.5 Flash ... Model code gemini-2.5-flash ... Token limits ... Input token limit 1,048,576 Output token limit 65,536&quot;
+          },
+          &quot;note&quot;: &quot;Corrected data/facts.json to the exact input token limit.&quot;
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;modelsdev&quot;,
+          &quot;provider&quot;: &quot;google&quot;,
+          &quot;model_id&quot;: &quot;gemini-2.5-flash&quot;,
+          &quot;field&quot;: &quot;context_window_tokens&quot;,
+          &quot;ours&quot;: 1000000,
+          &quot;theirs&quot;: 1048576,
+          &quot;verdict&quot;: &quot;modelwire_wrong&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;Gemini 2.5 Flash ... Model code gemini-2.5-flash ... Token limits ... Input token limit 1,048,576 Output token limit 65,536&quot;
+          },
+          &quot;note&quot;: &quot;Corrected data/facts.json to the exact input token limit.&quot;
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;google&quot;,
+          &quot;model_id&quot;: &quot;gemini-2.5-flash-native-audio-preview-12-2025&quot;,
+          &quot;field&quot;: &quot;pricing.input_per_mtok&quot;,
+          &quot;ours&quot;: 0.5,
+          &quot;theirs&quot;: 0.3,
+          &quot;verdict&quot;: &quot;modelwire_correct&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://ai.google.dev/gemini-api/docs/pricing&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;Gemini 2.5 Flash Native Audio (Live API) gemini-2.5-flash-native-audio-preview-12-2025 ... Input price Free of charge $0.50 (text) $3.00 (audio / video) Output price ... $2.00 (text) $12.00 (audio)&quot;
+          }
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;google&quot;,
+          &quot;model_id&quot;: &quot;gemini-2.5-flash-native-audio-preview-12-2025&quot;,
+          &quot;field&quot;: &quot;pricing.output_per_mtok&quot;,
+          &quot;ours&quot;: 2.0,
+          &quot;theirs&quot;: 2.5,
+          &quot;verdict&quot;: &quot;modelwire_correct&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://ai.google.dev/gemini-api/docs/pricing&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;Gemini 2.5 Flash Native Audio (Live API) gemini-2.5-flash-native-audio-preview-12-2025 ... Input price Free of charge $0.50 (text) $3.00 (audio / video) Output price ... $2.00 (text) $12.00 (audio)&quot;
+          }
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;google&quot;,
+          &quot;model_id&quot;: &quot;gemini-2.5-flash-preview-tts&quot;,
+          &quot;field&quot;: &quot;pricing.input_per_mtok&quot;,
+          &quot;ours&quot;: 0.5,
+          &quot;theirs&quot;: 0.3,
+          &quot;verdict&quot;: &quot;modelwire_correct&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://ai.google.dev/gemini-api/docs/pricing&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;Gemini 2.5 Flash Preview TTS gemini-2.5-flash-preview-tts ... Input price Free of charge $0.50 (text) Output price Free of charge $10.00 (audio)&quot;
+          }
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;google&quot;,
+          &quot;model_id&quot;: &quot;gemini-2.5-flash-preview-tts&quot;,
+          &quot;field&quot;: &quot;pricing.output_per_mtok&quot;,
+          &quot;ours&quot;: 10.0,
+          &quot;theirs&quot;: 2.5,
+          &quot;verdict&quot;: &quot;modelwire_correct&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://ai.google.dev/gemini-api/docs/pricing&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;Gemini 2.5 Flash Preview TTS gemini-2.5-flash-preview-tts ... Input price Free of charge $0.50 (text) Output price Free of charge $10.00 (audio)&quot;
+          }
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;modelsdev&quot;,
+          &quot;provider&quot;: &quot;mistral&quot;,
+          &quot;model_id&quot;: &quot;mistral-medium-latest&quot;,
+          &quot;field&quot;: &quot;pricing.input_per_mtok&quot;,
+          &quot;ours&quot;: 1.5,
+          &quot;theirs&quot;: 0.4,
+          &quot;verdict&quot;: &quot;modelwire_correct&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://mistral.ai/pricing/api/&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;Mistral Medium 3.5 ... Input (/M tokens) $1.5 Output (/M tokens) $7.5 mistral-medium-latest&quot;
+          }
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;modelsdev&quot;,
+          &quot;provider&quot;: &quot;mistral&quot;,
+          &quot;model_id&quot;: &quot;mistral-medium-latest&quot;,
+          &quot;field&quot;: &quot;pricing.output_per_mtok&quot;,
+          &quot;ours&quot;: 7.5,
+          &quot;theirs&quot;: 2,
+          &quot;verdict&quot;: &quot;modelwire_correct&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://mistral.ai/pricing/api/&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;Mistral Medium 3.5 ... Input (/M tokens) $1.5 Output (/M tokens) $7.5 mistral-medium-latest&quot;
+          }
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;mistral&quot;,
+          &quot;model_id&quot;: &quot;mistral-small-latest&quot;,
+          &quot;field&quot;: &quot;pricing.input_per_mtok&quot;,
+          &quot;ours&quot;: 0.15,
+          &quot;theirs&quot;: 0.06,
+          &quot;verdict&quot;: &quot;modelwire_correct&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://mistral.ai/pricing/api/&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;Mistral Small 4 ... Input (/M tokens) $0.15 Output (/M tokens) $0.6 mistral-small-latest&quot;
+          }
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;mistral&quot;,
+          &quot;model_id&quot;: &quot;mistral-small-latest&quot;,
+          &quot;field&quot;: &quot;pricing.output_per_mtok&quot;,
+          &quot;ours&quot;: 0.6,
+          &quot;theirs&quot;: 0.18,
+          &quot;verdict&quot;: &quot;modelwire_correct&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://mistral.ai/pricing/api/&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;Mistral Small 4 ... Input (/M tokens) $0.15 Output (/M tokens) $0.6 mistral-small-latest&quot;
+          }
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;mistral&quot;,
+          &quot;model_id&quot;: &quot;codestral-latest&quot;,
+          &quot;field&quot;: &quot;pricing.input_per_mtok&quot;,
+          &quot;ours&quot;: 0.3,
+          &quot;theirs&quot;: 1.0,
+          &quot;verdict&quot;: &quot;modelwire_correct&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://mistral.ai/pricing/api/&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;Codestral ... Input (/M tokens) $0.3 Output (/M tokens) $0.9 codestral-latest&quot;
+          }
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;mistral&quot;,
+          &quot;model_id&quot;: &quot;codestral-latest&quot;,
+          &quot;field&quot;: &quot;pricing.output_per_mtok&quot;,
+          &quot;ours&quot;: 0.9,
+          &quot;theirs&quot;: 3.0,
+          &quot;verdict&quot;: &quot;modelwire_correct&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://mistral.ai/pricing/api/&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;Codestral ... Input (/M tokens) $0.3 Output (/M tokens) $0.9 codestral-latest&quot;
+          }
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;xai&quot;,
+          &quot;model_id&quot;: &quot;grok-4.20-0309-reasoning&quot;,
+          &quot;field&quot;: &quot;pricing.input_per_mtok&quot;,
+          &quot;ours&quot;: 1.25,
+          &quot;theirs&quot;: 2.0,
+          &quot;verdict&quot;: &quot;modelwire_correct&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://docs.x.ai/developers/pricing&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;Chat API Prices per 1M tokens Model Context Input Cached input Output ... grok-4.20-0309-reasoning 1M $1.25 $0.20 $2.50&quot;
+          }
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;xai&quot;,
+          &quot;model_id&quot;: &quot;grok-4.20-0309-reasoning&quot;,
+          &quot;field&quot;: &quot;pricing.output_per_mtok&quot;,
+          &quot;ours&quot;: 2.5,
+          &quot;theirs&quot;: 6.0,
+          &quot;verdict&quot;: &quot;modelwire_correct&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://docs.x.ai/developers/pricing&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;Chat API Prices per 1M tokens Model Context Input Cached input Output ... grok-4.20-0309-reasoning 1M $1.25 $0.20 $2.50&quot;
+          }
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;xai&quot;,
+          &quot;model_id&quot;: &quot;grok-4.20-0309-reasoning&quot;,
+          &quot;field&quot;: &quot;context_window_tokens&quot;,
+          &quot;ours&quot;: 1000000,
+          &quot;theirs&quot;: 2000000,
+          &quot;verdict&quot;: &quot;modelwire_correct&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://docs.x.ai/developers/pricing&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;Chat API Prices per 1M tokens Model Context Input Cached input Output ... grok-4.20-0309-reasoning 1M $1.25 $0.20 $2.50&quot;
+          }
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;deepseek&quot;,
+          &quot;model_id&quot;: &quot;deepseek-v4-flash&quot;,
+          &quot;field&quot;: &quot;max_output_tokens&quot;,
+          &quot;ours&quot;: 384000,
+          &quot;theirs&quot;: 8192,
+          &quot;verdict&quot;: &quot;modelwire_correct&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://api-docs.deepseek.com/quick_start/pricing&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;MODEL deepseek-v4-flash ... deepseek-v4-pro ... CONTEXT LENGTH 1M MAX OUTPUT MAXIMUM: 384K&quot;
+          }
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;deepseek&quot;,
+          &quot;model_id&quot;: &quot;deepseek-v4-pro&quot;,
+          &quot;field&quot;: &quot;max_output_tokens&quot;,
+          &quot;ours&quot;: 384000,
+          &quot;theirs&quot;: 8192,
+          &quot;verdict&quot;: &quot;modelwire_correct&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://api-docs.deepseek.com/quick_start/pricing&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;MODEL deepseek-v4-flash ... deepseek-v4-pro ... CONTEXT LENGTH 1M MAX OUTPUT MAXIMUM: 384K&quot;
+          }
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;cohere&quot;,
+          &quot;model_id&quot;: &quot;command-r-plus-08-2024&quot;,
+          &quot;field&quot;: &quot;max_output_tokens&quot;,
+          &quot;ours&quot;: 4000,
+          &quot;theirs&quot;: 4096,
+          &quot;verdict&quot;: &quot;ambiguous&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://docs.cohere.com/docs/models&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;command-r-plus-08-2024 Live ... Text 128k 4k&quot;
+          },
+          &quot;note&quot;: &quot;The primary source states 4k rather than an exact integer, so both 4000 and 4096 are plausible normalizations.&quot;
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;cohere&quot;,
+          &quot;model_id&quot;: &quot;command&quot;,
+          &quot;field&quot;: &quot;context_window_tokens&quot;,
+          &quot;ours&quot;: 4000,
+          &quot;theirs&quot;: 4096,
+          &quot;verdict&quot;: &quot;ambiguous&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://docs.cohere.com/docs/models&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;command Deprecated Sept 15, 2025 ... Text 4k 4k&quot;
+          },
+          &quot;note&quot;: &quot;The primary source states 4k rather than an exact integer, so both 4000 and 4096 are plausible normalizations.&quot;
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;cohere&quot;,
+          &quot;model_id&quot;: &quot;command&quot;,
+          &quot;field&quot;: &quot;max_output_tokens&quot;,
+          &quot;ours&quot;: 4000,
+          &quot;theirs&quot;: 4096,
+          &quot;verdict&quot;: &quot;ambiguous&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://docs.cohere.com/docs/models&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;command Deprecated Sept 15, 2025 ... Text 4k 4k&quot;
+          },
+          &quot;note&quot;: &quot;The primary source states 4k rather than an exact integer, so both 4000 and 4096 are plausible normalizations.&quot;
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;cohere&quot;,
+          &quot;model_id&quot;: &quot;command-light&quot;,
+          &quot;field&quot;: &quot;context_window_tokens&quot;,
+          &quot;ours&quot;: 4000,
+          &quot;theirs&quot;: 4096,
+          &quot;verdict&quot;: &quot;ambiguous&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://docs.cohere.com/docs/models&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;command-light Deprecated Sept 15, 2025 ... Text 4k 4k&quot;
+          },
+          &quot;note&quot;: &quot;The primary source states 4k rather than an exact integer, so both 4000 and 4096 are plausible normalizations.&quot;
+        },
+        {
+          &quot;date&quot;: &quot;2026-07-04&quot;,
+          &quot;external&quot;: &quot;litellm&quot;,
+          &quot;provider&quot;: &quot;cohere&quot;,
+          &quot;model_id&quot;: &quot;command-light&quot;,
+          &quot;field&quot;: &quot;max_output_tokens&quot;,
+          &quot;ours&quot;: 4000,
+          &quot;theirs&quot;: 4096,
+          &quot;verdict&quot;: &quot;ambiguous&quot;,
+          &quot;evidence&quot;: {
+            &quot;url&quot;: &quot;https://docs.cohere.com/docs/models&quot;,
+            &quot;accessed_at&quot;: &quot;2026-07-04T07:37:12Z&quot;,
+            &quot;quote&quot;: &quot;command-light Deprecated Sept 15, 2025 ... Text 4k 4k&quot;
+          },
+          &quot;note&quot;: &quot;The primary source states 4k rather than an exact integer, so both 4000 and 4096 are plausible normalizations.&quot;
+        }
+      ]
+    }
+  ]
+}</pre>
     </main>
-
-    <script>
-      (function () {
-        const statsEl = document.querySelector("#audit-stats");
-        const correctionsEl = document.querySelector("#audit-corrections");
-        const body = document.querySelector("#audit-body");
-
-        function fmt(value) {
-          if (value === null || value === undefined) {
-            return "-";
-          }
-          return typeof value === "number" ? Number(value).toLocaleString() : String(value);
-        }
-
-        function label(value) {
-          return String(value).replace(/_/g, " ");
-        }
-
-        function renderStats(audit) {
-          const stats = audit.stats || {};
-          const items = [
-            ["Models compared", stats.models_compared],
-            ["Mismatches", stats.mismatches],
-            ["ModelWire correct", stats.modelwire_correct],
-            ["ModelWire corrected", stats.modelwire_wrong],
-            ["Both wrong", stats.both_wrong],
-            ["Ambiguous", stats.ambiguous],
-          ];
-          statsEl.textContent = "";
-          for (const [name, value] of items) {
-            const item = document.createElement("div");
-            const strong = document.createElement("strong");
-            strong.textContent = fmt(value);
-            const span = document.createElement("span");
-            span.textContent = name;
-            item.append(strong, span);
-            statsEl.appendChild(item);
-          }
-        }
-
-        function renderCorrections(findings) {
-          const corrections = findings.filter((finding) => finding.verdict === "modelwire_wrong");
-          correctionsEl.textContent = "";
-          const heading = document.createElement("h2");
-          heading.textContent = "Self-Corrections";
-          correctionsEl.appendChild(heading);
-
-          if (!corrections.length) {
-            const none = document.createElement("p");
-            none.textContent = "No ModelWire corrections in this audit.";
-            correctionsEl.appendChild(none);
-            return;
-          }
-
-          const list = document.createElement("ul");
-          list.className = "changes";
-          for (const finding of corrections) {
-            const item = document.createElement("li");
-            item.textContent = `${finding.provider}/${finding.model_id} ${finding.field}: ${fmt(finding.ours)} -> ${fmt(finding.theirs)}`;
-            list.appendChild(item);
-          }
-          correctionsEl.appendChild(list);
-        }
-
-        function renderTable(findings) {
-          const order = { modelwire_wrong: 0, both_wrong: 1, modelwire_correct: 2, ambiguous: 3 };
-          const rows = findings.slice().sort((a, b) => {
-            const byVerdict = (order[a.verdict] || 9) - (order[b.verdict] || 9);
-            if (byVerdict) return byVerdict;
-            return `${a.provider}/${a.model_id}/${a.field}`.localeCompare(`${b.provider}/${b.model_id}/${b.field}`);
-          });
-
-          body.textContent = "";
-          const fragment = document.createDocumentFragment();
-          for (const finding of rows) {
-            const tr = document.createElement("tr");
-
-            const evidence = document.createElement("details");
-            const summary = document.createElement("summary");
-            summary.textContent = "Quote";
-            const quote = document.createElement("blockquote");
-            quote.textContent = finding.evidence.quote;
-            const source = document.createElement("a");
-            source.href = finding.evidence.url;
-            source.target = "_blank";
-            source.rel = "noreferrer";
-            source.textContent = "Primary source";
-            evidence.append(summary, quote, source);
-            if (finding.note) {
-              const note = document.createElement("p");
-              note.className = "audit-note";
-              note.textContent = finding.note;
-              evidence.appendChild(note);
-            }
-
-            const cells = [
-              label(finding.verdict),
-              finding.external,
-              `${finding.provider}/${finding.model_id}`,
-              finding.field,
-              fmt(finding.ours),
-              fmt(finding.theirs),
-            ];
-            for (const value of cells) {
-              const td = document.createElement("td");
-              td.textContent = value;
-              tr.appendChild(td);
-            }
-            const evidenceCell = document.createElement("td");
-            evidenceCell.appendChild(evidence);
-            tr.appendChild(evidenceCell);
-            fragment.appendChild(tr);
-          }
-          body.appendChild(fragment);
-        }
-
-        async function loadAudit() {
-          if (window.location.protocol === "file:") {
-            return loadInlineAudit();
-          }
-
-          try {
-            const response = await fetch("audit.json", { cache: "no-store" });
-            if (!response.ok) {
-              throw new Error(`audit.json returned ${response.status}`);
-            }
-            return await response.json();
-          } catch (error) {
-            return loadInlineAudit(error);
-          }
-        }
-
-        function loadInlineAudit(error) {
-          const fallback = document.querySelector("#modelwire-audit");
-          if (!fallback || !fallback.textContent.trim()) {
-            throw error || new Error("No embedded audit fallback found");
-          }
-          return JSON.parse(fallback.textContent);
-        }
-
-        async function init() {
-          try {
-            const data = await loadAudit();
-            const audit = (data.audits || [])[0] || { stats: {}, findings: [] };
-            const findings = audit.findings || [];
-            renderStats(audit);
-            renderCorrections(findings);
-            renderTable(findings);
-          } catch (error) {
-            statsEl.textContent = "Unable to load audit";
-            body.innerHTML = `<tr><td colspan="7">${error.message}</td></tr>`;
-          }
-        }
-
-        init();
-      })();
-    </script>
-    <script id="modelwire-audit" type="application/json">{"audits":[{"date":"2026-07-04","summary":"Independent verification of LiteLLM and models.dev metadata against ModelWire source-verified facts.","stats":{"models_compared":37,"external_model_pairs_compared":64,"mismatches":22,"modelwire_correct":15,"modelwire_wrong":2,"both_wrong":0,"ambiguous":5},"findings":[{"date":"2026-07-04","external":"litellm","provider":"google","model_id":"gemini-2.5-flash","field":"context_window_tokens","ours":1000000,"theirs":1048576,"verdict":"modelwire_wrong","evidence":{"url":"https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash","accessed_at":"2026-07-04T07:37:12Z","quote":"Gemini 2.5 Flash ... Model code gemini-2.5-flash ... Token limits ... Input token limit 1,048,576 Output token limit 65,536"},"note":"Corrected data/facts.json to the exact input token limit."},{"date":"2026-07-04","external":"modelsdev","provider":"google","model_id":"gemini-2.5-flash","field":"context_window_tokens","ours":1000000,"theirs":1048576,"verdict":"modelwire_wrong","evidence":{"url":"https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash","accessed_at":"2026-07-04T07:37:12Z","quote":"Gemini 2.5 Flash ... Model code gemini-2.5-flash ... Token limits ... Input token limit 1,048,576 Output token limit 65,536"},"note":"Corrected data/facts.json to the exact input token limit."},{"date":"2026-07-04","external":"litellm","provider":"google","model_id":"gemini-2.5-flash-native-audio-preview-12-2025","field":"pricing.input_per_mtok","ours":0.5,"theirs":0.3,"verdict":"modelwire_correct","evidence":{"url":"https://ai.google.dev/gemini-api/docs/pricing","accessed_at":"2026-07-04T07:37:12Z","quote":"Gemini 2.5 Flash Native Audio (Live API) gemini-2.5-flash-native-audio-preview-12-2025 ... Input price Free of charge $0.50 (text) $3.00 (audio / video) Output price ... $2.00 (text) $12.00 (audio)"}},{"date":"2026-07-04","external":"litellm","provider":"google","model_id":"gemini-2.5-flash-native-audio-preview-12-2025","field":"pricing.output_per_mtok","ours":2.0,"theirs":2.5,"verdict":"modelwire_correct","evidence":{"url":"https://ai.google.dev/gemini-api/docs/pricing","accessed_at":"2026-07-04T07:37:12Z","quote":"Gemini 2.5 Flash Native Audio (Live API) gemini-2.5-flash-native-audio-preview-12-2025 ... Input price Free of charge $0.50 (text) $3.00 (audio / video) Output price ... $2.00 (text) $12.00 (audio)"}},{"date":"2026-07-04","external":"litellm","provider":"google","model_id":"gemini-2.5-flash-preview-tts","field":"pricing.input_per_mtok","ours":0.5,"theirs":0.3,"verdict":"modelwire_correct","evidence":{"url":"https://ai.google.dev/gemini-api/docs/pricing","accessed_at":"2026-07-04T07:37:12Z","quote":"Gemini 2.5 Flash Preview TTS gemini-2.5-flash-preview-tts ... Input price Free of charge $0.50 (text) Output price Free of charge $10.00 (audio)"}},{"date":"2026-07-04","external":"litellm","provider":"google","model_id":"gemini-2.5-flash-preview-tts","field":"pricing.output_per_mtok","ours":10.0,"theirs":2.5,"verdict":"modelwire_correct","evidence":{"url":"https://ai.google.dev/gemini-api/docs/pricing","accessed_at":"2026-07-04T07:37:12Z","quote":"Gemini 2.5 Flash Preview TTS gemini-2.5-flash-preview-tts ... Input price Free of charge $0.50 (text) Output price Free of charge $10.00 (audio)"}},{"date":"2026-07-04","external":"modelsdev","provider":"mistral","model_id":"mistral-medium-latest","field":"pricing.input_per_mtok","ours":1.5,"theirs":0.4,"verdict":"modelwire_correct","evidence":{"url":"https://mistral.ai/pricing/api/","accessed_at":"2026-07-04T07:37:12Z","quote":"Mistral Medium 3.5 ... Input (/M tokens) $1.5 Output (/M tokens) $7.5 mistral-medium-latest"}},{"date":"2026-07-04","external":"modelsdev","provider":"mistral","model_id":"mistral-medium-latest","field":"pricing.output_per_mtok","ours":7.5,"theirs":2,"verdict":"modelwire_correct","evidence":{"url":"https://mistral.ai/pricing/api/","accessed_at":"2026-07-04T07:37:12Z","quote":"Mistral Medium 3.5 ... Input (/M tokens) $1.5 Output (/M tokens) $7.5 mistral-medium-latest"}},{"date":"2026-07-04","external":"litellm","provider":"mistral","model_id":"mistral-small-latest","field":"pricing.input_per_mtok","ours":0.15,"theirs":0.06,"verdict":"modelwire_correct","evidence":{"url":"https://mistral.ai/pricing/api/","accessed_at":"2026-07-04T07:37:12Z","quote":"Mistral Small 4 ... Input (/M tokens) $0.15 Output (/M tokens) $0.6 mistral-small-latest"}},{"date":"2026-07-04","external":"litellm","provider":"mistral","model_id":"mistral-small-latest","field":"pricing.output_per_mtok","ours":0.6,"theirs":0.18,"verdict":"modelwire_correct","evidence":{"url":"https://mistral.ai/pricing/api/","accessed_at":"2026-07-04T07:37:12Z","quote":"Mistral Small 4 ... Input (/M tokens) $0.15 Output (/M tokens) $0.6 mistral-small-latest"}},{"date":"2026-07-04","external":"litellm","provider":"mistral","model_id":"codestral-latest","field":"pricing.input_per_mtok","ours":0.3,"theirs":1.0,"verdict":"modelwire_correct","evidence":{"url":"https://mistral.ai/pricing/api/","accessed_at":"2026-07-04T07:37:12Z","quote":"Codestral ... Input (/M tokens) $0.3 Output (/M tokens) $0.9 codestral-latest"}},{"date":"2026-07-04","external":"litellm","provider":"mistral","model_id":"codestral-latest","field":"pricing.output_per_mtok","ours":0.9,"theirs":3.0,"verdict":"modelwire_correct","evidence":{"url":"https://mistral.ai/pricing/api/","accessed_at":"2026-07-04T07:37:12Z","quote":"Codestral ... Input (/M tokens) $0.3 Output (/M tokens) $0.9 codestral-latest"}},{"date":"2026-07-04","external":"litellm","provider":"xai","model_id":"grok-4.20-0309-reasoning","field":"pricing.input_per_mtok","ours":1.25,"theirs":2.0,"verdict":"modelwire_correct","evidence":{"url":"https://docs.x.ai/developers/pricing","accessed_at":"2026-07-04T07:37:12Z","quote":"Chat API Prices per 1M tokens Model Context Input Cached input Output ... grok-4.20-0309-reasoning 1M $1.25 $0.20 $2.50"}},{"date":"2026-07-04","external":"litellm","provider":"xai","model_id":"grok-4.20-0309-reasoning","field":"pricing.output_per_mtok","ours":2.5,"theirs":6.0,"verdict":"modelwire_correct","evidence":{"url":"https://docs.x.ai/developers/pricing","accessed_at":"2026-07-04T07:37:12Z","quote":"Chat API Prices per 1M tokens Model Context Input Cached input Output ... grok-4.20-0309-reasoning 1M $1.25 $0.20 $2.50"}},{"date":"2026-07-04","external":"litellm","provider":"xai","model_id":"grok-4.20-0309-reasoning","field":"context_window_tokens","ours":1000000,"theirs":2000000,"verdict":"modelwire_correct","evidence":{"url":"https://docs.x.ai/developers/pricing","accessed_at":"2026-07-04T07:37:12Z","quote":"Chat API Prices per 1M tokens Model Context Input Cached input Output ... grok-4.20-0309-reasoning 1M $1.25 $0.20 $2.50"}},{"date":"2026-07-04","external":"litellm","provider":"deepseek","model_id":"deepseek-v4-flash","field":"max_output_tokens","ours":384000,"theirs":8192,"verdict":"modelwire_correct","evidence":{"url":"https://api-docs.deepseek.com/quick_start/pricing","accessed_at":"2026-07-04T07:37:12Z","quote":"MODEL deepseek-v4-flash ... deepseek-v4-pro ... CONTEXT LENGTH 1M MAX OUTPUT MAXIMUM: 384K"}},{"date":"2026-07-04","external":"litellm","provider":"deepseek","model_id":"deepseek-v4-pro","field":"max_output_tokens","ours":384000,"theirs":8192,"verdict":"modelwire_correct","evidence":{"url":"https://api-docs.deepseek.com/quick_start/pricing","accessed_at":"2026-07-04T07:37:12Z","quote":"MODEL deepseek-v4-flash ... deepseek-v4-pro ... CONTEXT LENGTH 1M MAX OUTPUT MAXIMUM: 384K"}},{"date":"2026-07-04","external":"litellm","provider":"cohere","model_id":"command-r-plus-08-2024","field":"max_output_tokens","ours":4000,"theirs":4096,"verdict":"ambiguous","evidence":{"url":"https://docs.cohere.com/docs/models","accessed_at":"2026-07-04T07:37:12Z","quote":"command-r-plus-08-2024 Live ... Text 128k 4k"},"note":"The primary source states 4k rather than an exact integer, so both 4000 and 4096 are plausible normalizations."},{"date":"2026-07-04","external":"litellm","provider":"cohere","model_id":"command","field":"context_window_tokens","ours":4000,"theirs":4096,"verdict":"ambiguous","evidence":{"url":"https://docs.cohere.com/docs/models","accessed_at":"2026-07-04T07:37:12Z","quote":"command Deprecated Sept 15, 2025 ... Text 4k 4k"},"note":"The primary source states 4k rather than an exact integer, so both 4000 and 4096 are plausible normalizations."},{"date":"2026-07-04","external":"litellm","provider":"cohere","model_id":"command","field":"max_output_tokens","ours":4000,"theirs":4096,"verdict":"ambiguous","evidence":{"url":"https://docs.cohere.com/docs/models","accessed_at":"2026-07-04T07:37:12Z","quote":"command Deprecated Sept 15, 2025 ... Text 4k 4k"},"note":"The primary source states 4k rather than an exact integer, so both 4000 and 4096 are plausible normalizations."},{"date":"2026-07-04","external":"litellm","provider":"cohere","model_id":"command-light","field":"context_window_tokens","ours":4000,"theirs":4096,"verdict":"ambiguous","evidence":{"url":"https://docs.cohere.com/docs/models","accessed_at":"2026-07-04T07:37:12Z","quote":"command-light Deprecated Sept 15, 2025 ... Text 4k 4k"},"note":"The primary source states 4k rather than an exact integer, so both 4000 and 4096 are plausible normalizations."},{"date":"2026-07-04","external":"litellm","provider":"cohere","model_id":"command-light","field":"max_output_tokens","ours":4000,"theirs":4096,"verdict":"ambiguous","evidence":{"url":"https://docs.cohere.com/docs/models","accessed_at":"2026-07-04T07:37:12Z","quote":"command-light Deprecated Sept 15, 2025 ... Text 4k 4k"},"note":"The primary source states 4k rather than an exact integer, so both 4000 and 4096 are plausible normalizations."}]}]}</script>
+    <footer class="site-footer">
+      <a href="/corrections.html">corrections</a> |
+      <a href="/editorial.html">editorial</a> |
+      <a href="/cite.html">cite</a>
+    </footer>
   </body>
 </html>

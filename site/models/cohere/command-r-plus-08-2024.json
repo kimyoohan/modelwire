@@ -1,0 +1,52 @@
+{
+  "provider": "cohere",
+  "model_id": "command-r-plus-08-2024",
+  "display_name": "Command R+ 08-2024",
+  "status": "ga",
+  "release_date": null,
+  "deprecation_date": null,
+  "retirement_date": null,
+  "pricing": {
+    "input_per_mtok": 2.5,
+    "output_per_mtok": 10.0,
+    "cached_input_per_mtok": null,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": 128000,
+  "max_output_tokens": 4000,
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": null,
+  "sources": [
+    {
+      "url": "https://cohere.com/pricing",
+      "accessed_at": "2026-07-04T06:08:18Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok"
+      ],
+      "quote": "Command R+ 08-2024 pricing is $2.50/1M tokens for input and $10.00/1M tokens for output"
+    },
+    {
+      "url": "https://docs.cohere.com/docs/models",
+      "accessed_at": "2026-07-04T06:08:18Z",
+      "fields": [
+        "model_id",
+        "status",
+        "modalities",
+        "context_window_tokens",
+        "max_output_tokens"
+      ],
+      "quote": "`command-r-plus-08-2024 `Live `command-r-plus-08-2024` is an update of the Command R+ model, delivered in August 2024. Find more information here Text 128k 4k"
+    }
+  ],
+  "verified_at": "2026-07-04T06:08:18Z",
+  "notes": "Listed as legacy on Cohere pricing page",
+  "permalink": "/models/cohere/command-r-plus-08-2024.html"
+}

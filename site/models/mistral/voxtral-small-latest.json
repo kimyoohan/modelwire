@@ -1,0 +1,42 @@
+{
+  "provider": "mistral",
+  "model_id": "voxtral-small-latest",
+  "display_name": "Voxtral Small",
+  "status": "ga",
+  "release_date": null,
+  "deprecation_date": null,
+  "retirement_date": null,
+  "pricing": {
+    "input_per_mtok": 0.1,
+    "output_per_mtok": 0.4,
+    "cached_input_per_mtok": null,
+    "batch_discount_pct": null
+  },
+  "context_window_tokens": null,
+  "max_output_tokens": null,
+  "modalities": {
+    "input": [
+      "text",
+      "audio"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "knowledge_cutoff": null,
+  "sources": [
+    {
+      "url": "https://mistral.ai/pricing/api/",
+      "accessed_at": "2026-07-04T05:55:32Z",
+      "fields": [
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok",
+        "modalities"
+      ],
+      "quote": "Voxtral Small ... Audio Input (per min / per M tok) $0.004 Text Input (per min / per M tok) $0.1 Output (/M tokens) $0.4 Available on `/v1/chat/completions` voxtral-small-latest"
+    }
+  ],
+  "verified_at": "2026-07-04T05:55:32Z",
+  "notes": null,
+  "permalink": "/models/mistral/voxtral-small-latest.html"
+}
