@@ -888,6 +888,492 @@
           "model": "kimi-k2.5"
         }
       ]
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-5.2",
+      "litellm": [],
+      "modelsdev": [
+        {
+          "provider": "alibaba-cn",
+          "model": "glm-5.2"
+        },
+        {
+          "provider": "alibaba-token-plan-cn",
+          "model": "glm-5.2"
+        },
+        {
+          "provider": "zhipuai",
+          "model": "glm-5.2"
+        },
+        {
+          "provider": "cortecs",
+          "model": "glm-5.2"
+        },
+        {
+          "provider": "opencode-go",
+          "model": "glm-5.2"
+        },
+        {
+          "provider": "neuralwatt",
+          "model": "glm-5.2"
+        },
+        {
+          "provider": "zai",
+          "model": "glm-5.2"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "glm-5.2"
+        },
+        {
+          "provider": "ollama-cloud",
+          "model": "glm-5.2"
+        },
+        {
+          "provider": "zai-coding-plan",
+          "model": "glm-5.2"
+        },
+        {
+          "provider": "opencode",
+          "model": "glm-5.2"
+        },
+        {
+          "provider": "scaleway",
+          "model": "glm-5.2"
+        },
+        {
+          "provider": "alibaba-token-plan",
+          "model": "glm-5.2"
+        },
+        {
+          "provider": "crof",
+          "model": "glm-5.2"
+        },
+        {
+          "provider": "aihubmix",
+          "model": "glm-5.2"
+        },
+        {
+          "provider": "zhipuai-coding-plan",
+          "model": "glm-5.2"
+        }
+      ]
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-5.1",
+      "litellm": [
+        "zai/glm-5.1"
+      ],
+      "modelsdev": [
+        {
+          "provider": "alibaba-cn",
+          "model": "glm-5.1"
+        },
+        {
+          "provider": "alibaba-token-plan-cn",
+          "model": "glm-5.1"
+        },
+        {
+          "provider": "302ai",
+          "model": "glm-5.1"
+        },
+        {
+          "provider": "zhipuai",
+          "model": "glm-5.1"
+        },
+        {
+          "provider": "cortecs",
+          "model": "glm-5.1"
+        },
+        {
+          "provider": "auriko",
+          "model": "glm-5.1"
+        },
+        {
+          "provider": "opencode-go",
+          "model": "glm-5.1"
+        },
+        {
+          "provider": "zai",
+          "model": "glm-5.1"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "glm-5.1"
+        },
+        {
+          "provider": "ollama-cloud",
+          "model": "glm-5.1"
+        },
+        {
+          "provider": "zai-coding-plan",
+          "model": "glm-5.1"
+        },
+        {
+          "provider": "opencode",
+          "model": "glm-5.1"
+        },
+        {
+          "provider": "dinference",
+          "model": "glm-5.1"
+        },
+        {
+          "provider": "alibaba-token-plan",
+          "model": "glm-5.1"
+        },
+        {
+          "provider": "crof",
+          "model": "glm-5.1"
+        },
+        {
+          "provider": "zhipuai-coding-plan",
+          "model": "glm-5.1"
+        }
+      ]
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-5",
+      "litellm": [],
+      "modelsdev": [
+        {
+          "provider": "alibaba-cn",
+          "model": "glm-5"
+        },
+        {
+          "provider": "alibaba-token-plan-cn",
+          "model": "glm-5"
+        },
+        {
+          "provider": "302ai",
+          "model": "glm-5"
+        },
+        {
+          "provider": "zhipuai",
+          "model": "glm-5"
+        },
+        {
+          "provider": "cortecs",
+          "model": "glm-5"
+        },
+        {
+          "provider": "opencode-go",
+          "model": "glm-5"
+        },
+        {
+          "provider": "digitalocean",
+          "model": "glm-5"
+        },
+        {
+          "provider": "zai",
+          "model": "glm-5"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "glm-5"
+        },
+        {
+          "provider": "alibaba-coding-plan-cn",
+          "model": "glm-5"
+        },
+        {
+          "provider": "ollama-cloud",
+          "model": "glm-5"
+        },
+        {
+          "provider": "tencent-coding-plan",
+          "model": "glm-5"
+        },
+        {
+          "provider": "opencode",
+          "model": "glm-5"
+        },
+        {
+          "provider": "alibaba-coding-plan",
+          "model": "glm-5"
+        },
+        {
+          "provider": "dinference",
+          "model": "glm-5"
+        },
+        {
+          "provider": "alibaba-token-plan",
+          "model": "glm-5"
+        },
+        {
+          "provider": "crof",
+          "model": "glm-5"
+        }
+      ]
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-5-turbo",
+      "litellm": [],
+      "modelsdev": [
+        {
+          "provider": "302ai",
+          "model": "glm-5-turbo"
+        },
+        {
+          "provider": "cortecs",
+          "model": "glm-5-turbo"
+        },
+        {
+          "provider": "zai",
+          "model": "glm-5-turbo"
+        },
+        {
+          "provider": "zai-coding-plan",
+          "model": "glm-5-turbo"
+        },
+        {
+          "provider": "zhipuai-coding-plan",
+          "model": "glm-5-turbo"
+        }
+      ]
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-4.7",
+      "litellm": [
+        "zai/glm-4.7"
+      ],
+      "modelsdev": [
+        {
+          "provider": "302ai",
+          "model": "glm-4.7"
+        },
+        {
+          "provider": "zhipuai",
+          "model": "glm-4.7"
+        },
+        {
+          "provider": "cortecs",
+          "model": "glm-4.7"
+        },
+        {
+          "provider": "zai",
+          "model": "glm-4.7"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "glm-4.7"
+        },
+        {
+          "provider": "alibaba-coding-plan-cn",
+          "model": "glm-4.7"
+        },
+        {
+          "provider": "ollama-cloud",
+          "model": "glm-4.7"
+        },
+        {
+          "provider": "zai-coding-plan",
+          "model": "glm-4.7"
+        },
+        {
+          "provider": "opencode",
+          "model": "glm-4.7"
+        },
+        {
+          "provider": "alibaba-coding-plan",
+          "model": "glm-4.7"
+        },
+        {
+          "provider": "dinference",
+          "model": "glm-4.7"
+        },
+        {
+          "provider": "crof",
+          "model": "glm-4.7"
+        },
+        {
+          "provider": "zhipuai-coding-plan",
+          "model": "glm-4.7"
+        }
+      ]
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-4.7-flashx",
+      "litellm": [],
+      "modelsdev": [
+        {
+          "provider": "302ai",
+          "model": "glm-4.7-flashx"
+        },
+        {
+          "provider": "zhipuai",
+          "model": "glm-4.7-flashx"
+        },
+        {
+          "provider": "zai",
+          "model": "glm-4.7-flashx"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "glm-4.7-flashx"
+        }
+      ]
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-4.6",
+      "litellm": [
+        "zai/glm-4.6"
+      ],
+      "modelsdev": [
+        {
+          "provider": "302ai",
+          "model": "glm-4.6"
+        },
+        {
+          "provider": "zhipuai",
+          "model": "glm-4.6"
+        },
+        {
+          "provider": "helicone",
+          "model": "glm-4.6"
+        },
+        {
+          "provider": "zai",
+          "model": "glm-4.6"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "glm-4.6"
+        },
+        {
+          "provider": "ollama-cloud",
+          "model": "glm-4.6"
+        },
+        {
+          "provider": "opencode",
+          "model": "glm-4.6"
+        },
+        {
+          "provider": "iflowcn",
+          "model": "glm-4.6"
+        }
+      ]
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-4.5",
+      "litellm": [
+        "zai/glm-4.5"
+      ],
+      "modelsdev": [
+        {
+          "provider": "qiniu-ai",
+          "model": "glm-4.5"
+        },
+        {
+          "provider": "302ai",
+          "model": "glm-4.5"
+        },
+        {
+          "provider": "zhipuai",
+          "model": "glm-4.5"
+        },
+        {
+          "provider": "cortecs",
+          "model": "glm-4.5"
+        },
+        {
+          "provider": "zai",
+          "model": "glm-4.5"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "glm-4.5"
+        }
+      ]
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-4.5-x",
+      "litellm": [],
+      "modelsdev": [
+        {
+          "provider": "302ai",
+          "model": "glm-4.5-x"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "glm-4.5-x"
+        }
+      ]
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-4.5-air",
+      "litellm": [
+        "zai/glm-4.5-air"
+      ],
+      "modelsdev": [
+        {
+          "provider": "qiniu-ai",
+          "model": "glm-4.5-air"
+        },
+        {
+          "provider": "302ai",
+          "model": "glm-4.5-air"
+        },
+        {
+          "provider": "zhipuai",
+          "model": "glm-4.5-air"
+        },
+        {
+          "provider": "cortecs",
+          "model": "glm-4.5-air"
+        },
+        {
+          "provider": "zai",
+          "model": "glm-4.5-air"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "glm-4.5-air"
+        },
+        {
+          "provider": "zai-coding-plan",
+          "model": "glm-4.5-air"
+        },
+        {
+          "provider": "zhipuai-coding-plan",
+          "model": "glm-4.5-air"
+        }
+      ]
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-4.5-airx",
+      "litellm": [],
+      "modelsdev": [
+        {
+          "provider": "302ai",
+          "model": "glm-4.5-airx"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "glm-4.5-airx"
+        }
+      ]
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-4-32b-0414-128k",
+      "litellm": [],
+      "modelsdev": [
+        {
+          "provider": "llmgateway",
+          "model": "glm-4-32b-0414-128k"
+        }
+      ]
     }
   ]
 }
