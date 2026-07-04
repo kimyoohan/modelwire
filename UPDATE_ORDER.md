@@ -25,6 +25,11 @@ unconfirmed, never guess. Never reconstruct a table from memory.
    adjudicate new mismatches against primary sources, and append a new audit entry to
    `data/audit.json`.
 5. **Gaps**: update gaps.md (remove resolved lines, add new ones).
+5b. **Evidence-debt paydown**: run `py scripts/logic_check.py`. Pick ~25 UNSUPPORTED
+   warnings (rotate providers week to week) and re-capture quotes from the live cited
+   pages so the stored quote CONTAINS the stored value (values themselves only change
+   via step 2 rules). Remove the resolved keys from ops/logic-baseline.json so the
+   baseline shrinks every week toward zero.
 6. `py scripts/validate.py` must exit 0; run `py scripts/build_site.py`.
 7. Commit everything with message `Weekly refresh <date>`. **DO NOT PUSH** — an independent
    verification pass (VERIFY_ORDER.md) pushes only after cross-checking.
