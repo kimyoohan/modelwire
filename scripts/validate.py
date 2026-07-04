@@ -11,8 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_PATH = ROOT / "schema" / "model_fact.schema.json"
 FACTS_PATH = ROOT / "data" / "facts.json"
 
-MIN_ENTRIES = 40
-MIN_PROVIDERS = 6
+MIN_ENTRIES = 100
+MIN_PROVIDERS = 13
 PRICING_FIELDS = {
     "pricing.input_per_mtok",
     "pricing.output_per_mtok",

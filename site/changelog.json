@@ -2,6 +2,428 @@
   "releases": [
     {
       "date": "2026-07-04",
+      "version": "0.3",
+      "summary": "Coverage expansion",
+      "entries": [
+        {
+          "type": "added",
+          "provider": "alibaba",
+          "model_id": "qwen3-max"
+        },
+        {
+          "type": "added",
+          "provider": "alibaba",
+          "model_id": "qwen3-max-2026-01-23"
+        },
+        {
+          "type": "added",
+          "provider": "alibaba",
+          "model_id": "qwen3.6-max-preview"
+        },
+        {
+          "type": "added",
+          "provider": "alibaba",
+          "model_id": "qwen3.7-max"
+        },
+        {
+          "type": "added",
+          "provider": "alibaba",
+          "model_id": "qwen3.7-max-2026-05-17"
+        },
+        {
+          "type": "added",
+          "provider": "alibaba",
+          "model_id": "qwen3.7-max-2026-05-20"
+        },
+        {
+          "type": "added",
+          "provider": "alibaba",
+          "model_id": "qwen3.7-max-preview"
+        },
+        {
+          "type": "added",
+          "provider": "amazon",
+          "model_id": "amazon.nova-lite-v1:0"
+        },
+        {
+          "type": "added",
+          "provider": "amazon",
+          "model_id": "amazon.nova-micro-v1:0"
+        },
+        {
+          "type": "added",
+          "provider": "amazon",
+          "model_id": "amazon.nova-premier-v1:0"
+        },
+        {
+          "type": "added",
+          "provider": "amazon",
+          "model_id": "amazon.nova-pro-v1:0"
+        },
+        {
+          "type": "added",
+          "provider": "cohere",
+          "model_id": "command-a-03-2025"
+        },
+        {
+          "type": "added",
+          "provider": "cohere",
+          "model_id": "command-a-plus-05-2026"
+        },
+        {
+          "type": "added",
+          "provider": "cohere",
+          "model_id": "command-a-reasoning-08-2025"
+        },
+        {
+          "type": "added",
+          "provider": "cohere",
+          "model_id": "command-a-translate-08-2025"
+        },
+        {
+          "type": "added",
+          "provider": "cohere",
+          "model_id": "command-a-vision-07-2025"
+        },
+        {
+          "type": "added",
+          "provider": "cohere",
+          "model_id": "command-r-08-2024"
+        },
+        {
+          "type": "added",
+          "provider": "cohere",
+          "model_id": "command-r7b-12-2024"
+        },
+        {
+          "type": "added",
+          "provider": "cohere",
+          "model_id": "tiny-aya-global"
+        },
+        {
+          "type": "added",
+          "provider": "fireworks",
+          "model_id": "deepseek-v4-flash"
+        },
+        {
+          "type": "added",
+          "provider": "fireworks",
+          "model_id": "deepseek-v4-pro"
+        },
+        {
+          "type": "added",
+          "provider": "fireworks",
+          "model_id": "glm-5.1"
+        },
+        {
+          "type": "added",
+          "provider": "fireworks",
+          "model_id": "glm-5.1-fast"
+        },
+        {
+          "type": "added",
+          "provider": "fireworks",
+          "model_id": "glm-5.2"
+        },
+        {
+          "type": "added",
+          "provider": "fireworks",
+          "model_id": "glm-5.2-fast"
+        },
+        {
+          "type": "added",
+          "provider": "fireworks",
+          "model_id": "kimi-k2.6"
+        },
+        {
+          "type": "added",
+          "provider": "fireworks",
+          "model_id": "kimi-k2.6-fast"
+        },
+        {
+          "type": "added",
+          "provider": "fireworks",
+          "model_id": "kimi-k2.7-code"
+        },
+        {
+          "type": "added",
+          "provider": "fireworks",
+          "model_id": "kimi-k2.7-code-fast"
+        },
+        {
+          "type": "added",
+          "provider": "fireworks",
+          "model_id": "minimax-m2.7"
+        },
+        {
+          "type": "added",
+          "provider": "fireworks",
+          "model_id": "minimax-m3"
+        },
+        {
+          "type": "added",
+          "provider": "fireworks",
+          "model_id": "openai-gpt-oss-120b"
+        },
+        {
+          "type": "added",
+          "provider": "fireworks",
+          "model_id": "openai-gpt-oss-20b"
+        },
+        {
+          "type": "added",
+          "provider": "fireworks",
+          "model_id": "qwen-3.7-plus"
+        },
+        {
+          "type": "added",
+          "provider": "groq",
+          "model_id": "llama-3.1-8b-instant"
+        },
+        {
+          "type": "added",
+          "provider": "groq",
+          "model_id": "llama-3.3-70b-versatile"
+        },
+        {
+          "type": "added",
+          "provider": "groq",
+          "model_id": "openai/gpt-oss-120b"
+        },
+        {
+          "type": "added",
+          "provider": "groq",
+          "model_id": "openai/gpt-oss-20b"
+        },
+        {
+          "type": "added",
+          "provider": "minimax",
+          "model_id": "minimax-m2"
+        },
+        {
+          "type": "added",
+          "provider": "minimax",
+          "model_id": "minimax-m2.1"
+        },
+        {
+          "type": "added",
+          "provider": "minimax",
+          "model_id": "minimax-m2.5"
+        },
+        {
+          "type": "added",
+          "provider": "minimax",
+          "model_id": "minimax-m2.7"
+        },
+        {
+          "type": "added",
+          "provider": "minimax",
+          "model_id": "minimax-m3"
+        },
+        {
+          "type": "added",
+          "provider": "moonshot",
+          "model_id": "kimi-k2.5"
+        },
+        {
+          "type": "added",
+          "provider": "moonshot",
+          "model_id": "kimi-k2.6"
+        },
+        {
+          "type": "added",
+          "provider": "moonshot",
+          "model_id": "kimi-k2.7-code"
+        },
+        {
+          "type": "added",
+          "provider": "perplexity",
+          "model_id": "perplexity/sonar"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "cogito-v2.1-671b"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "deepseek-v4-pro"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "gemma-3n-e4b-instruct"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "gemma-4-31b"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "gemma-4-31b-it-pearl"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "glm-5.1"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "glm-5.2"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "gpt-oss-120b"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "gpt-oss-20b"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "kimi-k2.6"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "kimi-k2.7-code"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "lfm2-24b-a2b"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "llama-3.3-70b"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "minimax-m2.5"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "minimax-m2.7"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "minimax-m3"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "nvidia-nemotron-3-ultra"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "qwen3-235b-a22b-fp8-throughput"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "qwen3.5-397b-a17b"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "qwen3.5-9b"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "qwen3.6-plus"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "qwen3.7-max"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "qwen3.7-plus"
+        },
+        {
+          "type": "added",
+          "provider": "together",
+          "model_id": "rnj-1-instruct"
+        },
+        {
+          "type": "added",
+          "provider": "zhipu",
+          "model_id": "glm-4-32b-0414-128k"
+        },
+        {
+          "type": "added",
+          "provider": "zhipu",
+          "model_id": "glm-4.5"
+        },
+        {
+          "type": "added",
+          "provider": "zhipu",
+          "model_id": "glm-4.5-air"
+        },
+        {
+          "type": "added",
+          "provider": "zhipu",
+          "model_id": "glm-4.5-airx"
+        },
+        {
+          "type": "added",
+          "provider": "zhipu",
+          "model_id": "glm-4.5-x"
+        },
+        {
+          "type": "added",
+          "provider": "zhipu",
+          "model_id": "glm-4.6"
+        },
+        {
+          "type": "added",
+          "provider": "zhipu",
+          "model_id": "glm-4.7"
+        },
+        {
+          "type": "added",
+          "provider": "zhipu",
+          "model_id": "glm-4.7-flashx"
+        },
+        {
+          "type": "added",
+          "provider": "zhipu",
+          "model_id": "glm-5"
+        },
+        {
+          "type": "added",
+          "provider": "zhipu",
+          "model_id": "glm-5-turbo"
+        },
+        {
+          "type": "added",
+          "provider": "zhipu",
+          "model_id": "glm-5.1"
+        },
+        {
+          "type": "added",
+          "provider": "zhipu",
+          "model_id": "glm-5.2"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
       "version": "0.2",
       "summary": "External dataset audit self-correction: Gemini 2.5 Flash exact context limit",
       "entries": [

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-04T07:55:34Z",
-  "count": 40,
-  "version": "0.2",
+  "generated_at": "2026-07-04T08:15:02Z",
+  "count": 123,
+  "version": "0.3",
   "models": [
     {
       "provider": "openai",
@@ -1941,6 +1941,3420 @@
       ],
       "verified_at": "2026-07-04T05:55:32Z",
       "notes": null
+    },
+    {
+      "provider": "amazon",
+      "model_id": "amazon.nova-premier-v1:0",
+      "display_name": "Amazon Nova Premier",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 2.5,
+        "output_per_mtok": 12.5,
+        "cached_input_per_mtok": 0.625,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 1000000,
+      "max_output_tokens": 10000,
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://aws.amazon.com/bedrock/pricing/",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Amazon Nova Premier $2.50 per 1M input tokens $12.50 per 1M output tokens; prompt cache read $0.625 per 1M tokens in us-east-1 on-demand."
+        },
+        {
+          "url": "https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "model_id",
+            "modalities",
+            "context_window_tokens",
+            "max_output_tokens"
+          ],
+          "quote": "Model ID amazon.nova-premier-v1:0 amazon.nova-pro-v1:0 amazon.nova-lite-v1:0 amazon.nova-micro-v1:0 ... Input modalities Text, Image, Video Text, Image, Video Text, Image, Video Text ... Output Modalities Text Text Text Text ... Context Window 1M 300k 300k 128k ... Max Output Tokens 10K 10k 10k 10k"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "AWS Bedrock us-east-1 on-demand Standard tier; price table exposed on AWS Bedrock pricing."
+    },
+    {
+      "provider": "amazon",
+      "model_id": "amazon.nova-pro-v1:0",
+      "display_name": "Amazon Nova Pro",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.8,
+        "output_per_mtok": 3.2,
+        "cached_input_per_mtok": 0.2,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 300000,
+      "max_output_tokens": 10000,
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://aws.amazon.com/bedrock/pricing/",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Amazon Nova Pro $0.80 per 1M input tokens $3.20 per 1M output tokens; prompt cache read $0.20 per 1M tokens in us-east-1 on-demand."
+        },
+        {
+          "url": "https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "model_id",
+            "modalities",
+            "context_window_tokens",
+            "max_output_tokens"
+          ],
+          "quote": "Model ID amazon.nova-premier-v1:0 amazon.nova-pro-v1:0 amazon.nova-lite-v1:0 amazon.nova-micro-v1:0 ... Input modalities Text, Image, Video Text, Image, Video Text, Image, Video Text ... Output Modalities Text Text Text Text ... Context Window 1M 300k 300k 128k ... Max Output Tokens 10K 10k 10k 10k"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "AWS Bedrock us-east-1 on-demand Standard tier; price table exposed on AWS Bedrock pricing."
+    },
+    {
+      "provider": "amazon",
+      "model_id": "amazon.nova-lite-v1:0",
+      "display_name": "Amazon Nova Lite",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.06,
+        "output_per_mtok": 0.24,
+        "cached_input_per_mtok": 0.015,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 300000,
+      "max_output_tokens": 10000,
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://aws.amazon.com/bedrock/pricing/",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Amazon Nova Lite $0.06 per 1M input tokens $0.24 per 1M output tokens; prompt cache read $0.015 per 1M tokens in us-east-1 on-demand."
+        },
+        {
+          "url": "https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "model_id",
+            "modalities",
+            "context_window_tokens",
+            "max_output_tokens"
+          ],
+          "quote": "Model ID amazon.nova-premier-v1:0 amazon.nova-pro-v1:0 amazon.nova-lite-v1:0 amazon.nova-micro-v1:0 ... Input modalities Text, Image, Video Text, Image, Video Text, Image, Video Text ... Output Modalities Text Text Text Text ... Context Window 1M 300k 300k 128k ... Max Output Tokens 10K 10k 10k 10k"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "AWS Bedrock us-east-1 on-demand Standard tier; price table exposed on AWS Bedrock pricing."
+    },
+    {
+      "provider": "amazon",
+      "model_id": "amazon.nova-micro-v1:0",
+      "display_name": "Amazon Nova Micro",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.035,
+        "output_per_mtok": 0.14,
+        "cached_input_per_mtok": 0.00875,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 128000,
+      "max_output_tokens": 10000,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://aws.amazon.com/bedrock/pricing/",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Amazon Nova Micro $0.035 per 1M input tokens $0.14 per 1M output tokens; prompt cache read $0.00875 per 1M tokens in us-east-1 on-demand."
+        },
+        {
+          "url": "https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "model_id",
+            "modalities",
+            "context_window_tokens",
+            "max_output_tokens"
+          ],
+          "quote": "Model ID amazon.nova-premier-v1:0 amazon.nova-pro-v1:0 amazon.nova-lite-v1:0 amazon.nova-micro-v1:0 ... Input modalities Text, Image, Video Text, Image, Video Text, Image, Video Text ... Output Modalities Text Text Text Text ... Context Window 1M 300k 300k 128k ... Max Output Tokens 10K 10k 10k 10k"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "AWS Bedrock us-east-1 on-demand Standard tier; price table exposed on AWS Bedrock pricing."
+    },
+    {
+      "provider": "alibaba",
+      "model_id": "qwen3.7-max",
+      "display_name": "Qwen3.7 Max",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 2.5,
+        "output_per_mtok": 7.5,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 1000000,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "context_window_tokens"
+          ],
+          "quote": "Model ID ... qwen3.7-max International Non-Thinking and Thinking modes 0<Token<=1M $2.5 $7.5 1 million tokens qwen3.7-max-2026-05-20 ... $2.5 $7.5 1 million tokens qwen3.7-max-preview ... $2.5 $7.5 1 million tokens qwen3.7-max-2026-05-17 ... $2.5 $7.5 1 million tokens"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "International Model Studio price; base 0<Token<=1M tier recorded."
+    },
+    {
+      "provider": "alibaba",
+      "model_id": "qwen3.7-max-2026-05-20",
+      "display_name": "Qwen3.7 Max 2026-05-20",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 2.5,
+        "output_per_mtok": 7.5,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 1000000,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "context_window_tokens"
+          ],
+          "quote": "Model ID ... qwen3.7-max International Non-Thinking and Thinking modes 0<Token<=1M $2.5 $7.5 1 million tokens qwen3.7-max-2026-05-20 ... $2.5 $7.5 1 million tokens qwen3.7-max-preview ... $2.5 $7.5 1 million tokens qwen3.7-max-2026-05-17 ... $2.5 $7.5 1 million tokens"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "International Model Studio price; base 0<Token<=1M tier recorded."
+    },
+    {
+      "provider": "alibaba",
+      "model_id": "qwen3.7-max-preview",
+      "display_name": "Qwen3.7 Max Preview",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 2.5,
+        "output_per_mtok": 7.5,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 1000000,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "context_window_tokens"
+          ],
+          "quote": "Model ID ... qwen3.7-max International Non-Thinking and Thinking modes 0<Token<=1M $2.5 $7.5 1 million tokens qwen3.7-max-2026-05-20 ... $2.5 $7.5 1 million tokens qwen3.7-max-preview ... $2.5 $7.5 1 million tokens qwen3.7-max-2026-05-17 ... $2.5 $7.5 1 million tokens"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "International Model Studio price; base 0<Token<=1M tier recorded."
+    },
+    {
+      "provider": "alibaba",
+      "model_id": "qwen3.7-max-2026-05-17",
+      "display_name": "Qwen3.7 Max 2026-05-17",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 2.5,
+        "output_per_mtok": 7.5,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 1000000,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "context_window_tokens"
+          ],
+          "quote": "Model ID ... qwen3.7-max International Non-Thinking and Thinking modes 0<Token<=1M $2.5 $7.5 1 million tokens qwen3.7-max-2026-05-20 ... $2.5 $7.5 1 million tokens qwen3.7-max-preview ... $2.5 $7.5 1 million tokens qwen3.7-max-2026-05-17 ... $2.5 $7.5 1 million tokens"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "International Model Studio price; base 0<Token<=1M tier recorded."
+    },
+    {
+      "provider": "alibaba",
+      "model_id": "qwen3.6-max-preview",
+      "display_name": "Qwen3.6 Max Preview",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.3,
+        "output_per_mtok": 7.8,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 256000,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "context_window_tokens"
+          ],
+          "quote": "qwen3.6-max-preview International Non-Thinking and Thinking modes 0<Token<=128K $1.3 $7.8 1 million tokens 128K<Token<=256K $2 $12"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "International Model Studio price; base 0<Token<=128K tier recorded; higher tiers noted in quote."
+    },
+    {
+      "provider": "alibaba",
+      "model_id": "qwen3-max",
+      "display_name": "Qwen3 Max",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.2,
+        "output_per_mtok": 6.0,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 256000,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "context_window_tokens"
+          ],
+          "quote": "qwen3-max International Non-Thinking and Thinking modes 0<Token<=32K $1.2 $6 1 million tokens 32K<Token<=128K $2.4 $12 128K<Token<=256K $3 $15 qwen3-max-2026-01-23 ... $1.2 $6"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "International Model Studio price; base 0<Token<=32K tier recorded; higher tiers noted in quote."
+    },
+    {
+      "provider": "alibaba",
+      "model_id": "qwen3-max-2026-01-23",
+      "display_name": "Qwen3 Max 2026-01-23",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.2,
+        "output_per_mtok": 6.0,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 256000,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "context_window_tokens"
+          ],
+          "quote": "qwen3-max International Non-Thinking and Thinking modes 0<Token<=32K $1.2 $6 1 million tokens 32K<Token<=128K $2.4 $12 128K<Token<=256K $3 $15 qwen3-max-2026-01-23 ... $1.2 $6"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "International Model Studio price; base 0<Token<=32K tier recorded; higher tiers noted in quote."
+    },
+    {
+      "provider": "moonshot",
+      "model_id": "kimi-k2.7-code",
+      "display_name": "Kimi K2.7 Code",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.95,
+        "output_per_mtok": 4.0,
+        "cached_input_per_mtok": 0.19,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 256000,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://platform.kimi.ai/",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "K2.7 Code Kimi K2.7 Code ... Cache Hit $0.19 / MTok Input $0.95 / MTok Output $4.00 / MTok"
+        },
+        {
+          "url": "https://platform.kimi.ai/docs/pricing/chat-k27-code",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "modalities",
+            "context_window_tokens"
+          ],
+          "quote": "Kimi K2.7 Code ... supports text, image, video input ... Context length 256k"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": null
+    },
+    {
+      "provider": "moonshot",
+      "model_id": "kimi-k2.6",
+      "display_name": "Kimi K2.6",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.95,
+        "output_per_mtok": 4.0,
+        "cached_input_per_mtok": 0.16,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 256000,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://platform.kimi.ai/",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "K2.6 kimi-k2.6 ... Cache Hit $0.16 / MTok Input $0.95 / MTok Output $4.00 / MTok"
+        },
+        {
+          "url": "https://platform.kimi.ai/docs/pricing/chat-k26",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "modalities",
+            "context_window_tokens"
+          ],
+          "quote": "Kimi K2.6 ... supports text, image, and video input ... Context length 256k"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": null
+    },
+    {
+      "provider": "moonshot",
+      "model_id": "kimi-k2.5",
+      "display_name": "Kimi K2.5",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.6,
+        "output_per_mtok": 3.0,
+        "cached_input_per_mtok": 0.1,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 256000,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://platform.kimi.ai/",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "K2.5 kimi-k2.5 ... Cache Hit $0.10 / MTok Input $0.60 / MTok Output $3.00 / MTok"
+        },
+        {
+          "url": "https://platform.kimi.ai/docs/pricing/chat-k25",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "modalities",
+            "context_window_tokens"
+          ],
+          "quote": "Kimi K2.5 supports text, image, and video input ... Context length 256k"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": null
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-5.2",
+      "display_name": "GLM-5.2",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.4,
+        "output_per_mtok": 4.4,
+        "cached_input_per_mtok": 0.26,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Prices per 1M tokens. Model Input Cached Input Cached Input Storage Output GLM-5.2$1.4$0.26 Limited-time Free$4.4 GLM-5.1$1.4$0.26 Limited-time Free$4.4 GLM-5$1$0.2 Limited-time Free$3.2 GLM-5-Turbo$1.2$0.24 Limited-time Free$4.0 GLM-4.7$0.6$0.11 Limited-time Free$2.2 GLM-4.7-FlashX$0.07$0.01 Limited-time Free$0.4 GLM-4.6$0.6$0.11 Limited-time Free$2.2 GLM-4.5$0.6$0.11 Limited-time Free$2.2 GLM-4.5-X$2.2$0.45 Limited-time Free$8.9 GLM-4.5-Air$0.2$0.03 Limited-time Free$1.1 GLM-4.5-AirX$1.1$0.22 Limited-time Free$4.5 GLM-4-32B-0414-128K$0.1--$0.1"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-5.1",
+      "display_name": "GLM-5.1",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.4,
+        "output_per_mtok": 4.4,
+        "cached_input_per_mtok": 0.26,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Prices per 1M tokens. Model Input Cached Input Cached Input Storage Output GLM-5.2$1.4$0.26 Limited-time Free$4.4 GLM-5.1$1.4$0.26 Limited-time Free$4.4 GLM-5$1$0.2 Limited-time Free$3.2 GLM-5-Turbo$1.2$0.24 Limited-time Free$4.0 GLM-4.7$0.6$0.11 Limited-time Free$2.2 GLM-4.7-FlashX$0.07$0.01 Limited-time Free$0.4 GLM-4.6$0.6$0.11 Limited-time Free$2.2 GLM-4.5$0.6$0.11 Limited-time Free$2.2 GLM-4.5-X$2.2$0.45 Limited-time Free$8.9 GLM-4.5-Air$0.2$0.03 Limited-time Free$1.1 GLM-4.5-AirX$1.1$0.22 Limited-time Free$4.5 GLM-4-32B-0414-128K$0.1--$0.1"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-5",
+      "display_name": "GLM-5",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.0,
+        "output_per_mtok": 3.2,
+        "cached_input_per_mtok": 0.2,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Prices per 1M tokens. Model Input Cached Input Cached Input Storage Output GLM-5.2$1.4$0.26 Limited-time Free$4.4 GLM-5.1$1.4$0.26 Limited-time Free$4.4 GLM-5$1$0.2 Limited-time Free$3.2 GLM-5-Turbo$1.2$0.24 Limited-time Free$4.0 GLM-4.7$0.6$0.11 Limited-time Free$2.2 GLM-4.7-FlashX$0.07$0.01 Limited-time Free$0.4 GLM-4.6$0.6$0.11 Limited-time Free$2.2 GLM-4.5$0.6$0.11 Limited-time Free$2.2 GLM-4.5-X$2.2$0.45 Limited-time Free$8.9 GLM-4.5-Air$0.2$0.03 Limited-time Free$1.1 GLM-4.5-AirX$1.1$0.22 Limited-time Free$4.5 GLM-4-32B-0414-128K$0.1--$0.1"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-5-turbo",
+      "display_name": "GLM-5 Turbo",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.2,
+        "output_per_mtok": 4.0,
+        "cached_input_per_mtok": 0.24,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Prices per 1M tokens. Model Input Cached Input Cached Input Storage Output GLM-5.2$1.4$0.26 Limited-time Free$4.4 GLM-5.1$1.4$0.26 Limited-time Free$4.4 GLM-5$1$0.2 Limited-time Free$3.2 GLM-5-Turbo$1.2$0.24 Limited-time Free$4.0 GLM-4.7$0.6$0.11 Limited-time Free$2.2 GLM-4.7-FlashX$0.07$0.01 Limited-time Free$0.4 GLM-4.6$0.6$0.11 Limited-time Free$2.2 GLM-4.5$0.6$0.11 Limited-time Free$2.2 GLM-4.5-X$2.2$0.45 Limited-time Free$8.9 GLM-4.5-Air$0.2$0.03 Limited-time Free$1.1 GLM-4.5-AirX$1.1$0.22 Limited-time Free$4.5 GLM-4-32B-0414-128K$0.1--$0.1"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-4.7",
+      "display_name": "GLM-4.7",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.6,
+        "output_per_mtok": 2.2,
+        "cached_input_per_mtok": 0.11,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Prices per 1M tokens. Model Input Cached Input Cached Input Storage Output GLM-5.2$1.4$0.26 Limited-time Free$4.4 GLM-5.1$1.4$0.26 Limited-time Free$4.4 GLM-5$1$0.2 Limited-time Free$3.2 GLM-5-Turbo$1.2$0.24 Limited-time Free$4.0 GLM-4.7$0.6$0.11 Limited-time Free$2.2 GLM-4.7-FlashX$0.07$0.01 Limited-time Free$0.4 GLM-4.6$0.6$0.11 Limited-time Free$2.2 GLM-4.5$0.6$0.11 Limited-time Free$2.2 GLM-4.5-X$2.2$0.45 Limited-time Free$8.9 GLM-4.5-Air$0.2$0.03 Limited-time Free$1.1 GLM-4.5-AirX$1.1$0.22 Limited-time Free$4.5 GLM-4-32B-0414-128K$0.1--$0.1"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-4.7-flashx",
+      "display_name": "GLM-4.7 FlashX",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.07,
+        "output_per_mtok": 0.4,
+        "cached_input_per_mtok": 0.01,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Prices per 1M tokens. Model Input Cached Input Cached Input Storage Output GLM-5.2$1.4$0.26 Limited-time Free$4.4 GLM-5.1$1.4$0.26 Limited-time Free$4.4 GLM-5$1$0.2 Limited-time Free$3.2 GLM-5-Turbo$1.2$0.24 Limited-time Free$4.0 GLM-4.7$0.6$0.11 Limited-time Free$2.2 GLM-4.7-FlashX$0.07$0.01 Limited-time Free$0.4 GLM-4.6$0.6$0.11 Limited-time Free$2.2 GLM-4.5$0.6$0.11 Limited-time Free$2.2 GLM-4.5-X$2.2$0.45 Limited-time Free$8.9 GLM-4.5-Air$0.2$0.03 Limited-time Free$1.1 GLM-4.5-AirX$1.1$0.22 Limited-time Free$4.5 GLM-4-32B-0414-128K$0.1--$0.1"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-4.6",
+      "display_name": "GLM-4.6",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.6,
+        "output_per_mtok": 2.2,
+        "cached_input_per_mtok": 0.11,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Prices per 1M tokens. Model Input Cached Input Cached Input Storage Output GLM-5.2$1.4$0.26 Limited-time Free$4.4 GLM-5.1$1.4$0.26 Limited-time Free$4.4 GLM-5$1$0.2 Limited-time Free$3.2 GLM-5-Turbo$1.2$0.24 Limited-time Free$4.0 GLM-4.7$0.6$0.11 Limited-time Free$2.2 GLM-4.7-FlashX$0.07$0.01 Limited-time Free$0.4 GLM-4.6$0.6$0.11 Limited-time Free$2.2 GLM-4.5$0.6$0.11 Limited-time Free$2.2 GLM-4.5-X$2.2$0.45 Limited-time Free$8.9 GLM-4.5-Air$0.2$0.03 Limited-time Free$1.1 GLM-4.5-AirX$1.1$0.22 Limited-time Free$4.5 GLM-4-32B-0414-128K$0.1--$0.1"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-4.5",
+      "display_name": "GLM-4.5",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.6,
+        "output_per_mtok": 2.2,
+        "cached_input_per_mtok": 0.11,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Prices per 1M tokens. Model Input Cached Input Cached Input Storage Output GLM-5.2$1.4$0.26 Limited-time Free$4.4 GLM-5.1$1.4$0.26 Limited-time Free$4.4 GLM-5$1$0.2 Limited-time Free$3.2 GLM-5-Turbo$1.2$0.24 Limited-time Free$4.0 GLM-4.7$0.6$0.11 Limited-time Free$2.2 GLM-4.7-FlashX$0.07$0.01 Limited-time Free$0.4 GLM-4.6$0.6$0.11 Limited-time Free$2.2 GLM-4.5$0.6$0.11 Limited-time Free$2.2 GLM-4.5-X$2.2$0.45 Limited-time Free$8.9 GLM-4.5-Air$0.2$0.03 Limited-time Free$1.1 GLM-4.5-AirX$1.1$0.22 Limited-time Free$4.5 GLM-4-32B-0414-128K$0.1--$0.1"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-4.5-x",
+      "display_name": "GLM-4.5-X",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 2.2,
+        "output_per_mtok": 8.9,
+        "cached_input_per_mtok": 0.45,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Prices per 1M tokens. Model Input Cached Input Cached Input Storage Output GLM-5.2$1.4$0.26 Limited-time Free$4.4 GLM-5.1$1.4$0.26 Limited-time Free$4.4 GLM-5$1$0.2 Limited-time Free$3.2 GLM-5-Turbo$1.2$0.24 Limited-time Free$4.0 GLM-4.7$0.6$0.11 Limited-time Free$2.2 GLM-4.7-FlashX$0.07$0.01 Limited-time Free$0.4 GLM-4.6$0.6$0.11 Limited-time Free$2.2 GLM-4.5$0.6$0.11 Limited-time Free$2.2 GLM-4.5-X$2.2$0.45 Limited-time Free$8.9 GLM-4.5-Air$0.2$0.03 Limited-time Free$1.1 GLM-4.5-AirX$1.1$0.22 Limited-time Free$4.5 GLM-4-32B-0414-128K$0.1--$0.1"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-4.5-air",
+      "display_name": "GLM-4.5 Air",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.2,
+        "output_per_mtok": 1.1,
+        "cached_input_per_mtok": 0.03,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Prices per 1M tokens. Model Input Cached Input Cached Input Storage Output GLM-5.2$1.4$0.26 Limited-time Free$4.4 GLM-5.1$1.4$0.26 Limited-time Free$4.4 GLM-5$1$0.2 Limited-time Free$3.2 GLM-5-Turbo$1.2$0.24 Limited-time Free$4.0 GLM-4.7$0.6$0.11 Limited-time Free$2.2 GLM-4.7-FlashX$0.07$0.01 Limited-time Free$0.4 GLM-4.6$0.6$0.11 Limited-time Free$2.2 GLM-4.5$0.6$0.11 Limited-time Free$2.2 GLM-4.5-X$2.2$0.45 Limited-time Free$8.9 GLM-4.5-Air$0.2$0.03 Limited-time Free$1.1 GLM-4.5-AirX$1.1$0.22 Limited-time Free$4.5 GLM-4-32B-0414-128K$0.1--$0.1"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-4.5-airx",
+      "display_name": "GLM-4.5 AirX",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.1,
+        "output_per_mtok": 4.5,
+        "cached_input_per_mtok": 0.22,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Prices per 1M tokens. Model Input Cached Input Cached Input Storage Output GLM-5.2$1.4$0.26 Limited-time Free$4.4 GLM-5.1$1.4$0.26 Limited-time Free$4.4 GLM-5$1$0.2 Limited-time Free$3.2 GLM-5-Turbo$1.2$0.24 Limited-time Free$4.0 GLM-4.7$0.6$0.11 Limited-time Free$2.2 GLM-4.7-FlashX$0.07$0.01 Limited-time Free$0.4 GLM-4.6$0.6$0.11 Limited-time Free$2.2 GLM-4.5$0.6$0.11 Limited-time Free$2.2 GLM-4.5-X$2.2$0.45 Limited-time Free$8.9 GLM-4.5-Air$0.2$0.03 Limited-time Free$1.1 GLM-4.5-AirX$1.1$0.22 Limited-time Free$4.5 GLM-4-32B-0414-128K$0.1--$0.1"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+    },
+    {
+      "provider": "zhipu",
+      "model_id": "glm-4-32b-0414-128k",
+      "display_name": "GLM-4-32B-0414-128K",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.1,
+        "output_per_mtok": 0.1,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok"
+          ],
+          "quote": "Prices per 1M tokens. Model Input Cached Input Cached Input Storage Output GLM-5.2$1.4$0.26 Limited-time Free$4.4 GLM-5.1$1.4$0.26 Limited-time Free$4.4 GLM-5$1$0.2 Limited-time Free$3.2 GLM-5-Turbo$1.2$0.24 Limited-time Free$4.0 GLM-4.7$0.6$0.11 Limited-time Free$2.2 GLM-4.7-FlashX$0.07$0.01 Limited-time Free$0.4 GLM-4.6$0.6$0.11 Limited-time Free$2.2 GLM-4.5$0.6$0.11 Limited-time Free$2.2 GLM-4.5-X$2.2$0.45 Limited-time Free$8.9 GLM-4.5-Air$0.2$0.03 Limited-time Free$1.1 GLM-4.5-AirX$1.1$0.22 Limited-time Free$4.5 GLM-4-32B-0414-128K$0.1--$0.1"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Z.AI official USD pricing; provider key follows EXPANSION_ORDER zhipu naming. Cached input storage is listed as limited-time free and not modeled."
+    },
+    {
+      "provider": "minimax",
+      "model_id": "minimax-m3",
+      "display_name": "MiniMax M3",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.3,
+        "output_per_mtok": 1.2,
+        "cached_input_per_mtok": 0.06,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Model Input Output Prompt caching Read MiniMax-M3 <= 512k input tokens Permanent 50% off $0.30 / M tokens $1.20 / M tokens $0.06 / M tokens ... MiniMax-M2.7$0.3 / M tokens$1.2 / M tokens$0.06 / M tokens$0.375 / M tokens Legacy Models MiniMax-M2.5$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2.1$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source."
+    },
+    {
+      "provider": "minimax",
+      "model_id": "minimax-m2.7",
+      "display_name": "MiniMax M2.7",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.3,
+        "output_per_mtok": 1.2,
+        "cached_input_per_mtok": 0.06,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Model Input Output Prompt caching Read MiniMax-M3 <= 512k input tokens Permanent 50% off $0.30 / M tokens $1.20 / M tokens $0.06 / M tokens ... MiniMax-M2.7$0.3 / M tokens$1.2 / M tokens$0.06 / M tokens$0.375 / M tokens Legacy Models MiniMax-M2.5$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2.1$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source."
+    },
+    {
+      "provider": "minimax",
+      "model_id": "minimax-m2.5",
+      "display_name": "MiniMax M2.5",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.3,
+        "output_per_mtok": 1.2,
+        "cached_input_per_mtok": 0.03,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Model Input Output Prompt caching Read MiniMax-M3 <= 512k input tokens Permanent 50% off $0.30 / M tokens $1.20 / M tokens $0.06 / M tokens ... MiniMax-M2.7$0.3 / M tokens$1.2 / M tokens$0.06 / M tokens$0.375 / M tokens Legacy Models MiniMax-M2.5$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2.1$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source."
+    },
+    {
+      "provider": "minimax",
+      "model_id": "minimax-m2.1",
+      "display_name": "MiniMax M2.1",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.3,
+        "output_per_mtok": 1.2,
+        "cached_input_per_mtok": 0.03,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Model Input Output Prompt caching Read MiniMax-M3 <= 512k input tokens Permanent 50% off $0.30 / M tokens $1.20 / M tokens $0.06 / M tokens ... MiniMax-M2.7$0.3 / M tokens$1.2 / M tokens$0.06 / M tokens$0.375 / M tokens Legacy Models MiniMax-M2.5$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2.1$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source."
+    },
+    {
+      "provider": "minimax",
+      "model_id": "minimax-m2",
+      "display_name": "MiniMax M2",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.3,
+        "output_per_mtok": 1.2,
+        "cached_input_per_mtok": 0.03,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Model Input Output Prompt caching Read MiniMax-M3 <= 512k input tokens Permanent 50% off $0.30 / M tokens $1.20 / M tokens $0.06 / M tokens ... MiniMax-M2.7$0.3 / M tokens$1.2 / M tokens$0.06 / M tokens$0.375 / M tokens Legacy Models MiniMax-M2.5$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2.1$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source."
+    },
+    {
+      "provider": "groq",
+      "model_id": "llama-3.1-8b-instant",
+      "display_name": "Llama 3.1 8B Instant on Groq",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.05,
+        "output_per_mtok": 0.08,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 131072,
+      "max_output_tokens": 131072,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://console.groq.com/docs/models",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "context_window_tokens",
+            "max_output_tokens"
+          ],
+          "quote": "Production Models MODEL ID ... llama-3.1-8b-instant $0.05 input$0.08 output ... 131,072 131,072 ... llama-3.3-70b-versatile $0.59 input$0.79 output ... 131,072 32,768 ... openai/gpt-oss-120b $0.15 input$0.60 output ... 131,072 65,536 ... openai/gpt-oss-20b $0.075 input$0.30 output ... 131,072 65,536"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Upstream model family: Meta Llama; provider is Groq serving platform."
+    },
+    {
+      "provider": "groq",
+      "model_id": "llama-3.3-70b-versatile",
+      "display_name": "Llama 3.3 70B Versatile on Groq",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.59,
+        "output_per_mtok": 0.79,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 131072,
+      "max_output_tokens": 32768,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://console.groq.com/docs/models",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "context_window_tokens",
+            "max_output_tokens"
+          ],
+          "quote": "Production Models MODEL ID ... llama-3.1-8b-instant $0.05 input$0.08 output ... 131,072 131,072 ... llama-3.3-70b-versatile $0.59 input$0.79 output ... 131,072 32,768 ... openai/gpt-oss-120b $0.15 input$0.60 output ... 131,072 65,536 ... openai/gpt-oss-20b $0.075 input$0.30 output ... 131,072 65,536"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Upstream model family: Meta Llama; provider is Groq serving platform."
+    },
+    {
+      "provider": "groq",
+      "model_id": "openai/gpt-oss-120b",
+      "display_name": "GPT OSS 120B on Groq",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.15,
+        "output_per_mtok": 0.6,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 131072,
+      "max_output_tokens": 65536,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://console.groq.com/docs/models",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "context_window_tokens",
+            "max_output_tokens"
+          ],
+          "quote": "Production Models MODEL ID ... llama-3.1-8b-instant $0.05 input$0.08 output ... 131,072 131,072 ... llama-3.3-70b-versatile $0.59 input$0.79 output ... 131,072 32,768 ... openai/gpt-oss-120b $0.15 input$0.60 output ... 131,072 65,536 ... openai/gpt-oss-20b $0.075 input$0.30 output ... 131,072 65,536"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Upstream model family: OpenAI GPT OSS; provider is Groq serving platform."
+    },
+    {
+      "provider": "groq",
+      "model_id": "openai/gpt-oss-20b",
+      "display_name": "GPT OSS 20B on Groq",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.075,
+        "output_per_mtok": 0.3,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 131072,
+      "max_output_tokens": 65536,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://console.groq.com/docs/models",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "context_window_tokens",
+            "max_output_tokens"
+          ],
+          "quote": "Production Models MODEL ID ... llama-3.1-8b-instant $0.05 input$0.08 output ... 131,072 131,072 ... llama-3.3-70b-versatile $0.59 input$0.79 output ... 131,072 32,768 ... openai/gpt-oss-120b $0.15 input$0.60 output ... 131,072 65,536 ... openai/gpt-oss-20b $0.075 input$0.30 output ... 131,072 65,536"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Upstream model family: OpenAI GPT OSS; provider is Groq serving platform."
+    },
+    {
+      "provider": "fireworks",
+      "model_id": "kimi-k2.7-code",
+      "display_name": "Kimi K2.7 Code on Fireworks",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.95,
+        "output_per_mtok": 4.0,
+        "cached_input_per_mtok": 0.19,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.fireworks.ai/serverless/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+    },
+    {
+      "provider": "fireworks",
+      "model_id": "kimi-k2.7-code-fast",
+      "display_name": "Kimi K2.7 Code Fast on Fireworks",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.9,
+        "output_per_mtok": 8.0,
+        "cached_input_per_mtok": 0.38,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.fireworks.ai/serverless/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+    },
+    {
+      "provider": "fireworks",
+      "model_id": "kimi-k2.6",
+      "display_name": "Kimi K2.6 on Fireworks",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.95,
+        "output_per_mtok": 4.0,
+        "cached_input_per_mtok": 0.16,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.fireworks.ai/serverless/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+    },
+    {
+      "provider": "fireworks",
+      "model_id": "kimi-k2.6-fast",
+      "display_name": "Kimi K2.6 Fast on Fireworks",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 2.0,
+        "output_per_mtok": 8.0,
+        "cached_input_per_mtok": 0.3,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.fireworks.ai/serverless/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+    },
+    {
+      "provider": "fireworks",
+      "model_id": "deepseek-v4-pro",
+      "display_name": "DeepSeek V4 Pro on Fireworks",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.74,
+        "output_per_mtok": 3.48,
+        "cached_input_per_mtok": 0.145,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.fireworks.ai/serverless/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+    },
+    {
+      "provider": "fireworks",
+      "model_id": "deepseek-v4-flash",
+      "display_name": "DeepSeek V4 Flash on Fireworks",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.14,
+        "output_per_mtok": 0.28,
+        "cached_input_per_mtok": 0.028,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.fireworks.ai/serverless/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+    },
+    {
+      "provider": "fireworks",
+      "model_id": "glm-5.2",
+      "display_name": "GLM 5.2 on Fireworks",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.4,
+        "output_per_mtok": 4.4,
+        "cached_input_per_mtok": 0.14,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.fireworks.ai/serverless/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+    },
+    {
+      "provider": "fireworks",
+      "model_id": "glm-5.2-fast",
+      "display_name": "GLM 5.2 Fast on Fireworks",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 2.1,
+        "output_per_mtok": 6.6,
+        "cached_input_per_mtok": 0.21,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.fireworks.ai/serverless/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+    },
+    {
+      "provider": "fireworks",
+      "model_id": "glm-5.1",
+      "display_name": "GLM 5.1 on Fireworks",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.4,
+        "output_per_mtok": 4.4,
+        "cached_input_per_mtok": 0.26,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.fireworks.ai/serverless/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+    },
+    {
+      "provider": "fireworks",
+      "model_id": "glm-5.1-fast",
+      "display_name": "GLM 5.1 Fast on Fireworks",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 2.8,
+        "output_per_mtok": 8.8,
+        "cached_input_per_mtok": 0.52,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.fireworks.ai/serverless/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+    },
+    {
+      "provider": "fireworks",
+      "model_id": "qwen-3.7-plus",
+      "display_name": "Qwen 3.7 Plus on Fireworks",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.4,
+        "output_per_mtok": 1.6,
+        "cached_input_per_mtok": 0.08,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.fireworks.ai/serverless/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+    },
+    {
+      "provider": "fireworks",
+      "model_id": "minimax-m3",
+      "display_name": "MiniMax M3 on Fireworks",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.3,
+        "output_per_mtok": 1.2,
+        "cached_input_per_mtok": 0.06,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.fireworks.ai/serverless/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+    },
+    {
+      "provider": "fireworks",
+      "model_id": "minimax-m2.7",
+      "display_name": "MiniMax M2.7 on Fireworks",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.3,
+        "output_per_mtok": 1.2,
+        "cached_input_per_mtok": 0.06,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.fireworks.ai/serverless/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+    },
+    {
+      "provider": "fireworks",
+      "model_id": "openai-gpt-oss-120b",
+      "display_name": "OpenAI GPT OSS 120B on Fireworks",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.15,
+        "output_per_mtok": 0.6,
+        "cached_input_per_mtok": 0.015,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.fireworks.ai/serverless/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+    },
+    {
+      "provider": "fireworks",
+      "model_id": "openai-gpt-oss-20b",
+      "display_name": "OpenAI GPT OSS 20B on Fireworks",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.07,
+        "output_per_mtok": 0.3,
+        "cached_input_per_mtok": 0.035,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.fireworks.ai/serverless/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Text and vision models ... prices are input / cached input / output (USD per 1M tokens) ... Kimi K2.7 Code $0.95 / $0.19 / $4.00 ... Kimi K2.6 $0.95 / $0.16 / $4.00 ... DeepSeek V4 Pro $1.74 / $0.145 / $3.48 ... DeepSeek V4 Flash $0.14 / $0.028 / $0.28 ... GLM 5.2 $1.40 / $0.14 / $4.40 ... GLM 5.1 $1.40 / $0.26 / $4.40 ... Qwen 3.7 Plus $0.40 / $0.08 / $1.60 ... MiniMax M3 $0.30 / $0.06 / $1.20 ... MiniMax M2.7 $0.30 / $0.06 / $1.20 ... OpenAI GPT OSS 120B $0.15 / $0.015 / $0.60 ... OpenAI GPT OSS 20B $0.07 / $0.035 / $0.30 ... NVIDIA Nemotron 3 Ultra (Preview) $0.60 / $0.12 / $2.40"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Fireworks serving platform; upstream model family named in display_name. Context window not captured from Fireworks model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "deepseek-v4-pro",
+      "display_name": "DeepSeek V4 Pro on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.74,
+        "output_per_mtok": 3.48,
+        "cached_input_per_mtok": 0.2,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "minimax-m3",
+      "display_name": "MiniMax M3 on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.3,
+        "output_per_mtok": 1.2,
+        "cached_input_per_mtok": 0.06,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "kimi-k2.7-code",
+      "display_name": "Kimi K2.7 Code on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.95,
+        "output_per_mtok": 4.0,
+        "cached_input_per_mtok": 0.19,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "glm-5.2",
+      "display_name": "GLM-5.2 on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.4,
+        "output_per_mtok": 4.4,
+        "cached_input_per_mtok": 0.26,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "lfm2-24b-a2b",
+      "display_name": "LFM2 24B A2B on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.03,
+        "output_per_mtok": 0.12,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "gemma-4-31b",
+      "display_name": "Gemma 4 31B on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.39,
+        "output_per_mtok": 0.97,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "nvidia-nemotron-3-ultra",
+      "display_name": "NVIDIA Nemotron 3 Ultra on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.6,
+        "output_per_mtok": 3.6,
+        "cached_input_per_mtok": 0.2,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "qwen3.7-plus",
+      "display_name": "Qwen3.7 Plus on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.32,
+        "output_per_mtok": 1.28,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "kimi-k2.6",
+      "display_name": "Kimi K2.6 on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.2,
+        "output_per_mtok": 4.5,
+        "cached_input_per_mtok": 0.2,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "qwen3.7-max",
+      "display_name": "Qwen3.7 Max on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.25,
+        "output_per_mtok": 3.75,
+        "cached_input_per_mtok": 0.13,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "gpt-oss-120b",
+      "display_name": "GPT OSS 120B on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.15,
+        "output_per_mtok": 0.6,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "qwen3.5-397b-a17b",
+      "display_name": "Qwen3.5 397B A17B on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.6,
+        "output_per_mtok": 3.6,
+        "cached_input_per_mtok": 0.35,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "qwen3.5-9b",
+      "display_name": "Qwen3.5 9B on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.17,
+        "output_per_mtok": 0.25,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "gemma-4-31b-it-pearl",
+      "display_name": "Gemma 4 31B IT Pearl on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.28,
+        "output_per_mtok": 0.86,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "cogito-v2.1-671b",
+      "display_name": "Cogito v2.1 671B on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.25,
+        "output_per_mtok": 1.25,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "rnj-1-instruct",
+      "display_name": "Rnj-1 Instruct on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.15,
+        "output_per_mtok": 0.15,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "llama-3.3-70b",
+      "display_name": "Llama 3.3 70B on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.04,
+        "output_per_mtok": 1.04,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "gemma-3n-e4b-instruct",
+      "display_name": "Gemma 3n E4B Instruct on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.06,
+        "output_per_mtok": 0.12,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "gpt-oss-20b",
+      "display_name": "GPT OSS 20B on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.05,
+        "output_per_mtok": 0.2,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "qwen3-235b-a22b-fp8-throughput",
+      "display_name": "Qwen3 235B A22B FP8 Throughput on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.2,
+        "output_per_mtok": 0.6,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "minimax-m2.5",
+      "display_name": "MiniMax M2.5 on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.3,
+        "output_per_mtok": 1.2,
+        "cached_input_per_mtok": 0.06,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "glm-5.1",
+      "display_name": "GLM-5.1 on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 1.4,
+        "output_per_mtok": 4.4,
+        "cached_input_per_mtok": 0.26,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "minimax-m2.7",
+      "display_name": "MiniMax M2.7 on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.3,
+        "output_per_mtok": 1.2,
+        "cached_input_per_mtok": 0.06,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "together",
+      "model_id": "qwen3.6-plus",
+      "display_name": "Qwen3.6 Plus on Together",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.5,
+        "output_per_mtok": 3.0,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok"
+          ],
+          "quote": "Serverless Inference Price per 1M tokens Model Input output DeepSeek V4 Pro $1.74 $0.20 (cached) $3.48 MiniMax M3 $0.30 $0.06 (cached) $1.20 Kimi K2.7 Code $0.95 $0.19 (cached) $4.00 GLM-5.2 $1.40 $0.26 (cached) $4.40 LFM2 24B A2B $0.03 $0.12 Gemma 4 31B $0.39 $0.97 NVIDIA Nemotron 3 Ultra $0.60 $0.20 (cached) $3.60 Qwen3.7-Plus $0.32 $1.28 Kimi K2.6 $1.20 $0.20 (cached) $4.50 Qwen3.7-Max $1.25 $0.13 (cached) $3.75 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35 (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Gemma-4-31B-it-Pearl $0.28 $0.86 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Llama 3.3 70B $1.04 $1.04 Gemma 3n E4B Instruct $0.06 $0.12 gpt-oss-20B $0.05 $0.20 Qwen3 235B A22B FP8 Throughput $0.20 $0.60 MiniMax M2.5 $0.30 $0.06 (cached) $1.20 GLM-5.1 $1.40 $0.26 (cached) $4.40 MiniMax M2.7 $0.30 $0.06 (cached) $1.20 Qwen3.6-Plus $0.50 $3.00"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Provider is Together AI serving platform; upstream model family named in display_name. Context window not captured from Together model page."
+    },
+    {
+      "provider": "perplexity",
+      "model_id": "perplexity/sonar",
+      "display_name": "Sonar",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.25,
+        "output_per_mtok": 2.5,
+        "cached_input_per_mtok": 0.0625,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": null,
+      "max_output_tokens": null,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.perplexity.ai/docs/agent-api/models",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "pricing.cached_input_per_mtok"
+          ],
+          "quote": "Perplexity Sonar \u2014 Perplexity\u2019s grounded search model. Model Input ($/1M)Output ($/1M)Cache ($/1M) `perplexity/sonar` 0.25 2.50 0.0625"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Perplexity Agent API model table; context window not stated on collected page."
+    },
+    {
+      "provider": "cohere",
+      "model_id": "command-a-plus-05-2026",
+      "display_name": "Command A+ 05-2026",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": null,
+        "output_per_mtok": null,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 128000,
+      "max_output_tokens": 64000,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.cohere.com/docs/models",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "model_id",
+            "status",
+            "modalities",
+            "context_window_tokens",
+            "max_output_tokens"
+          ],
+          "quote": "The Command family of models includes Command A+, Command A, Command R7B, Command A Translate, Command A Reasoning, Command A Vision, Command R+, Command R, and Command ... Model Name Status Description Modality Context Length Maximum Output Tokens Endpoints `command-a-plus-05-2026` Live ... Text, Images 128k 64k ... `command-a-03-2025` Live ... Text 256k 8k ... `command-r7b-12-2024` Live ... Text 128k 4k ... `command-a-translate-08-2025` Live ... Text 8K 8k ... `command-a-reasoning-08-2025` Live ... Text 256k 32k ... `command-a-vision-07-2025` Live ... Text, Images 128K 8K ... `command-r-08-2024` Live ... Text 128k 4k"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page."
+    },
+    {
+      "provider": "cohere",
+      "model_id": "command-a-03-2025",
+      "display_name": "Command A 03-2025",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": null,
+        "output_per_mtok": null,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 256000,
+      "max_output_tokens": 8000,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.cohere.com/docs/models",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "model_id",
+            "status",
+            "modalities",
+            "context_window_tokens",
+            "max_output_tokens"
+          ],
+          "quote": "The Command family of models includes Command A+, Command A, Command R7B, Command A Translate, Command A Reasoning, Command A Vision, Command R+, Command R, and Command ... Model Name Status Description Modality Context Length Maximum Output Tokens Endpoints `command-a-plus-05-2026` Live ... Text, Images 128k 64k ... `command-a-03-2025` Live ... Text 256k 8k ... `command-r7b-12-2024` Live ... Text 128k 4k ... `command-a-translate-08-2025` Live ... Text 8K 8k ... `command-a-reasoning-08-2025` Live ... Text 256k 32k ... `command-a-vision-07-2025` Live ... Text, Images 128K 8K ... `command-r-08-2024` Live ... Text 128k 4k"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page."
+    },
+    {
+      "provider": "cohere",
+      "model_id": "command-a-translate-08-2025",
+      "display_name": "Command A Translate 08-2025",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": null,
+        "output_per_mtok": null,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 8000,
+      "max_output_tokens": 8000,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.cohere.com/docs/models",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "model_id",
+            "status",
+            "modalities",
+            "context_window_tokens",
+            "max_output_tokens"
+          ],
+          "quote": "The Command family of models includes Command A+, Command A, Command R7B, Command A Translate, Command A Reasoning, Command A Vision, Command R+, Command R, and Command ... Model Name Status Description Modality Context Length Maximum Output Tokens Endpoints `command-a-plus-05-2026` Live ... Text, Images 128k 64k ... `command-a-03-2025` Live ... Text 256k 8k ... `command-r7b-12-2024` Live ... Text 128k 4k ... `command-a-translate-08-2025` Live ... Text 8K 8k ... `command-a-reasoning-08-2025` Live ... Text 256k 32k ... `command-a-vision-07-2025` Live ... Text, Images 128K 8K ... `command-r-08-2024` Live ... Text 128k 4k"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page."
+    },
+    {
+      "provider": "cohere",
+      "model_id": "command-a-reasoning-08-2025",
+      "display_name": "Command A Reasoning 08-2025",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": null,
+        "output_per_mtok": null,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 256000,
+      "max_output_tokens": 32000,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.cohere.com/docs/models",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "model_id",
+            "status",
+            "modalities",
+            "context_window_tokens",
+            "max_output_tokens"
+          ],
+          "quote": "The Command family of models includes Command A+, Command A, Command R7B, Command A Translate, Command A Reasoning, Command A Vision, Command R+, Command R, and Command ... Model Name Status Description Modality Context Length Maximum Output Tokens Endpoints `command-a-plus-05-2026` Live ... Text, Images 128k 64k ... `command-a-03-2025` Live ... Text 256k 8k ... `command-r7b-12-2024` Live ... Text 128k 4k ... `command-a-translate-08-2025` Live ... Text 8K 8k ... `command-a-reasoning-08-2025` Live ... Text 256k 32k ... `command-a-vision-07-2025` Live ... Text, Images 128K 8K ... `command-r-08-2024` Live ... Text 128k 4k"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page."
+    },
+    {
+      "provider": "cohere",
+      "model_id": "command-a-vision-07-2025",
+      "display_name": "Command A Vision 07-2025",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": null,
+        "output_per_mtok": null,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 128000,
+      "max_output_tokens": 8000,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.cohere.com/docs/models",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "model_id",
+            "status",
+            "modalities",
+            "context_window_tokens",
+            "max_output_tokens"
+          ],
+          "quote": "The Command family of models includes Command A+, Command A, Command R7B, Command A Translate, Command A Reasoning, Command A Vision, Command R+, Command R, and Command ... Model Name Status Description Modality Context Length Maximum Output Tokens Endpoints `command-a-plus-05-2026` Live ... Text, Images 128k 64k ... `command-a-03-2025` Live ... Text 256k 8k ... `command-r7b-12-2024` Live ... Text 128k 4k ... `command-a-translate-08-2025` Live ... Text 8K 8k ... `command-a-reasoning-08-2025` Live ... Text 256k 32k ... `command-a-vision-07-2025` Live ... Text, Images 128K 8K ... `command-r-08-2024` Live ... Text 128k 4k"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page."
+    },
+    {
+      "provider": "cohere",
+      "model_id": "command-r-08-2024",
+      "display_name": "Command R 08-2024",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": null,
+        "output_per_mtok": null,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 128000,
+      "max_output_tokens": 4000,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.cohere.com/docs/models",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "model_id",
+            "status",
+            "modalities",
+            "context_window_tokens",
+            "max_output_tokens"
+          ],
+          "quote": "The Command family of models includes Command A+, Command A, Command R7B, Command A Translate, Command A Reasoning, Command A Vision, Command R+, Command R, and Command ... Model Name Status Description Modality Context Length Maximum Output Tokens Endpoints `command-a-plus-05-2026` Live ... Text, Images 128k 64k ... `command-a-03-2025` Live ... Text 256k 8k ... `command-r7b-12-2024` Live ... Text 128k 4k ... `command-a-translate-08-2025` Live ... Text 8K 8k ... `command-a-reasoning-08-2025` Live ... Text 256k 32k ... `command-a-vision-07-2025` Live ... Text, Images 128K 8K ... `command-r-08-2024` Live ... Text 128k 4k"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page."
+    },
+    {
+      "provider": "cohere",
+      "model_id": "command-r7b-12-2024",
+      "display_name": "Command R7B 12-2024",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": 0.0375,
+        "output_per_mtok": 0.15,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 128000,
+      "max_output_tokens": 4000,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": "June 1, 2024",
+      "sources": [
+        {
+          "url": "https://docs.cohere.com/docs/command-r7b",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "pricing.input_per_mtok",
+            "pricing.output_per_mtok",
+            "context_window_tokens",
+            "max_output_tokens",
+            "knowledge_cutoff",
+            "model_id",
+            "modalities"
+          ],
+          "quote": "Command R7B model details and specifications Capabilities Multilingual Safety Modes Citations Tool Use Structured Outputs Reasoning Image Inputs Pricing Input $0.0375 / 1M tokens Output $0.15 / 1M tokens Specifications Context Window: 128,000 tokens Max Output Tokens: 4,000 tokens Knowledge Cutoff: June 1, 2024 Model ID command-r7b-12-2024"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": null
+    },
+    {
+      "provider": "cohere",
+      "model_id": "tiny-aya-global",
+      "display_name": "Tiny Aya Global",
+      "status": "ga",
+      "release_date": null,
+      "deprecation_date": null,
+      "retirement_date": null,
+      "pricing": {
+        "input_per_mtok": null,
+        "output_per_mtok": null,
+        "cached_input_per_mtok": null,
+        "batch_discount_pct": null
+      },
+      "context_window_tokens": 8000,
+      "max_output_tokens": 8000,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "knowledge_cutoff": null,
+      "sources": [
+        {
+          "url": "https://docs.cohere.com/docs/models",
+          "accessed_at": "2026-07-04T08:00:00Z",
+          "fields": [
+            "model_id",
+            "status",
+            "modalities",
+            "context_window_tokens",
+            "max_output_tokens"
+          ],
+          "quote": "Model Name Status Description Modality Context Length Maximum Output Tokens Endpoints `tiny-aya-global` Live Tiny Aya Global is a 3.35B instruction-tuned multilingual model with the best balance across languages and regions. Supports 70 languages.Text 8k 8k"
+        }
+      ],
+      "verified_at": "2026-07-04T08:00:00Z",
+      "notes": "Cohere model page confirms live model and limits; public token price was not found in collected primary pricing page."
     }
   ]
 }
