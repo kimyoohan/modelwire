@@ -1,6 +1,12 @@
 # FactQuire
 
-FactQuire (factquire.com) is a machine-readable, source-verified facts feed for commercial LLM APIs. It tracks model identifiers, pricing, lifecycle status, token limits, modalities, and primary-source evidence.
+**Source-verified facts feed for commercial LLM APIs.** Every price, token limit, and lifecycle fact carries a verbatim quote from the provider's own page plus an access timestamp — so you can re-verify any claim without trusting us.
+
+🌐 **[factquire.com](https://factquire.com)** · 📡 [feed.json](https://factquire.com/feed.json) (135 models · 16 providers) · 📰 [RSS](https://factquire.com/rss.xml) · 🤖 [llms.txt](https://factquire.com/llms.txt) · ✅ [Corrections](https://factquire.com/corrections.html)
+
+Why this exists: community datasets drift from primary sources (we've found — and fixed upstream — prices off by 2x and stale entries months old; see [our audit](https://factquire.com/audit.html)). FactQuire ties every value to its evidence.
+
+**Using the data:** grab [`feed.json`](https://factquire.com/feed.json) or per-model JSON permalinks (`/models/<provider>/<model_id>.json`). Data is CC BY 4.0 — free for any use with attribution to FactQuire. Code is MIT.
 
 ## Publish (the everyday command)
 
