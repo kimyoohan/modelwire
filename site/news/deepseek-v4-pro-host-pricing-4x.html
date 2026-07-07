@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The same DeepSeek V4 Pro costs 4x more on Together and Fireworks than on DeepSeek&#x27;s own API</title>
+    <meta name="description" content="DeepSeek V4 Pro is an open-weight model you can call three ways. On DeepSeek&#x27;s own API it is $0.435 per 1M input tokens; on Together and Fireworks the same model is $1.74 — exactly 4x more. A per-model price is a category error for open-weight models, and at least one widely used cost tracker had the hosted entries at the native price.">
+    <link rel="canonical" href="https://factquire.com/news/deepseek-v4-pro-host-pricing-4x.html">
+    <link rel="alternate" type="application/rss+xml" title="FactQuire RSS" href="https://factquire.com/rss.xml">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+    <link rel="apple-touch-icon" href="/assets/favicon-512.png">
+    <meta property="og:title" content="The same DeepSeek V4 Pro costs 4x more on Together and Fireworks than on DeepSeek&#x27;s own API">
+    <meta property="og:description" content="DeepSeek V4 Pro is an open-weight model you can call three ways. On DeepSeek&#x27;s own API it is $0.435 per 1M input tokens; on Together and Fireworks the same model is $1.74 — exactly 4x more. A per-model price is a category error for open-weight models, and at least one widely used cost tracker had the hosted entries at the native price.">
+    <meta property="og:image" content="https://factquire.com/assets/og-card.png">
+    <meta property="og:url" content="https://factquire.com/news/deepseek-v4-pro-host-pricing-4x.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="/styles.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"The same DeepSeek V4 Pro costs 4x more on Together and Fireworks than on DeepSeek's own API","datePublished":"2026-07-07","description":"DeepSeek V4 Pro is an open-weight model you can call three ways. On DeepSeek's own API it is $0.435 per 1M input tokens; on Together and Fireworks the same model is $1.74 — exactly 4x more. A per-model price is a category error for open-weight models, and at least one widely used cost tracker had the hosted entries at the native price.","url":"https://factquire.com/news/deepseek-v4-pro-host-pricing-4x.html","publisher":{"@type":"Organization","name":"FactQuire"}}</script>
+    
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <a href="/" style="display:inline-block;line-height:0;">
+          <img src="/assets/logo.png" alt="FactQuire" height="48" style="height:48px;width:auto;">
+        </a>
+      </div>
+      <nav>
+        <a href="/models/">Models</a>
+        <a href="/news/" aria-current="page">News</a>
+        <a href="/changelog.html">Changelog</a>
+        <a href="/audit.html">Audit</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </header>
+    <main>
+      <article class="article">
+        <h1>The same DeepSeek V4 Pro costs 4x more on Together and Fireworks than on DeepSeek&#x27;s own API</h1>
+        <p class="muted">2026-07-07</p>
+        <h1>The same DeepSeek V4 Pro costs 4x more on Together and Fireworks than on DeepSeek&#x27;s own API</h1>
+<p>If your cost model has one number for &quot;DeepSeek V4 Pro,&quot; it is wrong for two of the three places you can actually call it. The model is open-weight, so it is served by multiple providers — and each provider prices its own serving, not DeepSeek&#x27;s.</p>
+<h2>The three prices for one model</h2>
+<p>All figures per 1M tokens, from each host&#x27;s own pricing page, accessed 2026-07-07:</p>
+<ul>
+<li><strong>DeepSeek</strong> (native API) — input <strong>$0.435</strong>, output <strong>$0.87</strong>, cache-hit $0.003625</li>
+<li><strong>Together</strong> — input <strong>$1.74</strong>, output <strong>$3.48</strong>, cached input $0.20</li>
+<li><strong>Fireworks</strong> — input <strong>$1.74</strong>, output <strong>$3.48</strong>, cache $0.145</li>
+</ul>
+<p>Sources, verbatim:</p>
+<ul>
+<li>DeepSeek, https://api-docs.deepseek.com/quick_start/pricing —</li>
+<p>the `deepseek-v4-pro` column reads cache-miss input <strong>$0.435</strong>, output <strong>$0.87</strong>, cache-hit <strong>$0.003625</strong> per 1M tokens.</p>
+<li>Together, https://www.together.ai/pricing —</li>
+<p>&quot;DeepSeek V4 Pro ... <strong>$1.74</strong> ... $0.20 (cached) ... <strong>$3.48</strong>&quot;.</p>
+<li>Fireworks, https://fireworks.ai/pricing —</li>
+<p>&quot;DeepSeek V4 Pro&quot; serverless: &quot;<strong>$1.74 / $0.145 / $3.48</strong>&quot; (input / cache / output).</p>
+</ul>
+<p>The hosted input price ($1.74) is <strong>exactly 4x</strong> the DeepSeek-native price ($0.435). Output ($3.48) is exactly 4x native ($0.87). This is not a rounding artifact — it is the gap between a model author&#x27;s first-party API and third-party serving of the same weights.</p>
+<h2>Why the same weights cost 4x</h2>
+<p>An open-weight model is not one product with one price. DeepSeek sets the price for its own hosted API. Together and Fireworks each stand up their own inference stack — GPUs, batching, uptime, margins — and price that. So &quot;DeepSeek V4 Pro pricing&quot; has no single answer; it is a property of the *host*, not the model. A cost estimate that stores one number per model, rather than one per model-and-host, will be off by multiples the moment traffic moves to a different provider — which is exactly what a router or gateway is built to do.</p>
+<h2>Where it already bit</h2>
+<p>While cross-auditing community datasets against primary sources on 2026-07-07, we found <a href="https://github.com/BerriAI/litellm">LiteLLM</a>&#x27;s widely used `model_prices_and_context_window.json` listing the <strong>Together and Fireworks</strong> DeepSeek V4 Pro entries at <strong>$0.435</strong> input — the DeepSeek-*native* price, not the hosts&#x27; $1.74. Any cost dashboard built on that entry would under-report the true hosted spend by 4x. The code is not buggy; it simply inherited DeepSeek&#x27;s native price for a row that is billed by Together and Fireworks. We verified the current host prices against each host&#x27;s own page and are contributing the correction upstream.</p>
+<p>(Our own data drifts too. When we are the ones who turn out to be wrong, we publish it: https://factquire.com/corrections.html)</p>
+<h2>The general rule</h2>
+<p>For any open-weight model — DeepSeek, Llama, Qwen, Mixtral, GPT-OSS — &quot;the price&quot; is a question that only makes sense once you name the host. Store the host with the price, or your cost math is right only by coincidence.</p>
+<p>Machine-readable records for each host, every field carrying its primary-source quote:</p>
+<ul>
+<li>https://factquire.com/models/deepseek/deepseek-v4-pro.json</li>
+<li>https://factquire.com/models/together/deepseek-v4-pro.json</li>
+<li>https://factquire.com/models/fireworks/deepseek-v4-pro.json</li>
+</ul>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <a href="/corrections.html">corrections</a> |
+      <a href="/editorial.html">editorial</a> |
+      <a href="/cite.html">cite</a>
+    </footer>
+  </body>
+</html>

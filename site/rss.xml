@@ -5,6 +5,13 @@
     <link>https://factquire.com/</link>
     <description>Source-verified LLM API fact changes and news.</description>
     <item>
+      <title>The same DeepSeek V4 Pro costs 4x more on Together and Fireworks than on DeepSeek&#x27;s own API</title>
+      <link>https://factquire.com/news/deepseek-v4-pro-host-pricing-4x.html</link>
+      <guid>https://factquire.com/news/deepseek-v4-pro-host-pricing-4x.html</guid>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
+      <description>DeepSeek V4 Pro is an open-weight model you can call three ways. On DeepSeek&#x27;s own API it is $0.435 per 1M input tokens; on Together and Fireworks the same model is $1.74 — exactly 4x more. A per-model price is a category error for open-weight models, and at least one widely used cost tracker had the hosted entries at the native price.</description>
+    </item>
+    <item>
       <title>AWS quietly doubled Bedrock prices for legacy Claude models — and cost trackers haven&#x27;t caught up</title>
       <link>https://factquire.com/news/bedrock-extended-access-price-doubling.html</link>
       <guid>https://factquire.com/news/bedrock-extended-access-price-doubling.html</guid>
