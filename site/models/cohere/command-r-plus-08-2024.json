@@ -27,7 +27,7 @@
   "sources": [
     {
       "url": "https://cohere.com/pricing",
-      "accessed_at": "2026-07-04T06:08:18Z",
+      "accessed_at": "2026-07-07T11:44:22Z",
       "fields": [
         "pricing.input_per_mtok",
         "pricing.output_per_mtok"
@@ -36,7 +36,7 @@
     },
     {
       "url": "https://docs.cohere.com/docs/models",
-      "accessed_at": "2026-07-04T06:08:18Z",
+      "accessed_at": "2026-07-07T11:44:22Z",
       "fields": [
         "model_id",
         "status",
@@ -44,10 +44,10 @@
         "context_window_tokens",
         "max_output_tokens"
       ],
-      "quote": "`command-r-plus-08-2024 `Live `command-r-plus-08-2024` is an update of the Command R+ model, delivered in August 2024. Find more information here Text 128k 4k"
+      "quote": "R model, delivered in August 2024. Find more information here Text 128k 4k Chat command-r-plus-08-2024 Live command-r-plus-08-2024 is an update of the Command R+ model, delivered in August 2024. Find more information here Text 128k 4k Chat"
     }
   ],
-  "verified_at": "2026-07-04T06:08:18Z",
+  "verified_at": "2026-07-07T11:44:22Z",
   "notes": "Listed as legacy on Cohere pricing page",
   "permalink": "/models/cohere/command-r-plus-08-2024.html"
 }

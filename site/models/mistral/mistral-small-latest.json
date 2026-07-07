@@ -27,7 +27,7 @@
   "sources": [
     {
       "url": "https://mistral.ai/pricing/api/",
-      "accessed_at": "2026-07-04T05:55:32Z",
+      "accessed_at": "2026-07-07T11:44:22Z",
       "fields": [
         "pricing.input_per_mtok",
         "pricing.output_per_mtok",
@@ -36,7 +36,7 @@
       "quote": "Mistral Small 4 ... Text-to-text Agentic Multimodal Lightweight Input (/M tokens) $0.15 Output (/M tokens) $0.6 mistral-small-latest"
     }
   ],
-  "verified_at": "2026-07-04T05:55:32Z",
+  "verified_at": "2026-07-07T11:44:22Z",
   "notes": null,
   "permalink": "/models/mistral/mistral-small-latest.html"
 }

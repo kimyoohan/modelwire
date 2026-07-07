@@ -27,7 +27,7 @@
   "sources": [
     {
       "url": "https://cohere.com/pricing",
-      "accessed_at": "2026-07-04T05:55:32Z",
+      "accessed_at": "2026-07-07T11:44:22Z",
       "fields": [
         "pricing.input_per_mtok",
         "pricing.output_per_mtok"
@@ -36,7 +36,7 @@
     },
     {
       "url": "https://docs.cohere.com/docs/models",
-      "accessed_at": "2026-07-04T05:55:32Z",
+      "accessed_at": "2026-07-07T11:44:22Z",
       "fields": [
         "model_id",
         "status",
@@ -44,10 +44,10 @@
         "context_window_tokens",
         "max_output_tokens"
       ],
-      "quote": "`c4ai-aya-expanse-32b `Live Aya Expanse is a highly performant 32B multilingual model ... Text 128k 4k"
+      "quote": "for European and Asia-Pacific languages. Supports 70 languages. Text 8k 8k Chat c4ai-aya-expanse-32b Live Aya Expanse is a highly performant 32B multilingual model, designed to rival monolingual performance through innovations in instruction tuning with data arbitrage, preference training, and model merging. Serves 23 languages. Text 128k 4k Chat c4ai-aya-vision-32b Live Aya Vision is a state-of-the-art multimodal model excelling at a variety of critical benchmarks for language, text, and image"
     }
   ],
-  "verified_at": "2026-07-04T05:55:32Z",
+  "verified_at": "2026-07-07T11:44:22Z",
   "notes": null,
   "permalink": "/models/cohere/c4ai-aya-expanse-32b.html"
 }

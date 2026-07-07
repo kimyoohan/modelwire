@@ -213,39 +213,25 @@
       "detail": "stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens"
     },
     {
-      "key": "cohere/command|context_window_tokens|AMBIGUOUS|stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens",
-      "entry": "cohere/command",
-      "field": "context_window_tokens",
-      "class": "AMBIGUOUS",
-      "detail": "stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens"
-    },
-    {
-      "key": "cohere/command|max_output_tokens|AMBIGUOUS|stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens",
-      "entry": "cohere/command",
-      "field": "max_output_tokens",
-      "class": "AMBIGUOUS",
-      "detail": "stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens"
-    },
-    {
-      "key": "cohere/command-a-03-2025|context_window_tokens|AMBIGUOUS|stored value 256000 only matches ambiguous quote unit(s): 256k can mean decimal 256000 or binary 262144 tokens; 256k can mean decimal 256000 or binary 262144 tokens",
+      "key": "cohere/command-a-03-2025|context_window_tokens|AMBIGUOUS|stored value 256000 only matches ambiguous quote unit(s): 256K can mean decimal 256000 or binary 262144 tokens; 256k can mean decimal 256000 or binary 262144 tokens",
       "entry": "cohere/command-a-03-2025",
       "field": "context_window_tokens",
       "class": "AMBIGUOUS",
-      "detail": "stored value 256000 only matches ambiguous quote unit(s): 256k can mean decimal 256000 or binary 262144 tokens; 256k can mean decimal 256000 or binary 262144 tokens"
+      "detail": "stored value 256000 only matches ambiguous quote unit(s): 256K can mean decimal 256000 or binary 262144 tokens; 256k can mean decimal 256000 or binary 262144 tokens"
     },
     {
-      "key": "cohere/command-a-03-2025|max_output_tokens|AMBIGUOUS|stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens; 8K can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens",
+      "key": "cohere/command-a-03-2025|max_output_tokens|AMBIGUOUS|stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens",
       "entry": "cohere/command-a-03-2025",
       "field": "max_output_tokens",
       "class": "AMBIGUOUS",
-      "detail": "stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens; 8K can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens"
+      "detail": "stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens"
     },
     {
-      "key": "cohere/command-a-plus-05-2026|context_window_tokens|AMBIGUOUS|stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens; 128k can mean decimal 128000 or binary 131072 tokens; 128K can mean decimal 128000 or binary 131072 tokens",
+      "key": "cohere/command-a-plus-05-2026|context_window_tokens|AMBIGUOUS|stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens",
       "entry": "cohere/command-a-plus-05-2026",
       "field": "context_window_tokens",
       "class": "AMBIGUOUS",
-      "detail": "stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens; 128k can mean decimal 128000 or binary 131072 tokens; 128K can mean decimal 128000 or binary 131072 tokens"
+      "detail": "stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens"
     },
     {
       "key": "cohere/command-a-plus-05-2026|max_output_tokens|AMBIGUOUS|stored value 64000 only matches ambiguous quote unit(s): 64k can mean decimal 64000 or binary 65536 tokens",
@@ -255,11 +241,11 @@
       "detail": "stored value 64000 only matches ambiguous quote unit(s): 64k can mean decimal 64000 or binary 65536 tokens"
     },
     {
-      "key": "cohere/command-a-reasoning-08-2025|context_window_tokens|AMBIGUOUS|stored value 256000 only matches ambiguous quote unit(s): 256k can mean decimal 256000 or binary 262144 tokens; 256k can mean decimal 256000 or binary 262144 tokens",
+      "key": "cohere/command-a-reasoning-08-2025|context_window_tokens|AMBIGUOUS|stored value 256000 only matches ambiguous quote unit(s): 256k can mean decimal 256000 or binary 262144 tokens",
       "entry": "cohere/command-a-reasoning-08-2025",
       "field": "context_window_tokens",
       "class": "AMBIGUOUS",
-      "detail": "stored value 256000 only matches ambiguous quote unit(s): 256k can mean decimal 256000 or binary 262144 tokens; 256k can mean decimal 256000 or binary 262144 tokens"
+      "detail": "stored value 256000 only matches ambiguous quote unit(s): 256k can mean decimal 256000 or binary 262144 tokens"
     },
     {
       "key": "cohere/command-a-reasoning-08-2025|max_output_tokens|AMBIGUOUS|stored value 32000 only matches ambiguous quote unit(s): 32k can mean decimal 32000 or binary 32768 tokens",
@@ -269,116 +255,116 @@
       "detail": "stored value 32000 only matches ambiguous quote unit(s): 32k can mean decimal 32000 or binary 32768 tokens"
     },
     {
-      "key": "cohere/command-a-translate-08-2025|context_window_tokens|AMBIGUOUS|stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens; 8K can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens",
+      "key": "cohere/command-a-translate-08-2025|context_window_tokens|AMBIGUOUS|stored value 8000 only matches ambiguous quote unit(s): 8K can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens",
       "entry": "cohere/command-a-translate-08-2025",
       "field": "context_window_tokens",
       "class": "AMBIGUOUS",
-      "detail": "stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens; 8K can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens"
+      "detail": "stored value 8000 only matches ambiguous quote unit(s): 8K can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens"
     },
     {
-      "key": "cohere/command-a-translate-08-2025|max_output_tokens|AMBIGUOUS|stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens; 8K can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens",
+      "key": "cohere/command-a-translate-08-2025|max_output_tokens|AMBIGUOUS|stored value 8000 only matches ambiguous quote unit(s): 8K can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens",
       "entry": "cohere/command-a-translate-08-2025",
       "field": "max_output_tokens",
       "class": "AMBIGUOUS",
-      "detail": "stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens; 8K can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens"
+      "detail": "stored value 8000 only matches ambiguous quote unit(s): 8K can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens"
     },
     {
-      "key": "cohere/command-a-vision-07-2025|context_window_tokens|AMBIGUOUS|stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens; 128k can mean decimal 128000 or binary 131072 tokens; 128K can mean decimal 128000 or binary 131072 tokens",
+      "key": "cohere/command-a-vision-07-2025|context_window_tokens|AMBIGUOUS|stored value 128000 only matches ambiguous quote unit(s): 128K can mean decimal 128000 or binary 131072 tokens",
       "entry": "cohere/command-a-vision-07-2025",
       "field": "context_window_tokens",
       "class": "AMBIGUOUS",
-      "detail": "stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens; 128k can mean decimal 128000 or binary 131072 tokens; 128K can mean decimal 128000 or binary 131072 tokens"
+      "detail": "stored value 128000 only matches ambiguous quote unit(s): 128K can mean decimal 128000 or binary 131072 tokens"
     },
     {
-      "key": "cohere/command-a-vision-07-2025|max_output_tokens|AMBIGUOUS|stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens; 8K can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens",
+      "key": "cohere/command-a-vision-07-2025|max_output_tokens|AMBIGUOUS|stored value 8000 only matches ambiguous quote unit(s): 8K can mean decimal 8000 or binary 8192 tokens",
       "entry": "cohere/command-a-vision-07-2025",
       "field": "max_output_tokens",
       "class": "AMBIGUOUS",
-      "detail": "stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens; 8K can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens"
+      "detail": "stored value 8000 only matches ambiguous quote unit(s): 8K can mean decimal 8000 or binary 8192 tokens"
     },
     {
-      "key": "cohere/command-light|context_window_tokens|AMBIGUOUS|stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens",
+      "key": "cohere/command-light|context_window_tokens|AMBIGUOUS|stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens",
       "entry": "cohere/command-light",
       "field": "context_window_tokens",
       "class": "AMBIGUOUS",
-      "detail": "stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens"
+      "detail": "stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens"
     },
     {
-      "key": "cohere/command-light|max_output_tokens|AMBIGUOUS|stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens",
+      "key": "cohere/command-light|max_output_tokens|AMBIGUOUS|stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens",
       "entry": "cohere/command-light",
       "field": "max_output_tokens",
       "class": "AMBIGUOUS",
-      "detail": "stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens"
+      "detail": "stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens"
     },
     {
-      "key": "cohere/command-r-03-2024|context_window_tokens|AMBIGUOUS|stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens",
+      "key": "cohere/command-r-03-2024|context_window_tokens|AMBIGUOUS|stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens; 128k can mean decimal 128000 or binary 131072 tokens",
       "entry": "cohere/command-r-03-2024",
       "field": "context_window_tokens",
       "class": "AMBIGUOUS",
-      "detail": "stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens"
+      "detail": "stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens; 128k can mean decimal 128000 or binary 131072 tokens"
     },
     {
-      "key": "cohere/command-r-03-2024|max_output_tokens|AMBIGUOUS|stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens",
+      "key": "cohere/command-r-03-2024|max_output_tokens|AMBIGUOUS|stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens",
       "entry": "cohere/command-r-03-2024",
-      "field": "max_output_tokens",
-      "class": "AMBIGUOUS",
-      "detail": "stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens"
-    },
-    {
-      "key": "cohere/command-r-08-2024|context_window_tokens|AMBIGUOUS|stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens; 128k can mean decimal 128000 or binary 131072 tokens; 128K can mean decimal 128000 or binary 131072 tokens",
-      "entry": "cohere/command-r-08-2024",
-      "field": "context_window_tokens",
-      "class": "AMBIGUOUS",
-      "detail": "stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens; 128k can mean decimal 128000 or binary 131072 tokens; 128K can mean decimal 128000 or binary 131072 tokens"
-    },
-    {
-      "key": "cohere/command-r-08-2024|max_output_tokens|AMBIGUOUS|stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens",
-      "entry": "cohere/command-r-08-2024",
       "field": "max_output_tokens",
       "class": "AMBIGUOUS",
       "detail": "stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens"
     },
     {
-      "key": "cohere/command-r-plus-04-2024|context_window_tokens|AMBIGUOUS|stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens",
-      "entry": "cohere/command-r-plus-04-2024",
+      "key": "cohere/command-r-08-2024|context_window_tokens|AMBIGUOUS|stored value 128000 only matches ambiguous quote unit(s): 128K can mean decimal 128000 or binary 131072 tokens; 128k can mean decimal 128000 or binary 131072 tokens",
+      "entry": "cohere/command-r-08-2024",
       "field": "context_window_tokens",
       "class": "AMBIGUOUS",
-      "detail": "stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens"
+      "detail": "stored value 128000 only matches ambiguous quote unit(s): 128K can mean decimal 128000 or binary 131072 tokens; 128k can mean decimal 128000 or binary 131072 tokens"
     },
     {
-      "key": "cohere/command-r-plus-04-2024|max_output_tokens|AMBIGUOUS|stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens",
-      "entry": "cohere/command-r-plus-04-2024",
+      "key": "cohere/command-r-08-2024|max_output_tokens|AMBIGUOUS|stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens",
+      "entry": "cohere/command-r-08-2024",
       "field": "max_output_tokens",
       "class": "AMBIGUOUS",
       "detail": "stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens"
     },
     {
-      "key": "cohere/command-r-plus-08-2024|context_window_tokens|AMBIGUOUS|stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens",
+      "key": "cohere/command-r-plus-04-2024|context_window_tokens|AMBIGUOUS|stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens; 128k can mean decimal 128000 or binary 131072 tokens; 128k can mean decimal 128000 or binary 131072 tokens",
+      "entry": "cohere/command-r-plus-04-2024",
+      "field": "context_window_tokens",
+      "class": "AMBIGUOUS",
+      "detail": "stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens; 128k can mean decimal 128000 or binary 131072 tokens; 128k can mean decimal 128000 or binary 131072 tokens"
+    },
+    {
+      "key": "cohere/command-r-plus-04-2024|max_output_tokens|AMBIGUOUS|stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens",
+      "entry": "cohere/command-r-plus-04-2024",
+      "field": "max_output_tokens",
+      "class": "AMBIGUOUS",
+      "detail": "stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens"
+    },
+    {
+      "key": "cohere/command-r-plus-08-2024|context_window_tokens|AMBIGUOUS|stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens; 128k can mean decimal 128000 or binary 131072 tokens",
       "entry": "cohere/command-r-plus-08-2024",
       "field": "context_window_tokens",
       "class": "AMBIGUOUS",
-      "detail": "stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens"
+      "detail": "stored value 128000 only matches ambiguous quote unit(s): 128k can mean decimal 128000 or binary 131072 tokens; 128k can mean decimal 128000 or binary 131072 tokens"
     },
     {
-      "key": "cohere/command-r-plus-08-2024|max_output_tokens|AMBIGUOUS|stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens",
+      "key": "cohere/command-r-plus-08-2024|max_output_tokens|AMBIGUOUS|stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens",
       "entry": "cohere/command-r-plus-08-2024",
       "field": "max_output_tokens",
       "class": "AMBIGUOUS",
-      "detail": "stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens"
+      "detail": "stored value 4000 only matches ambiguous quote unit(s): 4k can mean decimal 4000 or binary 4096 tokens; 4k can mean decimal 4000 or binary 4096 tokens"
     },
     {
-      "key": "cohere/tiny-aya-global|context_window_tokens|AMBIGUOUS|stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens",
+      "key": "cohere/tiny-aya-global|context_window_tokens|AMBIGUOUS|stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens",
       "entry": "cohere/tiny-aya-global",
       "field": "context_window_tokens",
       "class": "AMBIGUOUS",
-      "detail": "stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens"
+      "detail": "stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens"
     },
     {
-      "key": "cohere/tiny-aya-global|max_output_tokens|AMBIGUOUS|stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens",
+      "key": "cohere/tiny-aya-global|max_output_tokens|AMBIGUOUS|stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens",
       "entry": "cohere/tiny-aya-global",
       "field": "max_output_tokens",
       "class": "AMBIGUOUS",
-      "detail": "stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens"
+      "detail": "stored value 8000 only matches ambiguous quote unit(s): 8k can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens; 8k can mean decimal 8000 or binary 8192 tokens"
     },
     {
       "key": "deepseek/deepseek-v4-flash|context_window_tokens|AMBIGUOUS|stored value 1000000 only matches ambiguous quote unit(s): 1M can mean decimal 1000000 or binary 1048576 tokens; 1M can mean decimal 1000000 or binary 1048576 tokens; 1M can mean decimal 1000000 or binary 1048576 tokens",
@@ -822,18 +808,25 @@
       "detail": "no stored quote entails status ga"
     },
     {
+      "key": "cohere/command|context_window_tokens|UNSUPPORTED|no stored quote contains numeric evidence for stored value 4000",
+      "entry": "cohere/command",
+      "field": "context_window_tokens",
+      "class": "UNSUPPORTED",
+      "detail": "no stored quote contains numeric evidence for stored value 4000"
+    },
+    {
+      "key": "cohere/command|max_output_tokens|UNSUPPORTED|no stored quote contains numeric evidence for stored value 4000",
+      "entry": "cohere/command",
+      "field": "max_output_tokens",
+      "class": "UNSUPPORTED",
+      "detail": "no stored quote contains numeric evidence for stored value 4000"
+    },
+    {
       "key": "cohere/command|status|UNSUPPORTED|no stored quote entails status deprecated",
       "entry": "cohere/command",
       "field": "status",
       "class": "UNSUPPORTED",
       "detail": "no stored quote entails status deprecated"
-    },
-    {
-      "key": "cohere/command-a-plus-05-2026|modalities|UNSUPPORTED|no stored quote entails input=['image', 'text'] and output=['text']",
-      "entry": "cohere/command-a-plus-05-2026",
-      "field": "modalities",
-      "class": "UNSUPPORTED",
-      "detail": "no stored quote entails input=['image', 'text'] and output=['text']"
     },
     {
       "key": "cohere/command-a-vision-07-2025|modalities|UNSUPPORTED|no stored quote entails input=['image', 'text'] and output=['text']",

@@ -28,7 +28,7 @@
   "sources": [
     {
       "url": "https://ai.google.dev/gemini-api/docs/pricing",
-      "accessed_at": "2026-07-04T05:55:32Z",
+      "accessed_at": "2026-07-07T11:44:22Z",
       "fields": [
         "pricing.input_per_mtok",
         "pricing.output_per_mtok",
@@ -39,14 +39,14 @@
     },
     {
       "url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash",
-      "accessed_at": "2026-07-04T07:37:12Z",
+      "accessed_at": "2026-07-07T11:44:22Z",
       "fields": [
         "context_window_tokens"
       ],
       "quote": "Gemini 2.5 Flash ... Model code gemini-2.5-flash ... Token limits ... Input token limit 1,048,576 Output token limit 65,536"
     }
   ],
-  "verified_at": "2026-07-04T07:37:12Z",
+  "verified_at": "2026-07-07T11:44:22Z",
   "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
   "permalink": "/models/google/gemini-2_5-flash.html"
 }

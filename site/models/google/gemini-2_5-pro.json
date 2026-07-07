@@ -26,7 +26,7 @@
   "sources": [
     {
       "url": "https://ai.google.dev/gemini-api/docs/pricing",
-      "accessed_at": "2026-07-04T05:55:32Z",
+      "accessed_at": "2026-07-07T11:44:22Z",
       "fields": [
         "pricing.input_per_mtok",
         "pricing.output_per_mtok",
@@ -36,7 +36,7 @@
       "quote": "Gemini 2.5 Pro `gemini-2.5-pro` ... Input price Free of charge $1.25, prompts <= 200k tokens $2.50, prompts > 200k tokens Output price (including thinking tokens) Free of charge $10.00, prompts <= 200k tokens $15.00, prompts > 200k Context caching price Not available $0.125, prompts <= 200k tokens"
     }
   ],
-  "verified_at": "2026-07-04T05:55:32Z",
+  "verified_at": "2026-07-07T11:44:22Z",
   "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
   "permalink": "/models/google/gemini-2_5-pro.html"
 }

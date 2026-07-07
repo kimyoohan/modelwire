@@ -1,6 +1,21 @@
 {
   "audits": [
     {
+      "date": "2026-07-07",
+      "summary": "Weekly external audit reran LiteLLM and models.dev comparisons after refreshing primary-source evidence. Raw third-party differences are preserved in data/external/mismatches.json; no primary-source-backed ModelWire corrections were made in this pass.",
+      "stats": {
+        "models_compared": 135,
+        "external_model_pairs_compared": 672,
+        "raw_mismatches": 972,
+        "raw_we_lack": 1135,
+        "raw_they_lack": 225,
+        "raw_not_present": 115,
+        "raw_matches": 1028,
+        "modelwire_corrections": 0
+      },
+      "findings": []
+    },
+    {
       "date": "2026-07-04",
       "summary": "Independent verification of LiteLLM and models.dev metadata against ModelWire source-verified facts.",
       "stats": {
