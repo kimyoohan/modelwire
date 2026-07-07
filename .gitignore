@@ -1,1 +1,5 @@
 .netlify/
+.env.cloudflare
+ops/refresh.log
+ops/outreach/candidates-2026-07-05.json
+ops/outreach/candidates-2026-07-05-summary.md

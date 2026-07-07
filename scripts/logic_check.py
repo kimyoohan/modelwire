@@ -119,7 +119,35 @@ def money_unit_multiplier(window):
     return Decimal("1")
 
 
-def price_candidates(quote):
+PRICE_CUE_RE = re.compile(
+    r"(\$|/?\$?/?1m\b|/?\$?/?1k\b|per ?1m\b|per ?1k\b|input|output|cache|price|pricing|token)",
+    re.IGNORECASE,
+)
+BARE_PRICE_NUMBER_RE = re.compile(r"(?<![\w$])([0-9]+(?:,[0-9]{3})*(?:\.[0-9]+)?)(?![\w])")
+PRICE_TABLE_HEADER_RE = re.compile(
+    r"input\s*\([^)]*1m[^)]*\)\s*output\s*\([^)]*1m[^)]*\)\s*cache",
+    re.IGNORECASE,
+)
+
+
+def bare_price_table_field(quote, number_start):
+    header_matches = list(PRICE_TABLE_HEADER_RE.finditer(quote[:number_start]))
+    if not header_matches:
+        return None
+
+    row_prefix = quote[header_matches[-1].end():number_start]
+    column_index = len(list(BARE_PRICE_NUMBER_RE.finditer(row_prefix)))
+    fields = (
+        "pricing.input_per_mtok",
+        "pricing.output_per_mtok",
+        "pricing.cached_input_per_mtok",
+    )
+    if column_index < len(fields):
+        return fields[column_index]
+    return None
+
+
+def price_candidates(quote, expected_value=None, field=None):
     candidates = []
     for match in re.finditer(r"\$\s*([0-9]+(?:,[0-9]{3})*(?:\.[0-9]+)?)", quote):
         start, end = match.span()
@@ -137,6 +165,31 @@ def price_candidates(quote):
                 values=(value * multiplier,),
                 ambiguous=False,
                 detail=f"{match.group(0)} as {value * multiplier} per 1M tokens",
+            )
+        )
+    if expected_value is None:
+        return candidates
+
+    for match in BARE_PRICE_NUMBER_RE.finditer(quote):
+        start, end = match.span()
+        raw = quote[start:end]
+        if start > 0 and quote[start - 1] == "$":
+            continue
+        value = decimal_from_text(match.group(1))
+        if value is None or not decimal_equal(expected_value, value):
+            continue
+        table_field = bare_price_table_field(quote, start)
+        if table_field is not None and field != table_field:
+            continue
+        window = quote[max(0, start - 40): min(len(quote), end + 40)]
+        if not PRICE_CUE_RE.search(window):
+            continue
+        candidates.append(
+            NumericCandidate(
+                raw=raw,
+                values=(value,),
+                ambiguous=False,
+                detail=f"{raw} as exact bare price per 1M tokens",
             )
         )
     return candidates
@@ -228,11 +281,11 @@ def token_candidates(quote):
     return candidates
 
 
-def numeric_candidates_for_field(quote, field):
+def numeric_candidates_for_field(quote, field, expected_value=None):
     if field == "pricing.batch_discount_pct":
         return percent_candidates(quote)
     if field.startswith("pricing."):
-        return price_candidates(quote)
+        return price_candidates(quote, expected_value=expected_value, field=field)
     return token_candidates(quote)
 
 
@@ -279,26 +332,30 @@ def labeled_numeric_candidates(quote, field):
 
 
 def tiered_pricing_without_note(entry, field):
-    if not field.startswith("pricing.") or get_field(entry, field) is None:
+    value = get_field(entry, field)
+    if not field.startswith("pricing.") or value is None:
         return None
     notes = (entry.get("notes") or "").lower()
     if any(term in notes for term in TIER_NOTE_TERMS):
         return None
 
     tier_markers = re.compile(
-        r"(<=|>=|<|>|tier|prompt|long[- ]context|search context|duration|resolution|regional|global|international)",
+        r"(<=|>=|<|>|\btier\b|first\s+[0-9][0-9,]*(?:\.\d+)?|after\s+[0-9][0-9,]*(?:\.\d+)?|above\s+[0-9][0-9,]*(?:\.\d+)?|over\s+[0-9][0-9,]*(?:\.\d+)?|under\s+[0-9][0-9,]*(?:\.\d+)?|long[- ]context|context size|search context|volume|threshold|duration|resolution|regional|global|international)",
         re.IGNORECASE,
     )
     for source in entry.get("sources", []):
         if field not in source.get("fields", []):
             continue
         quote = source.get("quote", "")
-        if not tier_markers.search(quote):
-            continue
-        candidates = numeric_candidates_for_field(quote, field)
-        distinct = {str(candidate.values[0]) for candidate in candidates if candidate.values}
-        if len(distinct) > 1:
-            return f"tiered pricing quote has multiple values ({', '.join(sorted(distinct)[:6])}) but notes do not document the chosen tier"
+        for clause in re.split(r"(?:\r?\n|---+|[;|])", quote):
+            if not tier_markers.search(clause):
+                continue
+            candidates = numeric_candidates_for_field(clause, field, expected_value=value)
+            if not exact_candidate_matches(value, candidates):
+                continue
+            distinct = {str(candidate.values[0]) for candidate in candidates if candidate.values}
+            if len(distinct) > 1:
+                return f"tiered pricing quote has multiple values ({', '.join(sorted(distinct)[:6])}) but notes do not document the chosen tier"
     return None
 
 
@@ -309,7 +366,7 @@ def audit_numeric_field(entry, field):
 
     all_candidates = []
     for quote in source_quotes(entry):
-        all_candidates.extend(numeric_candidates_for_field(quote, field))
+        all_candidates.extend(numeric_candidates_for_field(quote, field, expected_value=value))
     matches = exact_candidate_matches(value, all_candidates)
     if any(not match.ambiguous for match in matches):
         tier_detail = tiered_pricing_without_note(entry, field)
@@ -323,7 +380,7 @@ def audit_numeric_field(entry, field):
     field_source_candidates = []
     field_labeled_candidates = []
     for quote in source_quotes(entry, field):
-        field_source_candidates.extend(numeric_candidates_for_field(quote, field))
+        field_source_candidates.extend(numeric_candidates_for_field(quote, field, expected_value=value))
         field_labeled_candidates.extend(labeled_numeric_candidates(quote, field))
     if field_labeled_candidates:
         seen = sorted({candidate.raw for candidate in field_labeled_candidates})

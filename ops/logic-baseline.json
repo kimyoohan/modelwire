@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T00:00:00Z",
+  "generated_at": "2026-07-07T00:00:00Z",
   "policy": "Findings listed here are accepted warnings. Validation fails only on logic findings with keys absent from this baseline.",
   "findings": [
     {
@@ -1298,27 +1298,6 @@
       "detail": "no stored quote entails input=['text'] and output=['text']"
     },
     {
-      "key": "perplexity/perplexity/sonar|pricing.cached_input_per_mtok|UNSUPPORTED|no stored quote contains numeric evidence for stored value 0.0625",
-      "entry": "perplexity/perplexity/sonar",
-      "field": "pricing.cached_input_per_mtok",
-      "class": "UNSUPPORTED",
-      "detail": "no stored quote contains numeric evidence for stored value 0.0625"
-    },
-    {
-      "key": "perplexity/perplexity/sonar|pricing.input_per_mtok|UNSUPPORTED|no stored quote contains numeric evidence for stored value 0.25",
-      "entry": "perplexity/perplexity/sonar",
-      "field": "pricing.input_per_mtok",
-      "class": "UNSUPPORTED",
-      "detail": "no stored quote contains numeric evidence for stored value 0.25"
-    },
-    {
-      "key": "perplexity/perplexity/sonar|pricing.output_per_mtok|UNSUPPORTED|no stored quote contains numeric evidence for stored value 2.5",
-      "entry": "perplexity/perplexity/sonar",
-      "field": "pricing.output_per_mtok",
-      "class": "UNSUPPORTED",
-      "detail": "no stored quote contains numeric evidence for stored value 2.5"
-    },
-    {
       "key": "perplexity/perplexity/sonar|status|UNSUPPORTED|no stored quote entails status ga",
       "entry": "perplexity/perplexity/sonar",
       "field": "status",
@@ -1326,39 +1305,11 @@
       "detail": "no stored quote entails status ga"
     },
     {
-      "key": "perplexity/sonar-pro|pricing.input_per_mtok|UNSUPPORTED|tiered pricing quote has multiple values (10, 14, 15, 2, 3, 6) but notes do not document the chosen tier",
-      "entry": "perplexity/sonar-pro",
-      "field": "pricing.input_per_mtok",
-      "class": "UNSUPPORTED",
-      "detail": "tiered pricing quote has multiple values (10, 14, 15, 2, 3, 6) but notes do not document the chosen tier"
-    },
-    {
-      "key": "perplexity/sonar-pro|pricing.output_per_mtok|UNSUPPORTED|tiered pricing quote has multiple values (10, 14, 15, 2, 3, 6) but notes do not document the chosen tier",
-      "entry": "perplexity/sonar-pro",
-      "field": "pricing.output_per_mtok",
-      "class": "UNSUPPORTED",
-      "detail": "tiered pricing quote has multiple values (10, 14, 15, 2, 3, 6) but notes do not document the chosen tier"
-    },
-    {
       "key": "perplexity/sonar-pro|status|UNSUPPORTED|no stored quote entails status ga",
       "entry": "perplexity/sonar-pro",
       "field": "status",
       "class": "UNSUPPORTED",
       "detail": "no stored quote entails status ga"
-    },
-    {
-      "key": "perplexity/sonar-reasoning-pro|pricing.input_per_mtok|UNSUPPORTED|tiered pricing quote has multiple values (10, 14, 15, 2, 3, 6) but notes do not document the chosen tier",
-      "entry": "perplexity/sonar-reasoning-pro",
-      "field": "pricing.input_per_mtok",
-      "class": "UNSUPPORTED",
-      "detail": "tiered pricing quote has multiple values (10, 14, 15, 2, 3, 6) but notes do not document the chosen tier"
-    },
-    {
-      "key": "perplexity/sonar-reasoning-pro|pricing.output_per_mtok|UNSUPPORTED|tiered pricing quote has multiple values (10, 14, 15, 2, 3, 6) but notes do not document the chosen tier",
-      "entry": "perplexity/sonar-reasoning-pro",
-      "field": "pricing.output_per_mtok",
-      "class": "UNSUPPORTED",
-      "detail": "tiered pricing quote has multiple values (10, 14, 15, 2, 3, 6) but notes do not document the chosen tier"
     },
     {
       "key": "perplexity/sonar-reasoning-pro|status|UNSUPPORTED|no stored quote entails status ga",

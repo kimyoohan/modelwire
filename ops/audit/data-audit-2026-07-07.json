@@ -1,0 +1,134 @@
+[
+  {
+    "model": "perplexity/sonar",
+    "field": "pricing.input_per_mtok",
+    "our_value": 0.25,
+    "primary_value": 0.25,
+    "verbatim_quote": "Model Input ($/1M)Output ($/1M)Cache ($/1M)Docs\n`perplexity/sonar `0.25 2.50 0.0625",
+    "source_url": "https://docs.perplexity.ai/docs/agent-api/models",
+    "accessed_at": "2026-07-07T07:52:00Z",
+    "verdict": "OURS_RIGHT",
+    "note": "Agent API pricing for model id perplexity/sonar; separate Sonar API pricing lists different token/request fees for model id sonar."
+  },
+  {
+    "model": "perplexity/sonar",
+    "field": "pricing.output_per_mtok",
+    "our_value": 2.5,
+    "primary_value": 2.5,
+    "verbatim_quote": "Model Input ($/1M)Output ($/1M)Cache ($/1M)Docs\n`perplexity/sonar `0.25 2.50 0.0625",
+    "source_url": "https://docs.perplexity.ai/docs/agent-api/models",
+    "accessed_at": "2026-07-07T07:52:00Z",
+    "verdict": "OURS_RIGHT",
+    "note": "Agent API pricing for model id perplexity/sonar; separate Sonar API pricing lists different token/request fees for model id sonar."
+  },
+  {
+    "model": "perplexity/sonar",
+    "field": "pricing.cached_input_per_mtok",
+    "our_value": 0.0625,
+    "primary_value": 0.0625,
+    "verbatim_quote": "Model Input ($/1M)Output ($/1M)Cache ($/1M)Docs\n`perplexity/sonar `0.25 2.50 0.0625",
+    "source_url": "https://docs.perplexity.ai/docs/agent-api/models",
+    "accessed_at": "2026-07-07T07:52:00Z",
+    "verdict": "OURS_RIGHT",
+    "note": "Agent API pricing for model id perplexity/sonar; separate Sonar API pricing lists different token/request fees for model id sonar."
+  },
+  {
+    "model": "perplexity/sonar-pro",
+    "field": "pricing.input_per_mtok",
+    "our_value": 3.0,
+    "primary_value": 3.0,
+    "verbatim_quote": "Model Input Tokens ($/1M)Output Tokens ($/1M)Citation Tokens ($/1M)Search Queries ($/1K)Reasoning Tokens ($/1M)\nSonar$1$1---\nSonar Pro$3$15---",
+    "source_url": "https://docs.perplexity.ai/docs/getting-started/pricing",
+    "accessed_at": "2026-07-07T07:52:00Z",
+    "verdict": "OURS_RIGHT",
+    "note": "Token price is not tiered; request fee is separately tiered by search context size."
+  },
+  {
+    "model": "perplexity/sonar-pro",
+    "field": "pricing.output_per_mtok",
+    "our_value": 15.0,
+    "primary_value": 15.0,
+    "verbatim_quote": "Model Input Tokens ($/1M)Output Tokens ($/1M)Citation Tokens ($/1M)Search Queries ($/1K)Reasoning Tokens ($/1M)\nSonar$1$1---\nSonar Pro$3$15---",
+    "source_url": "https://docs.perplexity.ai/docs/getting-started/pricing",
+    "accessed_at": "2026-07-07T07:52:00Z",
+    "verdict": "OURS_RIGHT",
+    "note": "Token price is not tiered; request fee is separately tiered by search context size."
+  },
+  {
+    "model": "perplexity/sonar-reasoning-pro",
+    "field": "pricing.input_per_mtok",
+    "our_value": 2.0,
+    "primary_value": 2.0,
+    "verbatim_quote": "Model Input Tokens ($/1M)Output Tokens ($/1M)Citation Tokens ($/1M)Search Queries ($/1K)Reasoning Tokens ($/1M)\nSonar Pro$3$15---\nSonar Reasoning Pro$2$8---",
+    "source_url": "https://docs.perplexity.ai/docs/getting-started/pricing",
+    "accessed_at": "2026-07-07T07:52:00Z",
+    "verdict": "OURS_RIGHT",
+    "note": "Token price is not tiered; request fee is separately tiered by search context size."
+  },
+  {
+    "model": "perplexity/sonar-reasoning-pro",
+    "field": "pricing.output_per_mtok",
+    "our_value": 8.0,
+    "primary_value": 8.0,
+    "verbatim_quote": "Model Input Tokens ($/1M)Output Tokens ($/1M)Citation Tokens ($/1M)Search Queries ($/1K)Reasoning Tokens ($/1M)\nSonar Pro$3$15---\nSonar Reasoning Pro$2$8---",
+    "source_url": "https://docs.perplexity.ai/docs/getting-started/pricing",
+    "accessed_at": "2026-07-07T07:52:00Z",
+    "verdict": "OURS_RIGHT",
+    "note": "Token price is not tiered; request fee is separately tiered by search context size."
+  },
+  {
+    "model": "groq/llama-3.1-8b-instant",
+    "field": "max_output_tokens",
+    "our_value": 131072,
+    "primary_value": 131072,
+    "verbatim_quote": "MODEL ID SPEED (T/SEC)PRICE PER 1M TOKENS RATE LIMITS (DEVELOPER PLAN)CONTEXT WINDOW (TOKENS)MAX COMPLETION TOKENS MAX FILE SIZE\n\nLlama 3.1 8B llama-3.1-8b-instant\n\n560\n\n$0.05 input$0.08 output\n\n250K TPM 1K RPM\n\n131,072\n\n131,072",
+    "source_url": "https://console.groq.com/docs/models",
+    "accessed_at": "2026-07-07T07:52:00Z",
+    "verdict": "OURS_RIGHT",
+    "note": "Groq docs list max completion tokens as 131,072; the LiteLLM 8,192 value appears stale or wrong."
+  },
+  {
+    "model": "groq/openai/gpt-oss-120b",
+    "field": "max_output_tokens",
+    "our_value": 65536,
+    "primary_value": 65536,
+    "verbatim_quote": "MODEL ID SPEED (T/SEC)PRICE PER 1M TOKENS RATE LIMITS (DEVELOPER PLAN)CONTEXT WINDOW (TOKENS)MAX COMPLETION TOKENS MAX FILE SIZE\n\nGPT OSS 120B openai/gpt-oss-120b\n\n500\n\n$0.15 input$0.60 output\n\n250K TPM 1K RPM\n\n131,072\n\n65,536",
+    "source_url": "https://console.groq.com/docs/models",
+    "accessed_at": "2026-07-07T07:52:00Z",
+    "verdict": "OURS_RIGHT",
+    "note": "Groq docs list max completion tokens as 65,536; the LiteLLM 32,766 value appears stale or wrong."
+  },
+  {
+    "model": "groq/openai/gpt-oss-20b",
+    "field": "max_output_tokens",
+    "our_value": 65536,
+    "primary_value": 65536,
+    "verbatim_quote": "MODEL ID SPEED (T/SEC)PRICE PER 1M TOKENS RATE LIMITS (DEVELOPER PLAN)CONTEXT WINDOW (TOKENS)MAX COMPLETION TOKENS MAX FILE SIZE\n\nGPT OSS 20B openai/gpt-oss-20b\n\n1000\n\n$0.075 input$0.30 output\n\n250K TPM 1K RPM\n\n131,072\n\n65,536",
+    "source_url": "https://console.groq.com/docs/models",
+    "accessed_at": "2026-07-07T07:52:00Z",
+    "verdict": "OURS_RIGHT",
+    "note": "Groq docs list max completion tokens as 65,536; the LiteLLM 32,768 value appears stale or wrong."
+  },
+  {
+    "model": "fireworks/deepseek-v4-pro",
+    "field": "pricing.input_per_mtok",
+    "our_value": 1.74,
+    "primary_value": 1.74,
+    "verbatim_quote": "DeepSeek V4 Pro $1.74 / $0.145 / $3.48$2.61 / $0.218 / $5.22",
+    "source_url": "https://docs.fireworks.ai/serverless/pricing",
+    "accessed_at": "2026-07-07T07:52:00Z",
+    "verdict": "OURS_RIGHT",
+    "note": "Fireworks lists DeepSeek V4 Pro on serverless pricing; standard serving path input is $1.74 per 1M tokens."
+  },
+  {
+    "model": "together/deepseek-v4-pro",
+    "field": "pricing.input_per_mtok",
+    "our_value": 1.74,
+    "primary_value": 1.74,
+    "verbatim_quote": "DeepSeek V4 Pro\n\n$1.74\n\n$0.20\u00a0(cached)\n\n$3.48",
+    "source_url": "https://www.together.ai/pricing",
+    "accessed_at": "2026-07-07T07:52:00Z",
+    "verdict": "OURS_RIGHT",
+    "note": "Together lists DeepSeek V4 Pro in serverless pricing and a model page with endpoint deepseek-ai/DeepSeek-V4-Pro."
+  }
+]
