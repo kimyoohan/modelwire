@@ -1,0 +1,43 @@
+# Held: shorthand-ambiguous completeness fields (need exact-integer source)
+
+Applied 25 FOUND. Held these 39 AMBIGUOUS: source uses K/M shorthand; decimal-vs-binary unresolved. Do not publish a guessed integer.
+
+- anthropic/claude-opus-4-7 max_output_tokens: source says "4.8," (shorthand) - need exact integer (decimal vs binary) before publishing
+- anthropic/claude-opus-4-6 max_output_tokens: source says "4.8," (shorthand) - need exact integer (decimal vs binary) before publishing
+- mistral/mistral-medium-latest context_window_tokens: source says "256k" (shorthand) - need exact integer (decimal vs binary) before publishing
+- mistral/mistral-small-latest context_window_tokens: source says "256k" (shorthand) - need exact integer (decimal vs binary) before publishing
+- mistral/mistral-large-latest context_window_tokens: source says "256k" (shorthand) - need exact integer (decimal vs binary) before publishing
+- mistral/voxtral-small-latest context_window_tokens: source says "32k" (shorthand) - need exact integer (decimal vs binary) before publishing
+- mistral/devstral-medium-latest context_window_tokens: source says "256k" (shorthand) - need exact integer (decimal vs binary) before publishing
+- mistral/devstral-small-latest context_window_tokens: source says "256k" (shorthand) - need exact integer (decimal vs binary) before publishing
+- mistral/codestral-latest context_window_tokens: source says "128k" (shorthand) - need exact integer (decimal vs binary) before publishing
+- mistral/magistral-medium-latest context_window_tokens: source says "128k" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-5.2 context_window_tokens: source says "1M" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-5.2 max_output_tokens: source says "1M" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-5.1 context_window_tokens: source says "200K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-5.1 max_output_tokens: source says "200K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-5 context_window_tokens: source says "200K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-5 max_output_tokens: source says "200K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-5-turbo context_window_tokens: source says "200K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-5-turbo max_output_tokens: source says "200K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-4.7 context_window_tokens: source says "200K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-4.7 max_output_tokens: source says "200K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-4.7-flashx context_window_tokens: source says "200K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-4.7-flashx max_output_tokens: source says "200K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-4.6 context_window_tokens: source says "128K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-4.6 max_output_tokens: source says "4.6" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-4.5 context_window_tokens: source says "128K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-4.5 max_output_tokens: source says "128K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-4.5-x context_window_tokens: source says "128K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-4.5-x max_output_tokens: source says "128K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-4.5-air context_window_tokens: source says "128K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-4.5-air max_output_tokens: source says "128K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-4.5-airx context_window_tokens: source says "128K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-4.5-airx max_output_tokens: source says "128K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-4-32b-0414-128k context_window_tokens: source says "128K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- zhipu/glm-4-32b-0414-128k max_output_tokens: source says "128K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- minimax/minimax-m2 max_output_tokens: source says "2" (shorthand) - need exact integer (decimal vs binary) before publishing
+- together/deepseek-v4-pro context_window_tokens: source says "512K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- together/minimax-m3 context_window_tokens: source says "1M" (shorthand) - need exact integer (decimal vs binary) before publishing
+- together/glm-5.2 context_window_tokens: source says "256K" (shorthand) - need exact integer (decimal vs binary) before publishing
+- together/minimax-m2.5 context_window_tokens: source says "192K" (shorthand) - need exact integer (decimal vs binary) before publishing
