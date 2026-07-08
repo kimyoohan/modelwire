@@ -7,8 +7,8 @@
   "deprecation_date": "2025-09-15",
   "retirement_date": null,
   "pricing": {
-    "input_per_mtok": 1.0,
-    "output_per_mtok": 2.0,
+    "input_per_mtok": 1,
+    "output_per_mtok": 2,
     "cached_input_per_mtok": null,
     "batch_discount_pct": null
   },

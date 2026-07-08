@@ -8,7 +8,7 @@
   "retirement_date": null,
   "pricing": {
     "input_per_mtok": 0.5,
-    "output_per_mtok": 3.0,
+    "output_per_mtok": 3,
     "cached_input_per_mtok": null,
     "batch_discount_pct": null
   },

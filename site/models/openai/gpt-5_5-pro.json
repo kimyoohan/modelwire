@@ -7,8 +7,8 @@
   "deprecation_date": null,
   "retirement_date": null,
   "pricing": {
-    "input_per_mtok": 30.0,
-    "output_per_mtok": 180.0,
+    "input_per_mtok": 30,
+    "output_per_mtok": 180,
     "cached_input_per_mtok": null,
     "batch_discount_pct": null
   },

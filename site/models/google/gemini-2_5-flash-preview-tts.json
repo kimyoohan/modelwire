@@ -8,12 +8,12 @@
   "retirement_date": null,
   "pricing": {
     "input_per_mtok": 0.5,
-    "output_per_mtok": 10.0,
+    "output_per_mtok": 10,
     "cached_input_per_mtok": null,
     "batch_discount_pct": null
   },
-  "context_window_tokens": null,
-  "max_output_tokens": null,
+  "context_window_tokens": 8192,
+  "max_output_tokens": 16384,
   "modalities": {
     "input": [
       "text"
@@ -33,9 +33,18 @@
         "modalities"
       ],
       "quote": "Gemini 2.5 Flash Preview TTS `gemini-2.5-flash-preview-tts` ... Input price Free of charge $0.50 (text) Output price Free of charge $10.00 (audio)"
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-preview-tts",
+      "accessed_at": "2026-07-08T00:00:00Z",
+      "quote": "Input token limit 8,192 Output token limit 16,384",
+      "fields": [
+        "context_window_tokens",
+        "max_output_tokens"
+      ]
     }
   ],
-  "verified_at": "2026-07-07T11:44:22Z",
+  "verified_at": "2026-07-08T00:00:00Z",
   "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
   "permalink": "/models/google/gemini-2_5-flash-preview-tts.html"
 }

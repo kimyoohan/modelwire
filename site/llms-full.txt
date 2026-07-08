@@ -2,13 +2,13 @@
 
 ## alibaba
 model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
-qwen3-max	1.2	6.0	256000	-	ga
-qwen3-max-2026-01-23	1.2	6.0	256000	-	ga
+qwen3-max	1.2	6	256000	-	ga
+qwen3-max-2026-01-23	1.2	6	256000	-	ga
 qwen3.6-flash	0.25	1.5	1000000	64000	ga
 qwen3.6-flash-2026-04-16	0.25	1.5	1000000	64000	ga
 qwen3.6-max-preview	1.3	7.8	256000	-	preview
-qwen3.6-plus	0.5	3.0	1000000	64000	ga
-qwen3.6-plus-2026-04-02	0.5	3.0	1000000	64000	ga
+qwen3.6-plus	0.5	3	1000000	64000	ga
+qwen3.6-plus-2026-04-02	0.5	3	1000000	64000	ga
 qwen3.7-max	2.5	7.5	1000000	-	ga
 qwen3.7-max-2026-05-17	2.5	7.5	1000000	-	ga
 qwen3.7-max-2026-05-20	2.5	7.5	1000000	-	ga
@@ -22,7 +22,7 @@ amazon.nova-lite-v1:0	0.06	0.24	300000	10000	ga
 amazon.nova-micro-v1:0	0.035	0.14	128000	10000	ga
 amazon.nova-premier-v1:0	2.5	12.5	1000000	10000	ga
 amazon.nova-pro-v1:0	0.8	3.2	300000	10000	ga
-anthropic.claude-3-5-sonnet-20241022-v2:0	6.0	30.0	200000	-	deprecated
+anthropic.claude-3-5-sonnet-20241022-v2:0	6	30	200000	8192	deprecated
 
 ## anthropic
 model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
@@ -36,7 +36,7 @@ claude-sonnet-5	2	10	1000000	128000	ga
 ## cohere
 model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
 c4ai-aya-expanse-32b	0.5	1.5	128000	4000	ga
-command	1.0	2.0	4000	4000	deprecated
+command	1	2	4000	4000	deprecated
 command-a-03-2025	-	-	256000	8000	ga
 command-a-plus-05-2026	-	-	128000	64000	ga
 command-a-reasoning-08-2025	-	-	256000	32000	ga
@@ -45,8 +45,8 @@ command-a-vision-07-2025	-	-	128000	8000	ga
 command-light	0.3	0.6	4000	4000	deprecated
 command-r-03-2024	0.5	1.5	128000	4000	deprecated
 command-r-08-2024	-	-	128000	4000	ga
-command-r-plus-04-2024	3.0	15.0	128000	4000	deprecated
-command-r-plus-08-2024	2.5	10.0	128000	4000	ga
+command-r-plus-04-2024	3	15	128000	4000	deprecated
+command-r-plus-08-2024	2.5	10	128000	4000	ga
 command-r7b-12-2024	0.0375	0.15	128000	4000	ga
 tiny-aya-global	-	-	8000	8000	ga
 
@@ -63,10 +63,10 @@ glm-5.1	1.4	4.4	-	-	ga
 glm-5.1-fast	2.8	8.8	-	-	ga
 glm-5.2	1.4	4.4	-	-	ga
 glm-5.2-fast	2.1	6.6	-	-	ga
-kimi-k2.6	0.95	4.0	-	-	ga
-kimi-k2.6-fast	2.0	8.0	-	-	ga
-kimi-k2.7-code	0.95	4.0	-	-	ga
-kimi-k2.7-code-fast	1.9	8.0	-	-	ga
+kimi-k2.6	0.95	4	-	-	ga
+kimi-k2.6-fast	2	8	-	-	ga
+kimi-k2.7-code	0.95	4	-	-	ga
+kimi-k2.7-code-fast	1.9	8	-	-	ga
 llama-v3p3-70b-instruct	0.9	0.9	131072	-	ga
 minimax-m2.7	0.3	1.2	-	-	ga
 minimax-m3	0.3	1.2	-	-	ga
@@ -77,16 +77,16 @@ qwen2p5-vl-32b-instruct	0.9	0.9	128000	-	ga
 
 ## google
 model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
-gemini-2.5-flash	0.3	2.5	1048576	-	ga
-gemini-2.5-flash-lite	0.1	0.4	-	-	ga
-gemini-2.5-flash-lite-preview-09-2025	0.1	0.4	-	-	preview
-gemini-2.5-flash-native-audio-preview-12-2025	0.5	2.0	-	-	preview
-gemini-2.5-flash-preview-tts	0.5	10.0	-	-	preview
-gemini-2.5-pro	1.25	10.0	-	-	ga
-gemini-3-flash-preview	0.5	3.0	-	-	preview
-gemini-3.1-flash-lite	0.25	1.5	-	-	ga
-gemini-3.1-flash-live-preview	0.75	4.5	-	-	preview
-gemini-3.1-pro-preview	2.0	12.0	-	-	preview
+gemini-2.5-flash	0.3	2.5	1048576	65536	ga
+gemini-2.5-flash-lite	0.1	0.4	1048576	65536	ga
+gemini-2.5-flash-lite-preview-09-2025	0.1	0.4	1048576	65536	preview
+gemini-2.5-flash-native-audio-preview-12-2025	0.5	2	131072	8192	preview
+gemini-2.5-flash-preview-tts	0.5	10	8192	16384	preview
+gemini-2.5-pro	1.25	10	1048576	65536	ga
+gemini-3-flash-preview	0.5	3	1048576	65536	preview
+gemini-3.1-flash-lite	0.25	1.5	1048576	65536	ga
+gemini-3.1-flash-live-preview	0.75	4.5	131072	65536	preview
+gemini-3.1-pro-preview	2	12	1048576	65536	preview
 
 ## groq
 model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
@@ -97,18 +97,18 @@ openai/gpt-oss-20b	0.075	0.3	131072	65536	ga
 
 ## minimax
 model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
-minimax-m2	0.3	1.2	-	-	deprecated
-minimax-m2.1	0.3	1.2	-	-	deprecated
-minimax-m2.5	0.3	1.2	-	-	deprecated
-minimax-m2.7	0.3	1.2	-	-	ga
-minimax-m3	0.3	1.2	-	-	ga
+minimax-m2	0.3	1.2	204800	-	deprecated
+minimax-m2.1	0.3	1.2	204800	-	deprecated
+minimax-m2.5	0.3	1.2	204800	-	deprecated
+minimax-m2.7	0.3	1.2	204800	-	ga
+minimax-m3	0.3	1.2	1000000	-	ga
 
 ## mistral
 model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
 codestral-latest	0.3	0.9	-	-	ga
-devstral-medium-latest	0.4	2.0	-	-	ga
+devstral-medium-latest	0.4	2	-	-	ga
 devstral-small-latest	0.1	0.3	-	-	ga
-magistral-medium-latest	2.0	5.0	-	-	ga
+magistral-medium-latest	2	5	-	-	ga
 mistral-large-latest	0.5	1.5	-	-	ga
 mistral-medium-latest	1.5	7.5	-	-	ga
 mistral-small-latest	0.15	0.6	-	-	ga
@@ -116,21 +116,21 @@ voxtral-small-latest	0.1	0.4	-	-	ga
 
 ## moonshot
 model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
-kimi-k2.5	0.6	3.0	256000	-	ga
-kimi-k2.6	0.95	4.0	256000	-	ga
-kimi-k2.7-code	0.95	4.0	256000	-	ga
+kimi-k2.5	0.6	3	256000	-	ga
+kimi-k2.6	0.95	4	256000	-	ga
+kimi-k2.7-code	0.95	4	256000	-	ga
 
 ## openai
 model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
-gpt-5.4	2.5	15.0	1050000	128000	ga
-gpt-5.5	5.0	30.0	1050000	128000	ga
-gpt-5.5-pro	30.0	180.0	1050000	128000	ga
+gpt-5.4	2.5	15	1050000	128000	ga
+gpt-5.5	5	30	1050000	128000	ga
+gpt-5.5-pro	30	180	1050000	128000	ga
 
 ## perplexity
 model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
 perplexity/sonar	0.25	2.5	-	-	ga
-sonar-pro	3.0	15.0	200000	-	ga
-sonar-reasoning-pro	2.0	8.0	128000	-	ga
+sonar-pro	3	15	200000	-	ga
+sonar-reasoning-pro	2	8	128000	-	ga
 
 ## together
 model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
@@ -145,7 +145,7 @@ glm-5.2	1.4	4.4	-	-	ga
 gpt-oss-120b	0.15	0.6	-	-	ga
 gpt-oss-20b	0.05	0.2	-	-	ga
 kimi-k2.6	1.2	4.5	-	-	ga
-kimi-k2.7-code	0.95	4.0	-	-	ga
+kimi-k2.7-code	0.95	4	-	-	ga
 lfm2-24b-a2b	0.03	0.12	-	-	ga
 llama-3.3-70b	1.04	1.04	-	-	ga
 minimax-m2.5	0.3	1.2	-	-	ga
@@ -155,7 +155,7 @@ nvidia-nemotron-3-ultra	0.6	3.6	-	-	ga
 qwen3-235b-a22b-fp8-throughput	0.2	0.6	-	-	ga
 qwen3.5-397b-a17b	0.6	3.6	-	-	ga
 qwen3.5-9b	0.17	0.25	-	-	ga
-qwen3.6-plus	0.5	3.0	-	-	ga
+qwen3.6-plus	0.5	3	-	-	ga
 qwen3.7-max	1.25	3.75	-	-	ga
 qwen3.7-plus	0.32	1.28	-	-	ga
 rnj-1-instruct	0.15	0.15	-	-	ga
@@ -166,7 +166,7 @@ grok-4.20-0309-non-reasoning	1.25	2.5	1000000	-	ga
 grok-4.20-0309-reasoning	1.25	2.5	1000000	-	ga
 grok-4.20-multi-agent-0309	1.25	2.5	1000000	-	ga
 grok-4.3	1.25	2.5	1000000	-	ga
-grok-build-0.1	1.0	2.0	256000	-	ga
+grok-build-0.1	1	2	256000	-	ga
 
 ## zhipu
 model_id	input_usd_per_1m	output_usd_per_1m	context	max_output	status
@@ -178,8 +178,8 @@ glm-4.5-x	2.2	8.9	-	-	ga
 glm-4.6	0.6	2.2	-	-	ga
 glm-4.7	0.6	2.2	-	-	ga
 glm-4.7-flashx	0.07	0.4	-	-	ga
-glm-5	1.0	3.2	-	-	ga
-glm-5-turbo	1.2	4.0	-	-	ga
+glm-5	1	3.2	-	-	ga
+glm-5-turbo	1.2	4	-	-	ga
 glm-5.1	1.4	4.4	-	-	ga
 glm-5.2	1.4	4.4	-	-	ga
 

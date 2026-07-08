@@ -7,14 +7,14 @@
   "deprecation_date": "2026-01-30",
   "retirement_date": "2026-07-30",
   "pricing": {
-    "input_per_mtok": 6.0,
-    "output_per_mtok": 30.0,
+    "input_per_mtok": 6,
+    "output_per_mtok": 30,
     "cached_input_per_mtok": 0.6,
     "batch_discount_pct": null
   },
   "context_window_tokens": 200000,
   "context_window_notation": "200K",
-  "max_output_tokens": null,
+  "max_output_tokens": 8192,
   "modalities": {
     "input": [
       "text",
@@ -55,9 +55,17 @@
         "modalities"
       ],
       "quote": "Claude 3.5 Sonnet is now available ... via Anthropic API, Amazon Bedrock, and Google Cloud Vertex AI ... 200K token context window ... vision capabilities"
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "accessed_at": "2026-07-08T00:00:00Z",
+      "quote": "We've moved 8,192 token outputs from beta to general availability for Claude Sonnet 3.5.",
+      "fields": [
+        "max_output_tokens"
+      ]
     }
   ],
-  "verified_at": "2026-07-07T11:44:22Z",
+  "verified_at": "2026-07-08T00:00:00Z",
   "notes": "hosted third-party model (Anthropic) on Bedrock; Public Extended Access price recorded from AWS Bedrock pricing.",
   "permalink": "/models/amazon/anthropic_claude-3-5-sonnet-20241022-v2_0.html"
 }

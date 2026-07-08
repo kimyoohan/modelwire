@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T13:46:45Z",
+  "generated_at": "2026-07-08T03:23:28Z",
   "count": 135,
   "version": "0.6",
   "models": [
@@ -12,8 +12,8 @@
       "deprecation_date": null,
       "retirement_date": null,
       "pricing": {
-        "input_per_mtok": 5.0,
-        "output_per_mtok": 30.0,
+        "input_per_mtok": 5,
+        "output_per_mtok": 30,
         "cached_input_per_mtok": 0.5,
         "batch_discount_pct": null
       },
@@ -65,8 +65,8 @@
       "deprecation_date": null,
       "retirement_date": null,
       "pricing": {
-        "input_per_mtok": 30.0,
-        "output_per_mtok": 180.0,
+        "input_per_mtok": 30,
+        "output_per_mtok": 180,
         "cached_input_per_mtok": null,
         "batch_discount_pct": null
       },
@@ -118,7 +118,7 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 2.5,
-        "output_per_mtok": 15.0,
+        "output_per_mtok": 15,
         "cached_input_per_mtok": 0.25,
         "batch_discount_pct": null
       },
@@ -557,8 +557,8 @@
         "cached_input_per_mtok": 0.025,
         "batch_discount_pct": null
       },
-      "context_window_tokens": null,
-      "max_output_tokens": null,
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 65536,
       "modalities": {
         "input": [
           "text",
@@ -581,9 +581,18 @@
             "modalities"
           ],
           "quote": "Gemini 3.1 Flash-Lite `gemini-3.1-flash-lite` ... Input price Free of charge $0.25 (text / image / video) $0.50 (audio) Output price (including thinking tokens) Free of charge $1.50 Context caching price Not available $0.025 (text / image / video)"
+        },
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite",
+          "accessed_at": "2026-07-08T00:00:00Z",
+          "quote": "Input token limit 1,048,576 Output token limit 65,536",
+          "fields": [
+            "context_window_tokens",
+            "max_output_tokens"
+          ]
         }
       ],
-      "verified_at": "2026-07-07T11:44:22Z",
+      "verified_at": "2026-07-08T00:00:00Z",
       "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
       "permalink": "/models/google/gemini-3_1-flash-lite.html"
     },
@@ -596,13 +605,13 @@
       "deprecation_date": null,
       "retirement_date": null,
       "pricing": {
-        "input_per_mtok": 2.0,
-        "output_per_mtok": 12.0,
+        "input_per_mtok": 2,
+        "output_per_mtok": 12,
         "cached_input_per_mtok": 0.2,
         "batch_discount_pct": null
       },
-      "context_window_tokens": null,
-      "max_output_tokens": null,
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 65536,
       "modalities": {
         "input": [
           "text",
@@ -626,9 +635,18 @@
             "modalities"
           ],
           "quote": "Gemini 3.1 Pro Preview `gemini-3.1-pro-preview` ... Input price Not available $2.00, prompts <= 200k tokens $4.00, prompts > 200k tokens Output price (including thinking tokens) Not available $12.00, prompts <= 200k tokens $18.00, prompts > 200k Context caching price Not available $0.20, prompts <= 200k tokens"
+        },
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview",
+          "accessed_at": "2026-07-08T00:00:00Z",
+          "quote": "Input token limit 1,048,576 Output token limit 65,536",
+          "fields": [
+            "context_window_tokens",
+            "max_output_tokens"
+          ]
         }
       ],
-      "verified_at": "2026-07-07T11:44:22Z",
+      "verified_at": "2026-07-08T00:00:00Z",
       "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
       "permalink": "/models/google/gemini-3_1-pro-preview.html"
     },
@@ -646,8 +664,8 @@
         "cached_input_per_mtok": null,
         "batch_discount_pct": null
       },
-      "context_window_tokens": null,
-      "max_output_tokens": null,
+      "context_window_tokens": 131072,
+      "max_output_tokens": 65536,
       "modalities": {
         "input": [
           "text"
@@ -667,9 +685,18 @@
             "modalities"
           ],
           "quote": "Gemini 3.1 Flash Live Preview `gemini-3.1-flash-live-preview` ... Input price Free of charge $0.75 (text) $3.00 or $0.005/min (audio) $1.00 or $0.002/min (image/video) Output price (including thinking tokens) Free of charge $4.50 (text) $12.00 or $0.018/min (audio)"
+        },
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-live-preview",
+          "accessed_at": "2026-07-08T00:00:00Z",
+          "quote": "Input token limit 131,072 Output token limit 65,536",
+          "fields": [
+            "context_window_tokens",
+            "max_output_tokens"
+          ]
         }
       ],
-      "verified_at": "2026-07-07T11:44:22Z",
+      "verified_at": "2026-07-08T00:00:00Z",
       "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
       "permalink": "/models/google/gemini-3_1-flash-live-preview.html"
     },
@@ -683,12 +710,12 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 0.5,
-        "output_per_mtok": 3.0,
+        "output_per_mtok": 3,
         "cached_input_per_mtok": 0.05,
         "batch_discount_pct": null
       },
-      "context_window_tokens": null,
-      "max_output_tokens": null,
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 65536,
       "modalities": {
         "input": [
           "text",
@@ -711,9 +738,18 @@
             "modalities"
           ],
           "quote": "Gemini 3 Flash Preview `gemini-3-flash-preview` ... Input price Free of charge $0.50 (text / image / video) $1.00 (audio) Output price (including thinking tokens) Free of charge $3.00 Context caching price Free of charge $0.05 (text / image / video)"
+        },
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview",
+          "accessed_at": "2026-07-08T00:00:00Z",
+          "quote": "Input token limit 1,048,576 Output token limit 65,536",
+          "fields": [
+            "context_window_tokens",
+            "max_output_tokens"
+          ]
         }
       ],
-      "verified_at": "2026-07-07T11:44:22Z",
+      "verified_at": "2026-07-08T00:00:00Z",
       "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
       "permalink": "/models/google/gemini-3-flash-preview.html"
     },
@@ -727,12 +763,12 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 1.25,
-        "output_per_mtok": 10.0,
+        "output_per_mtok": 10,
         "cached_input_per_mtok": 0.125,
         "batch_discount_pct": null
       },
-      "context_window_tokens": null,
-      "max_output_tokens": null,
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 65536,
       "modalities": {
         "input": [
           "text"
@@ -753,9 +789,18 @@
             "modalities"
           ],
           "quote": "Gemini 2.5 Pro `gemini-2.5-pro` ... Input price Free of charge $1.25, prompts <= 200k tokens $2.50, prompts > 200k tokens Output price (including thinking tokens) Free of charge $10.00, prompts <= 200k tokens $15.00, prompts > 200k Context caching price Not available $0.125, prompts <= 200k tokens"
+        },
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-pro",
+          "accessed_at": "2026-07-08T00:00:00Z",
+          "quote": "Input token limit 1,048,576 Output token limit 65,536",
+          "fields": [
+            "context_window_tokens",
+            "max_output_tokens"
+          ]
         }
       ],
-      "verified_at": "2026-07-07T11:44:22Z",
+      "verified_at": "2026-07-08T00:00:00Z",
       "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
       "permalink": "/models/google/gemini-2_5-pro.html"
     },
@@ -774,7 +819,7 @@
         "batch_discount_pct": null
       },
       "context_window_tokens": 1048576,
-      "max_output_tokens": null,
+      "max_output_tokens": 65536,
       "modalities": {
         "input": [
           "text",
@@ -805,9 +850,17 @@
             "context_window_tokens"
           ],
           "quote": "Gemini 2.5 Flash ... Model code gemini-2.5-flash ... Token limits ... Input token limit 1,048,576 Output token limit 65,536"
+        },
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash",
+          "accessed_at": "2026-07-08T00:00:00Z",
+          "quote": "Input token limit 1,048,576 Output token limit 65,536",
+          "fields": [
+            "max_output_tokens"
+          ]
         }
       ],
-      "verified_at": "2026-07-07T11:44:22Z",
+      "verified_at": "2026-07-08T00:00:00Z",
       "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
       "permalink": "/models/google/gemini-2_5-flash.html"
     },
@@ -825,8 +878,8 @@
         "cached_input_per_mtok": 0.01,
         "batch_discount_pct": null
       },
-      "context_window_tokens": null,
-      "max_output_tokens": null,
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 65536,
       "modalities": {
         "input": [
           "text",
@@ -849,9 +902,18 @@
             "modalities"
           ],
           "quote": "Gemini 2.5 Flash-Lite `gemini-2.5-flash-lite` ... Input price (text, image, video) Free of charge $0.10 (text / image / video) $0.30 (audio) Output price (including thinking tokens) Free of charge $0.40 Context caching price Not available $0.01 (text / image / video)"
+        },
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-lite",
+          "accessed_at": "2026-07-08T00:00:00Z",
+          "quote": "Input token limit 1,048,576 Output token limit 65,536",
+          "fields": [
+            "context_window_tokens",
+            "max_output_tokens"
+          ]
         }
       ],
-      "verified_at": "2026-07-07T11:44:22Z",
+      "verified_at": "2026-07-08T00:00:00Z",
       "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
       "permalink": "/models/google/gemini-2_5-flash-lite.html"
     },
@@ -869,8 +931,8 @@
         "cached_input_per_mtok": 0.01,
         "batch_discount_pct": null
       },
-      "context_window_tokens": null,
-      "max_output_tokens": null,
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 65536,
       "modalities": {
         "input": [
           "text",
@@ -893,9 +955,18 @@
             "modalities"
           ],
           "quote": "Gemini 2.5 Flash-Lite Preview `gemini-2.5-flash-lite-preview-09-2025` ... Input price (text, image, video) Free of charge $0.10 (text / image / video) $0.30 (audio) Output price (including thinking tokens) Free of charge $0.40 Context caching price Not available $0.01 (text / image / video)"
+        },
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-lite-preview-09-2025",
+          "accessed_at": "2026-07-08T00:00:00Z",
+          "quote": "Input token limit 1,048,576 Output token limit 65,536",
+          "fields": [
+            "context_window_tokens",
+            "max_output_tokens"
+          ]
         }
       ],
-      "verified_at": "2026-07-07T11:44:22Z",
+      "verified_at": "2026-07-08T00:00:00Z",
       "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
       "permalink": "/models/google/gemini-2_5-flash-lite-preview-09-2025.html"
     },
@@ -909,12 +980,12 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 0.5,
-        "output_per_mtok": 2.0,
+        "output_per_mtok": 2,
         "cached_input_per_mtok": null,
         "batch_discount_pct": null
       },
-      "context_window_tokens": null,
-      "max_output_tokens": null,
+      "context_window_tokens": 131072,
+      "max_output_tokens": 8192,
       "modalities": {
         "input": [
           "text",
@@ -937,9 +1008,18 @@
             "modalities"
           ],
           "quote": "Gemini 2.5 Flash Native Audio (Live API) `gemini-2.5-flash-native-audio-preview-12-2025` ... Input price Free of charge $0.50 (text) $3.00 (audio / video) Output price (including thinking tokens) Free of charge $2.00 (text) $12.00 (audio)"
+        },
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-native-audio-preview-12-2025",
+          "accessed_at": "2026-07-08T00:00:00Z",
+          "quote": "Input token limit 131,072 Output token limit 8,192",
+          "fields": [
+            "context_window_tokens",
+            "max_output_tokens"
+          ]
         }
       ],
-      "verified_at": "2026-07-07T11:44:22Z",
+      "verified_at": "2026-07-08T00:00:00Z",
       "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
       "permalink": "/models/google/gemini-2_5-flash-native-audio-preview-12-2025.html"
     },
@@ -953,12 +1033,12 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 0.5,
-        "output_per_mtok": 10.0,
+        "output_per_mtok": 10,
         "cached_input_per_mtok": null,
         "batch_discount_pct": null
       },
-      "context_window_tokens": null,
-      "max_output_tokens": null,
+      "context_window_tokens": 8192,
+      "max_output_tokens": 16384,
       "modalities": {
         "input": [
           "text"
@@ -978,9 +1058,18 @@
             "modalities"
           ],
           "quote": "Gemini 2.5 Flash Preview TTS `gemini-2.5-flash-preview-tts` ... Input price Free of charge $0.50 (text) Output price Free of charge $10.00 (audio)"
+        },
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-preview-tts",
+          "accessed_at": "2026-07-08T00:00:00Z",
+          "quote": "Input token limit 8,192 Output token limit 16,384",
+          "fields": [
+            "context_window_tokens",
+            "max_output_tokens"
+          ]
         }
       ],
-      "verified_at": "2026-07-07T11:44:22Z",
+      "verified_at": "2026-07-08T00:00:00Z",
       "notes": "Gemini pricing may vary by modality and prompt length; this entry records the cited standard text or text/image/video tier.",
       "permalink": "/models/google/gemini-2_5-flash-preview-tts.html"
     },
@@ -1162,7 +1251,7 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 0.4,
-        "output_per_mtok": 2.0,
+        "output_per_mtok": 2,
         "cached_input_per_mtok": null,
         "batch_discount_pct": null
       },
@@ -1285,8 +1374,8 @@
       "deprecation_date": null,
       "retirement_date": null,
       "pricing": {
-        "input_per_mtok": 2.0,
-        "output_per_mtok": 5.0,
+        "input_per_mtok": 2,
+        "output_per_mtok": 5,
         "cached_input_per_mtok": null,
         "batch_discount_pct": null
       },
@@ -1327,8 +1416,8 @@
       "deprecation_date": null,
       "retirement_date": null,
       "pricing": {
-        "input_per_mtok": 1.0,
-        "output_per_mtok": 2.0,
+        "input_per_mtok": 1,
+        "output_per_mtok": 2,
         "cached_input_per_mtok": 0.2,
         "batch_discount_pct": null
       },
@@ -1689,7 +1778,7 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 2.5,
-        "output_per_mtok": 10.0,
+        "output_per_mtok": 10,
         "cached_input_per_mtok": null,
         "batch_discount_pct": null
       },
@@ -1795,8 +1884,8 @@
       "deprecation_date": "2025-09-15",
       "retirement_date": null,
       "pricing": {
-        "input_per_mtok": 3.0,
-        "output_per_mtok": 15.0,
+        "input_per_mtok": 3,
+        "output_per_mtok": 15,
         "cached_input_per_mtok": null,
         "batch_discount_pct": null
       },
@@ -1849,8 +1938,8 @@
       "deprecation_date": "2025-09-15",
       "retirement_date": null,
       "pricing": {
-        "input_per_mtok": 1.0,
-        "output_per_mtok": 2.0,
+        "input_per_mtok": 1,
+        "output_per_mtok": 2,
         "cached_input_per_mtok": null,
         "batch_discount_pct": null
       },
@@ -2439,7 +2528,7 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 1.2,
-        "output_per_mtok": 6.0,
+        "output_per_mtok": 6,
         "cached_input_per_mtok": null,
         "batch_discount_pct": null
       },
@@ -2481,7 +2570,7 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 1.2,
-        "output_per_mtok": 6.0,
+        "output_per_mtok": 6,
         "cached_input_per_mtok": null,
         "batch_discount_pct": null
       },
@@ -2523,7 +2612,7 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 0.95,
-        "output_per_mtok": 4.0,
+        "output_per_mtok": 4,
         "cached_input_per_mtok": 0.19,
         "batch_discount_pct": null
       },
@@ -2576,7 +2665,7 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 0.95,
-        "output_per_mtok": 4.0,
+        "output_per_mtok": 4,
         "cached_input_per_mtok": 0.16,
         "batch_discount_pct": null
       },
@@ -2629,7 +2718,7 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 0.6,
-        "output_per_mtok": 3.0,
+        "output_per_mtok": 3,
         "cached_input_per_mtok": 0.1,
         "batch_discount_pct": null
       },
@@ -2763,7 +2852,7 @@
       "deprecation_date": null,
       "retirement_date": null,
       "pricing": {
-        "input_per_mtok": 1.0,
+        "input_per_mtok": 1,
         "output_per_mtok": 3.2,
         "cached_input_per_mtok": 0.2,
         "batch_discount_pct": null
@@ -2805,7 +2894,7 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 1.2,
-        "output_per_mtok": 4.0,
+        "output_per_mtok": 4,
         "cached_input_per_mtok": 0.24,
         "batch_discount_pct": null
       },
@@ -3177,7 +3266,7 @@
         "cached_input_per_mtok": 0.06,
         "batch_discount_pct": null
       },
-      "context_window_tokens": null,
+      "context_window_tokens": 1000000,
       "max_output_tokens": null,
       "modalities": {
         "input": [
@@ -3198,9 +3287,17 @@
             "pricing.cached_input_per_mtok"
           ],
           "quote": "Model Input Output Prompt caching Read MiniMax-M3 <= 512k input tokens Permanent 50% off $0.30 / M tokens $1.20 / M tokens $0.06 / M tokens ... MiniMax-M2.7$0.3 / M tokens$1.2 / M tokens$0.06 / M tokens$0.375 / M tokens Legacy Models MiniMax-M2.5$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2.1$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens"
+        },
+        {
+          "url": "https://platform.minimax.io/docs/api-reference/text-openai-api",
+          "accessed_at": "2026-07-08T00:00:00Z",
+          "quote": "MiniMax-M3 1,000,000 Latest M-series language model for agentic reasoning, tool use, coding, and long-context tasks",
+          "fields": [
+            "context_window_tokens"
+          ]
         }
       ],
-      "verified_at": "2026-07-07T11:44:22Z",
+      "verified_at": "2026-07-08T00:00:00Z",
       "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source.",
       "permalink": "/models/minimax/minimax-m3.html"
     },
@@ -3218,7 +3315,7 @@
         "cached_input_per_mtok": 0.06,
         "batch_discount_pct": null
       },
-      "context_window_tokens": null,
+      "context_window_tokens": 204800,
       "max_output_tokens": null,
       "modalities": {
         "input": [
@@ -3239,9 +3336,17 @@
             "pricing.cached_input_per_mtok"
           ],
           "quote": "Model Input Output Prompt caching Read MiniMax-M3 <= 512k input tokens Permanent 50% off $0.30 / M tokens $1.20 / M tokens $0.06 / M tokens ... MiniMax-M2.7$0.3 / M tokens$1.2 / M tokens$0.06 / M tokens$0.375 / M tokens Legacy Models MiniMax-M2.5$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2.1$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens"
+        },
+        {
+          "url": "https://platform.minimax.io/docs/api-reference/text-openai-api",
+          "accessed_at": "2026-07-08T00:00:00Z",
+          "quote": "MiniMax-M2.7 204,800 Beginning the journey of recursive self-improvement",
+          "fields": [
+            "context_window_tokens"
+          ]
         }
       ],
-      "verified_at": "2026-07-07T11:44:22Z",
+      "verified_at": "2026-07-08T00:00:00Z",
       "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source.",
       "permalink": "/models/minimax/minimax-m2_7.html"
     },
@@ -3259,7 +3364,7 @@
         "cached_input_per_mtok": 0.03,
         "batch_discount_pct": null
       },
-      "context_window_tokens": null,
+      "context_window_tokens": 204800,
       "max_output_tokens": null,
       "modalities": {
         "input": [
@@ -3280,9 +3385,17 @@
             "pricing.cached_input_per_mtok"
           ],
           "quote": "Model Input Output Prompt caching Read MiniMax-M3 <= 512k input tokens Permanent 50% off $0.30 / M tokens $1.20 / M tokens $0.06 / M tokens ... MiniMax-M2.7$0.3 / M tokens$1.2 / M tokens$0.06 / M tokens$0.375 / M tokens Legacy Models MiniMax-M2.5$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2.1$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens"
+        },
+        {
+          "url": "https://platform.minimax.io/docs/api-reference/text-openai-api",
+          "accessed_at": "2026-07-08T00:00:00Z",
+          "quote": "MiniMax-M2.5 204,800 Peak Performance. Ultimate Value. Master the Complex",
+          "fields": [
+            "context_window_tokens"
+          ]
         }
       ],
-      "verified_at": "2026-07-07T11:44:22Z",
+      "verified_at": "2026-07-08T00:00:00Z",
       "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source.",
       "permalink": "/models/minimax/minimax-m2_5.html"
     },
@@ -3300,7 +3413,7 @@
         "cached_input_per_mtok": 0.03,
         "batch_discount_pct": null
       },
-      "context_window_tokens": null,
+      "context_window_tokens": 204800,
       "max_output_tokens": null,
       "modalities": {
         "input": [
@@ -3321,9 +3434,17 @@
             "pricing.cached_input_per_mtok"
           ],
           "quote": "Model Input Output Prompt caching Read MiniMax-M3 <= 512k input tokens Permanent 50% off $0.30 / M tokens $1.20 / M tokens $0.06 / M tokens ... MiniMax-M2.7$0.3 / M tokens$1.2 / M tokens$0.06 / M tokens$0.375 / M tokens Legacy Models MiniMax-M2.5$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2.1$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens"
+        },
+        {
+          "url": "https://platform.minimax.io/docs/api-reference/text-openai-api",
+          "accessed_at": "2026-07-08T00:00:00Z",
+          "quote": "MiniMax-M2.1 204,800 Powerful Multi-Language Programming Capabilities with Comprehensively Enhanced Programming Experience",
+          "fields": [
+            "context_window_tokens"
+          ]
         }
       ],
-      "verified_at": "2026-07-07T11:44:22Z",
+      "verified_at": "2026-07-08T00:00:00Z",
       "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source.",
       "permalink": "/models/minimax/minimax-m2_1.html"
     },
@@ -3341,7 +3462,7 @@
         "cached_input_per_mtok": 0.03,
         "batch_discount_pct": null
       },
-      "context_window_tokens": null,
+      "context_window_tokens": 204800,
       "max_output_tokens": null,
       "modalities": {
         "input": [
@@ -3362,9 +3483,17 @@
             "pricing.cached_input_per_mtok"
           ],
           "quote": "Model Input Output Prompt caching Read MiniMax-M3 <= 512k input tokens Permanent 50% off $0.30 / M tokens $1.20 / M tokens $0.06 / M tokens ... MiniMax-M2.7$0.3 / M tokens$1.2 / M tokens$0.06 / M tokens$0.375 / M tokens Legacy Models MiniMax-M2.5$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2.1$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens MiniMax-M2$0.3 / M tokens$1.2 / M tokens$0.03 / M tokens$0.375 / M tokens"
+        },
+        {
+          "url": "https://platform.minimax.io/docs/api-reference/text-openai-api",
+          "accessed_at": "2026-07-08T00:00:00Z",
+          "quote": "MiniMax-M2 204,800 Agentic capabilities, Advanced reasoning",
+          "fields": [
+            "context_window_tokens"
+          ]
         }
       ],
-      "verified_at": "2026-07-07T11:44:22Z",
+      "verified_at": "2026-07-08T00:00:00Z",
       "notes": "Standard Pay-as-you-go tier; M3 base <=512k input-token tier recorded, long-context and Priority tiers noted in source.",
       "permalink": "/models/minimax/minimax-m2.html"
     },
@@ -3546,7 +3675,7 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 0.95,
-        "output_per_mtok": 4.0,
+        "output_per_mtok": 4,
         "cached_input_per_mtok": 0.19,
         "batch_discount_pct": null
       },
@@ -3587,7 +3716,7 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 1.9,
-        "output_per_mtok": 8.0,
+        "output_per_mtok": 8,
         "cached_input_per_mtok": 0.38,
         "batch_discount_pct": null
       },
@@ -3628,7 +3757,7 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 0.95,
-        "output_per_mtok": 4.0,
+        "output_per_mtok": 4,
         "cached_input_per_mtok": 0.16,
         "batch_discount_pct": null
       },
@@ -3668,8 +3797,8 @@
       "deprecation_date": null,
       "retirement_date": null,
       "pricing": {
-        "input_per_mtok": 2.0,
-        "output_per_mtok": 8.0,
+        "input_per_mtok": 2,
+        "output_per_mtok": 8,
         "cached_input_per_mtok": 0.3,
         "batch_discount_pct": null
       },
@@ -4243,7 +4372,7 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 0.95,
-        "output_per_mtok": 4.0,
+        "output_per_mtok": 4,
         "cached_input_per_mtok": 0.19,
         "batch_discount_pct": null
       },
@@ -5092,7 +5221,7 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 0.5,
-        "output_per_mtok": 3.0,
+        "output_per_mtok": 3,
         "cached_input_per_mtok": null,
         "batch_discount_pct": null
       },
@@ -5528,8 +5657,8 @@
       "deprecation_date": null,
       "retirement_date": null,
       "pricing": {
-        "input_per_mtok": 3.0,
-        "output_per_mtok": 15.0,
+        "input_per_mtok": 3,
+        "output_per_mtok": 15,
         "cached_input_per_mtok": null,
         "batch_discount_pct": null
       },
@@ -5578,8 +5707,8 @@
       "deprecation_date": null,
       "retirement_date": null,
       "pricing": {
-        "input_per_mtok": 2.0,
-        "output_per_mtok": 8.0,
+        "input_per_mtok": 2,
+        "output_per_mtok": 8,
         "cached_input_per_mtok": null,
         "batch_discount_pct": null
       },
@@ -5731,7 +5860,7 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 0.5,
-        "output_per_mtok": 3.0,
+        "output_per_mtok": 3,
         "cached_input_per_mtok": null,
         "batch_discount_pct": null
       },
@@ -5782,7 +5911,7 @@
       "retirement_date": null,
       "pricing": {
         "input_per_mtok": 0.5,
-        "output_per_mtok": 3.0,
+        "output_per_mtok": 3,
         "cached_input_per_mtok": null,
         "batch_discount_pct": null
       },
@@ -6087,14 +6216,14 @@
       "deprecation_date": "2026-01-30",
       "retirement_date": "2026-07-30",
       "pricing": {
-        "input_per_mtok": 6.0,
-        "output_per_mtok": 30.0,
+        "input_per_mtok": 6,
+        "output_per_mtok": 30,
         "cached_input_per_mtok": 0.6,
         "batch_discount_pct": null
       },
       "context_window_tokens": 200000,
       "context_window_notation": "200K",
-      "max_output_tokens": null,
+      "max_output_tokens": 8192,
       "modalities": {
         "input": [
           "text",
@@ -6135,9 +6264,17 @@
             "modalities"
           ],
           "quote": "Claude 3.5 Sonnet is now available ... via Anthropic API, Amazon Bedrock, and Google Cloud Vertex AI ... 200K token context window ... vision capabilities"
+        },
+        {
+          "url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "accessed_at": "2026-07-08T00:00:00Z",
+          "quote": "We've moved 8,192 token outputs from beta to general availability for Claude Sonnet 3.5.",
+          "fields": [
+            "max_output_tokens"
+          ]
         }
       ],
-      "verified_at": "2026-07-07T11:44:22Z",
+      "verified_at": "2026-07-08T00:00:00Z",
       "notes": "hosted third-party model (Anthropic) on Bedrock; Public Extended Access price recorded from AWS Bedrock pricing.",
       "permalink": "/models/amazon/anthropic_claude-3-5-sonnet-20241022-v2_0.html"
     }

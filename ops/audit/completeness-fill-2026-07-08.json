@@ -1,0 +1,1722 @@
+[
+  {
+    "model": "anthropic/claude-opus-4-7",
+    "field": "max_output_tokens",
+    "proposed_value": 128000,
+    "verbatim_quote": "Claude Mythos Preview, Claude Opus 4.8, Claude Opus 4.7, Claude Sonnet 5, Claude Opus 4.6, and Claude Sonnet 4.6 support up to 128k output tokens.",
+    "source_url": "https://platform.claude.com/docs/en/build-with-claude/extended-thinking",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses 128k shorthand; proposed as 128000."
+  },
+  {
+    "model": "anthropic/claude-opus-4-6",
+    "field": "max_output_tokens",
+    "proposed_value": 128000,
+    "verbatim_quote": "Claude Mythos Preview, Claude Opus 4.8, Claude Opus 4.7, Claude Sonnet 5, Claude Opus 4.6, and Claude Sonnet 4.6 support up to 128k output tokens.",
+    "source_url": "https://platform.claude.com/docs/en/build-with-claude/extended-thinking",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses 128k shorthand; proposed as 128000."
+  },
+  {
+    "model": "google/gemini-3.1-flash-lite",
+    "field": "context_window_tokens",
+    "proposed_value": 1048576,
+    "verbatim_quote": "Input token limit 1,048,576 Output token limit 65,536",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-3.1-flash-lite",
+    "field": "max_output_tokens",
+    "proposed_value": 65536,
+    "verbatim_quote": "Input token limit 1,048,576 Output token limit 65,536",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-3.1-pro-preview",
+    "field": "context_window_tokens",
+    "proposed_value": 1048576,
+    "verbatim_quote": "Input token limit 1,048,576 Output token limit 65,536",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-3.1-pro-preview",
+    "field": "max_output_tokens",
+    "proposed_value": 65536,
+    "verbatim_quote": "Input token limit 1,048,576 Output token limit 65,536",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-3.1-flash-live-preview",
+    "field": "context_window_tokens",
+    "proposed_value": 131072,
+    "verbatim_quote": "Input token limit 131,072 Output token limit 65,536",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-live-preview",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-3.1-flash-live-preview",
+    "field": "max_output_tokens",
+    "proposed_value": 65536,
+    "verbatim_quote": "Input token limit 131,072 Output token limit 65,536",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-live-preview",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-3-flash-preview",
+    "field": "context_window_tokens",
+    "proposed_value": 1048576,
+    "verbatim_quote": "Input token limit 1,048,576 Output token limit 65,536",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-3-flash-preview",
+    "field": "max_output_tokens",
+    "proposed_value": 65536,
+    "verbatim_quote": "Input token limit 1,048,576 Output token limit 65,536",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-2.5-pro",
+    "field": "context_window_tokens",
+    "proposed_value": 1048576,
+    "verbatim_quote": "Input token limit 1,048,576 Output token limit 65,536",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-pro",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-2.5-pro",
+    "field": "max_output_tokens",
+    "proposed_value": 65536,
+    "verbatim_quote": "Input token limit 1,048,576 Output token limit 65,536",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-pro",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-2.5-flash",
+    "field": "max_output_tokens",
+    "proposed_value": 65536,
+    "verbatim_quote": "Input token limit 1,048,576 Output token limit 65,536",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-2.5-flash-lite",
+    "field": "context_window_tokens",
+    "proposed_value": 1048576,
+    "verbatim_quote": "Input token limit 1,048,576 Output token limit 65,536",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-lite",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-2.5-flash-lite",
+    "field": "max_output_tokens",
+    "proposed_value": 65536,
+    "verbatim_quote": "Input token limit 1,048,576 Output token limit 65,536",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-lite",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-2.5-flash-lite-preview-09-2025",
+    "field": "context_window_tokens",
+    "proposed_value": 1048576,
+    "verbatim_quote": "Input token limit 1,048,576 Output token limit 65,536",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-lite-preview-09-2025",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-2.5-flash-lite-preview-09-2025",
+    "field": "max_output_tokens",
+    "proposed_value": 65536,
+    "verbatim_quote": "Input token limit 1,048,576 Output token limit 65,536",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-lite-preview-09-2025",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-2.5-flash-native-audio-preview-12-2025",
+    "field": "context_window_tokens",
+    "proposed_value": 131072,
+    "verbatim_quote": "Input token limit 131,072 Output token limit 8,192",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-native-audio-preview-12-2025",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-2.5-flash-native-audio-preview-12-2025",
+    "field": "max_output_tokens",
+    "proposed_value": 8192,
+    "verbatim_quote": "Input token limit 131,072 Output token limit 8,192",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-native-audio-preview-12-2025",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-2.5-flash-preview-tts",
+    "field": "context_window_tokens",
+    "proposed_value": 8192,
+    "verbatim_quote": "Input token limit 8,192 Output token limit 16,384",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-preview-tts",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "google/gemini-2.5-flash-preview-tts",
+    "field": "max_output_tokens",
+    "proposed_value": 16384,
+    "verbatim_quote": "Input token limit 8,192 Output token limit 16,384",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-preview-tts",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "mistral/mistral-medium-latest",
+    "field": "context_window_tokens",
+    "proposed_value": 256000,
+    "verbatim_quote": "Context 256k",
+    "source_url": "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "mistral/mistral-medium-latest",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://docs.mistral.ai/api/endpoint/chat",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Chat API states max_tokens cannot exceed context length but no per-model max output cap found."
+  },
+  {
+    "model": "mistral/mistral-small-latest",
+    "field": "context_window_tokens",
+    "proposed_value": 256000,
+    "verbatim_quote": "Context 256k",
+    "source_url": "https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "mistral/mistral-small-latest",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://docs.mistral.ai/api/endpoint/chat",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Chat API states max_tokens cannot exceed context length but no per-model max output cap found."
+  },
+  {
+    "model": "mistral/mistral-large-latest",
+    "field": "context_window_tokens",
+    "proposed_value": 256000,
+    "verbatim_quote": "Context 256k",
+    "source_url": "https://docs.mistral.ai/models/model-cards/mistral-large-3-25-12",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "mistral/mistral-large-latest",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://docs.mistral.ai/api/endpoint/chat",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Chat API states max_tokens cannot exceed context length but no per-model max output cap found."
+  },
+  {
+    "model": "mistral/voxtral-small-latest",
+    "field": "context_window_tokens",
+    "proposed_value": 32000,
+    "verbatim_quote": "Context 32k",
+    "source_url": "https://docs.mistral.ai/models/model-cards/voxtral-small-25-07",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "mistral/voxtral-small-latest",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://docs.mistral.ai/api/endpoint/chat",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Chat API states max_tokens cannot exceed context length but no per-model max output cap found."
+  },
+  {
+    "model": "mistral/devstral-medium-latest",
+    "field": "context_window_tokens",
+    "proposed_value": 256000,
+    "verbatim_quote": "Context 256k",
+    "source_url": "https://docs.mistral.ai/models/model-cards/devstral-2-25-12",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "mistral/devstral-medium-latest",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://docs.mistral.ai/api/endpoint/chat",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Chat API states max_tokens cannot exceed context length but no per-model max output cap found."
+  },
+  {
+    "model": "mistral/devstral-small-latest",
+    "field": "context_window_tokens",
+    "proposed_value": 256000,
+    "verbatim_quote": "Context 256k",
+    "source_url": "https://docs.mistral.ai/models/model-cards/devstral-small-2-25-12",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "mistral/devstral-small-latest",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://docs.mistral.ai/api/endpoint/chat",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Chat API states max_tokens cannot exceed context length but no per-model max output cap found."
+  },
+  {
+    "model": "mistral/codestral-latest",
+    "field": "context_window_tokens",
+    "proposed_value": 128000,
+    "verbatim_quote": "Context 128k",
+    "source_url": "https://docs.mistral.ai/models/model-cards/codestral-25-08",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "mistral/codestral-latest",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://docs.mistral.ai/api/endpoint/chat",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Chat API states max_tokens cannot exceed context length but no per-model max output cap found."
+  },
+  {
+    "model": "mistral/magistral-medium-latest",
+    "field": "context_window_tokens",
+    "proposed_value": 128000,
+    "verbatim_quote": "Context 128k",
+    "source_url": "https://docs.mistral.ai/models/model-cards/magistral-medium-1-2-25-09",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "mistral/magistral-medium-latest",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://docs.mistral.ai/api/endpoint/chat",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Chat API states max_tokens cannot exceed context length but no per-model max output cap found."
+  },
+  {
+    "model": "xai/grok-build-0.1",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://docs.x.ai/developers/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "xAI publishes context and pricing but no max output token cap found."
+  },
+  {
+    "model": "xai/grok-4.3",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://docs.x.ai/developers/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "xAI publishes context and pricing but no max output token cap found."
+  },
+  {
+    "model": "xai/grok-4.20-multi-agent-0309",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://docs.x.ai/developers/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "xAI publishes context and pricing but no max output token cap found."
+  },
+  {
+    "model": "xai/grok-4.20-0309-reasoning",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://docs.x.ai/developers/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "xAI publishes context and pricing but no max output token cap found."
+  },
+  {
+    "model": "xai/grok-4.20-0309-non-reasoning",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://docs.x.ai/developers/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "xAI publishes context and pricing but no max output token cap found."
+  },
+  {
+    "model": "alibaba/qwen3.7-max",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.alibabacloud.com/help/en/model-studio/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Alibaba docs refer to Model List for maximum output tokens, but no value found for this exact model in accessible primary pages."
+  },
+  {
+    "model": "alibaba/qwen3.7-max-2026-05-20",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.alibabacloud.com/help/en/model-studio/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Alibaba docs refer to Model List for maximum output tokens, but no value found for this exact model in accessible primary pages."
+  },
+  {
+    "model": "alibaba/qwen3.7-max-preview",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.alibabacloud.com/help/en/model-studio/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Alibaba docs refer to Model List for maximum output tokens, but no value found for this exact model in accessible primary pages."
+  },
+  {
+    "model": "alibaba/qwen3.7-max-2026-05-17",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.alibabacloud.com/help/en/model-studio/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Alibaba docs refer to Model List for maximum output tokens, but no value found for this exact model in accessible primary pages."
+  },
+  {
+    "model": "alibaba/qwen3.6-max-preview",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.alibabacloud.com/help/en/model-studio/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Alibaba docs refer to Model List for maximum output tokens, but no value found for this exact model in accessible primary pages."
+  },
+  {
+    "model": "alibaba/qwen3-max",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.alibabacloud.com/help/en/model-studio/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Alibaba docs refer to Model List for maximum output tokens, but no value found for this exact model in accessible primary pages."
+  },
+  {
+    "model": "alibaba/qwen3-max-2026-01-23",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.alibabacloud.com/help/en/model-studio/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Alibaba docs refer to Model List for maximum output tokens, but no value found for this exact model in accessible primary pages."
+  },
+  {
+    "model": "moonshot/kimi-k2.7-code",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://platform.kimi.ai/docs",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Moonshot pricing/model pages found context length but no max output token cap."
+  },
+  {
+    "model": "moonshot/kimi-k2.6",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://platform.kimi.ai/docs",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Moonshot pricing/model pages found context length but no max output token cap."
+  },
+  {
+    "model": "moonshot/kimi-k2.5",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://platform.kimi.ai/docs",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Moonshot pricing/model pages found context length but no max output token cap."
+  },
+  {
+    "model": "zhipu/glm-5.2",
+    "field": "context_window_tokens",
+    "proposed_value": 1000000,
+    "verbatim_quote": "Context Length 1M Maximum Output Tokens 128K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-5.2",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-5.2",
+    "field": "max_output_tokens",
+    "proposed_value": 128000,
+    "verbatim_quote": "Context Length 1M Maximum Output Tokens 128K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-5.2",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-5.1",
+    "field": "context_window_tokens",
+    "proposed_value": 200000,
+    "verbatim_quote": "Context Length 200K Maximum Output Tokens 128K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-5.1",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-5.1",
+    "field": "max_output_tokens",
+    "proposed_value": 128000,
+    "verbatim_quote": "Context Length 200K Maximum Output Tokens 128K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-5.1",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-5",
+    "field": "context_window_tokens",
+    "proposed_value": 200000,
+    "verbatim_quote": "Context Length 200K Maximum Output Tokens 128K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-5",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-5",
+    "field": "max_output_tokens",
+    "proposed_value": 128000,
+    "verbatim_quote": "Context Length 200K Maximum Output Tokens 128K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-5",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-5-turbo",
+    "field": "context_window_tokens",
+    "proposed_value": 200000,
+    "verbatim_quote": "Context Length 200K Maximum Output Tokens 128K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-5-turbo",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-5-turbo",
+    "field": "max_output_tokens",
+    "proposed_value": 128000,
+    "verbatim_quote": "Context Length 200K Maximum Output Tokens 128K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-5-turbo",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-4.7",
+    "field": "context_window_tokens",
+    "proposed_value": 200000,
+    "verbatim_quote": "Context Length 200K Maximum Output Tokens 128K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-4.7",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-4.7",
+    "field": "max_output_tokens",
+    "proposed_value": 128000,
+    "verbatim_quote": "Context Length 200K Maximum Output Tokens 128K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-4.7",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-4.7-flashx",
+    "field": "context_window_tokens",
+    "proposed_value": 200000,
+    "verbatim_quote": "Context Length 200K Maximum Output Tokens 128K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-4.7",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-4.7-flashx",
+    "field": "max_output_tokens",
+    "proposed_value": 128000,
+    "verbatim_quote": "Context Length 200K Maximum Output Tokens 128K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-4.7",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-4.6",
+    "field": "context_window_tokens",
+    "proposed_value": 200000,
+    "verbatim_quote": "Longer context window: The context window has been expanded from 128K to 200K tokens",
+    "source_url": "https://docs.z.ai/guides/llm/glm-4.6",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-4.6",
+    "field": "max_output_tokens",
+    "proposed_value": 128000,
+    "verbatim_quote": "GLM-4.6 supports a maximum output length of 128K",
+    "source_url": "https://docs.z.ai/guides/overview/concept-param",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-4.5",
+    "field": "context_window_tokens",
+    "proposed_value": 128000,
+    "verbatim_quote": "Context Length 128K Maximum Output Tokens 96K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-4.5",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-4.5",
+    "field": "max_output_tokens",
+    "proposed_value": 96000,
+    "verbatim_quote": "Context Length 128K Maximum Output Tokens 96K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-4.5",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-4.5-x",
+    "field": "context_window_tokens",
+    "proposed_value": 128000,
+    "verbatim_quote": "Context Length 128K Maximum Output Tokens 96K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-4.5",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-4.5-x",
+    "field": "max_output_tokens",
+    "proposed_value": 96000,
+    "verbatim_quote": "Context Length 128K Maximum Output Tokens 96K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-4.5",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-4.5-air",
+    "field": "context_window_tokens",
+    "proposed_value": 128000,
+    "verbatim_quote": "Context Length 128K Maximum Output Tokens 96K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-4.5",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-4.5-air",
+    "field": "max_output_tokens",
+    "proposed_value": 96000,
+    "verbatim_quote": "Context Length 128K Maximum Output Tokens 96K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-4.5",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-4.5-airx",
+    "field": "context_window_tokens",
+    "proposed_value": 128000,
+    "verbatim_quote": "Context Length 128K Maximum Output Tokens 96K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-4.5",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-4.5-airx",
+    "field": "max_output_tokens",
+    "proposed_value": 96000,
+    "verbatim_quote": "Context Length 128K Maximum Output Tokens 96K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-4.5",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-4-32b-0414-128k",
+    "field": "context_window_tokens",
+    "proposed_value": 128000,
+    "verbatim_quote": "Context Length 128K Maximum Output Tokens 16K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-4-32b-0414-128k",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "zhipu/glm-4-32b-0414-128k",
+    "field": "max_output_tokens",
+    "proposed_value": 16000,
+    "verbatim_quote": "Context Length 128K Maximum Output Tokens 16K",
+    "source_url": "https://docs.z.ai/guides/llm/glm-4-32b-0414-128k",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "minimax/minimax-m3",
+    "field": "context_window_tokens",
+    "proposed_value": 1000000,
+    "verbatim_quote": "MiniMax-M3 1,000,000 Latest M-series language model for agentic reasoning, tool use, coding, and long-context tasks",
+    "source_url": "https://platform.minimax.io/docs/api-reference/text-openai-api",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "minimax/minimax-m3",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://platform.minimax.io/docs/guides/models-intro",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "MiniMax primary docs checked; no max output cap published for this exact model."
+  },
+  {
+    "model": "minimax/minimax-m2.7",
+    "field": "context_window_tokens",
+    "proposed_value": 204800,
+    "verbatim_quote": "MiniMax-M2.7 204,800 Beginning the journey of recursive self-improvement",
+    "source_url": "https://platform.minimax.io/docs/api-reference/text-openai-api",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "minimax/minimax-m2.7",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://platform.minimax.io/docs/guides/models-intro",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "MiniMax primary docs checked; no max output cap published for this exact model."
+  },
+  {
+    "model": "minimax/minimax-m2.5",
+    "field": "context_window_tokens",
+    "proposed_value": 204800,
+    "verbatim_quote": "MiniMax-M2.5 204,800 Peak Performance. Ultimate Value. Master the Complex",
+    "source_url": "https://platform.minimax.io/docs/api-reference/text-openai-api",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "minimax/minimax-m2.5",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://platform.minimax.io/docs/guides/models-intro",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "MiniMax primary docs checked; no max output cap published for this exact model."
+  },
+  {
+    "model": "minimax/minimax-m2.1",
+    "field": "context_window_tokens",
+    "proposed_value": 204800,
+    "verbatim_quote": "MiniMax-M2.1 204,800 Powerful Multi-Language Programming Capabilities with Comprehensively Enhanced Programming Experience",
+    "source_url": "https://platform.minimax.io/docs/api-reference/text-openai-api",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "minimax/minimax-m2.1",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://platform.minimax.io/docs/guides/models-intro",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "MiniMax primary docs checked; no max output cap published for this exact model."
+  },
+  {
+    "model": "minimax/minimax-m2",
+    "field": "context_window_tokens",
+    "proposed_value": 204800,
+    "verbatim_quote": "MiniMax-M2 204,800 Agentic capabilities, Advanced reasoning",
+    "source_url": "https://platform.minimax.io/docs/api-reference/text-openai-api",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": ""
+  },
+  {
+    "model": "minimax/minimax-m2",
+    "field": "max_output_tokens",
+    "proposed_value": 128000,
+    "verbatim_quote": "MiniMax-M2? Context Length: 200k tokens ? Maximum Output: 128k tokens (including CoT)",
+    "source_url": "https://platform.minimax.io/docs/guides/models-intro",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Source uses compact K/M notation; decimal integer proposed but notation is ambiguous."
+  },
+  {
+    "model": "fireworks/kimi-k2.7-code",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/kimi-k2.7-code",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/kimi-k2.7-code-fast",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/kimi-k2.7-code-fast",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/kimi-k2.6",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/kimi-k2.6",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/kimi-k2.6-fast",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/kimi-k2.6-fast",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/deepseek-v4-pro",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/deepseek-v4-pro",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/deepseek-v4-flash",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/deepseek-v4-flash",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/glm-5.2",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/glm-5.2",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/glm-5.2-fast",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/glm-5.2-fast",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/glm-5.1",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/glm-5.1",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/glm-5.1-fast",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/glm-5.1-fast",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/qwen-3.7-plus",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/qwen-3.7-plus",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/minimax-m3",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/minimax-m3",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/minimax-m2.7",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/minimax-m2.7",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/openai-gpt-oss-120b",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/openai-gpt-oss-120b",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/openai-gpt-oss-20b",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "fireworks/openai-gpt-oss-20b",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/deepseek-v4-pro",
+    "field": "context_window_tokens",
+    "proposed_value": 512000,
+    "verbatim_quote": "Context length 512K",
+    "source_url": "https://www.together.ai/models/deepseek-v4-pro",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Together host page uses compact K/M notation; host value used for hosted SKU."
+  },
+  {
+    "model": "together/deepseek-v4-pro",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/minimax-m3",
+    "field": "context_window_tokens",
+    "proposed_value": 1000000,
+    "verbatim_quote": "Context length 1M",
+    "source_url": "https://www.together.ai/models/minimax-m3",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Together host page uses compact K/M notation; host value used for hosted SKU."
+  },
+  {
+    "model": "together/minimax-m3",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/kimi-k2.7-code",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/kimi-k2.7-code",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/glm-5.2",
+    "field": "context_window_tokens",
+    "proposed_value": 256000,
+    "verbatim_quote": "Context length 256K",
+    "source_url": "https://www.together.ai/models/glm-52",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Together host page uses compact K/M notation; host value used for hosted SKU."
+  },
+  {
+    "model": "together/glm-5.2",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/lfm2-24b-a2b",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/lfm2-24b-a2b",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/gemma-4-31b",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/gemma-4-31b",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/nvidia-nemotron-3-ultra",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/nvidia-nemotron-3-ultra",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/qwen3.7-plus",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/qwen3.7-plus",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/kimi-k2.6",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/kimi-k2.6",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/qwen3.7-max",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/qwen3.7-max",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/gpt-oss-120b",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/gpt-oss-120b",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/qwen3.5-397b-a17b",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/qwen3.5-397b-a17b",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/qwen3.5-9b",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/qwen3.5-9b",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/gemma-4-31b-it-pearl",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/gemma-4-31b-it-pearl",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/cogito-v2.1-671b",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/cogito-v2.1-671b",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/rnj-1-instruct",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/rnj-1-instruct",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/llama-3.3-70b",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/llama-3.3-70b",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/gemma-3n-e4b-instruct",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/gemma-3n-e4b-instruct",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/gpt-oss-20b",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/gpt-oss-20b",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/qwen3-235b-a22b-fp8-throughput",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/qwen3-235b-a22b-fp8-throughput",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/minimax-m2.5",
+    "field": "context_window_tokens",
+    "proposed_value": 192000,
+    "verbatim_quote": "Context length 192K",
+    "source_url": "https://www.together.ai/models/minimax-m2-5",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "AMBIGUOUS",
+    "note": "Together host page uses compact K/M notation; host value used for hosted SKU."
+  },
+  {
+    "model": "together/minimax-m2.5",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/glm-5.1",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/glm-5.1",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/minimax-m2.7",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/minimax-m2.7",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/qwen3.6-plus",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "together/qwen3.6-plus",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "perplexity/perplexity/sonar",
+    "field": "context_window_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://docs.perplexity.ai/docs/agent-api/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Exact Agent API model id perplexity/sonar has pricing published, but no context window found; Sonar API sibling endpoint was not reused."
+  },
+  {
+    "model": "perplexity/perplexity/sonar",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://docs.perplexity.ai/docs/agent-api/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Agent API model page publishes pricing but no max output token cap."
+  },
+  {
+    "model": "perplexity/sonar-pro",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://docs.perplexity.ai/docs/sonar/models/sonar-pro",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Perplexity model page publishes context length and pricing but no max output token cap."
+  },
+  {
+    "model": "perplexity/sonar-reasoning-pro",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://docs.perplexity.ai/docs/sonar/models/sonar-reasoning-pro",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Perplexity model page publishes context length and pricing but no max output token cap."
+  },
+  {
+    "model": "fireworks/llama-v3p3-70b-instruct",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models/fireworks/llama-v3p3-70b-instruct",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Fireworks model page publishes context length but no max output token cap."
+  },
+  {
+    "model": "fireworks/qwen2p5-vl-32b-instruct",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://fireworks.ai/models/fireworks/qwen2p5-vl-32b-instruct",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "Fireworks model page publishes context length but no max output token cap."
+  },
+  {
+    "model": "together/Qwen/Qwen2.5-7B-Instruct-Turbo",
+    "field": "max_output_tokens",
+    "proposed_value": null,
+    "verbatim_quote": "",
+    "source_url": "https://www.together.ai/models",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "NO_SOURCE",
+    "note": "No primary source found publishing this field for this exact model."
+  },
+  {
+    "model": "amazon/anthropic.claude-3-5-sonnet-20241022-v2:0",
+    "field": "max_output_tokens",
+    "proposed_value": 8192,
+    "verbatim_quote": "We've moved 8,192 token outputs from beta to general availability for Claude Sonnet 3.5.",
+    "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "accessed_at": "2026-07-08T00:00:00Z",
+    "status": "FOUND",
+    "note": "Underlying Anthropic Claude 3.5 Sonnet output cap; AWS page did not publish a separate numeric cap."
+  }
+]
